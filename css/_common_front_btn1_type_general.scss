@@ -1,0 +1,10 @@
+.btn-container {
+	.common {
+		padding: 10px 12px 10px 12px;
+		&.white {
+			background-color: #fff;
+			color: #000;
+			border: 1px solid #bcbcbc;
+		}
+	} 
+} 

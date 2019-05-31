@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AACC,sBAAQ,GACP,OAAO,EAAE,mBAAmB;AAC5B,4BAAQ,GACP,gBAAgB,EAAE,IAAI,EACtB,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,iBAAiB",
+"sources": ["_common_front_btn1_type_general.scss"],
 "names": [],
 "file": "common.css"
 }
