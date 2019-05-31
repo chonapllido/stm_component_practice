@@ -1,0 +1,153 @@
+$img: '../images/';
+
+a{
+	text-decoration:none;
+}
+
+.common_front_paging1{
+	width: 100%;
+	font: normal 13px 'Malgun Gothic';
+	margin-top:15px;
+	text-align: center;
+	div{
+		display: inline-block;
+		text-align: center;
+		>span{
+			&.left{
+				display:inline-block;
+				border:1px solid #cfcfcf;
+				border-bottom:1px solid #9a9a9a;
+				vertical-align:top;
+				margin-right:10px;
+				>a{
+					display: inline-block;
+					&.first-page{
+						float:left;
+						width: 29px;
+						height: 25px;
+						background: url($img + 'icon/icon_first_page.png') no-repeat 50% 50%;
+						border-right:1px solid #d7d7d7;
+					}
+					&.back{
+						float:left;
+						width: 25px;
+						height: 25px;
+						background: url($img + 'icon/icon_back.png') no-repeat 50% 50%;
+					}
+					
+				}
+			}
+			&.right{
+				display:inline-block;
+				border:1px solid #cfcfcf;
+				vertical-align:top;
+				border-bottom:1px solid #9a9a9a;
+				margin-left:10px;
+				>a{
+					display:inline-block;
+					&.last-page{
+						float:left;
+						width: 29px;
+						height: 25px;
+						background: url($img + 'icon/icon_last_page.png') no-repeat 50% 50%;
+					}
+					&.next{
+						float:left;
+						width: 25px;
+						height: 25px;
+						background: url($img + 'icon/icon_next.png') no-repeat 50% 50%;
+						border-right:1px solid #d7d7d7;
+					}
+				}
+			}
+		}
+		>ul{
+			margin: 0;
+			padding: 0;
+			border-right: 1px solid #d7d7d7;
+			text-align: center;
+			display:inline-block;
+			>li{
+				display: block;
+				list-style: none;
+				display: table-cell;
+				height:25px;
+				min-width:25px;
+				padding:0;
+				margin: 0;
+				border: 1px solid #e0e0e0;
+				border-right: none;
+				line-height:25px;
+				a{
+					display:block; 
+					color: #535353;
+					text-decoration:none;
+				}
+				&.on{
+					color:#fff;
+					border-color:#95001f;
+					border-right:1px solid #95001f;
+					font-weight:bold;
+					background:#a40022;
+					
+					&+li{
+						border-left:0;
+					}
+					
+					a{
+						color:#fff;
+						text-decoration:none;
+					}
+				}
+				&.total-pages{
+					display:none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:640px) {
+	.common_front_paging1{
+		div{
+			>ul{
+				border-right:0;
+				margin-top:0;
+				>li{
+					width:auto;
+					display:none;
+					border:0;
+					min-width:auto;
+					&.on-page{
+						border-right:0;
+						background:0;
+						border:0;
+						a{
+							display:inline-block;
+							color:#a40022;
+							line-height:15px;
+						}
+						&:after{
+							display:inline-block;
+							content:'/';
+							color:#535353;
+							margin-right:0px;
+							margin-left:2px;
+							font-weight:normal;
+						}
+					}
+					
+					&:first-child{
+						display:table-cell;
+					}
+					&.total-pages{
+						display:table-cell;
+					}
+					&.last-page{
+						display:none;
+					}
+				}
+			}
+		}
+	}
+}
