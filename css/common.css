@@ -1,4 +1,11 @@
-.btn-container .common { padding: 10px 12px 10px 12px; }
-.btn-container .common.white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
+.btn-container button { padding: 10px 12px 10px 12px; cursor: pointer; }
+.btn-container button.white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
+.btn-container button.red { background-color: #a40022; color: #fff; border: 1px solid #500014; }
+.btn-container button.orange { background-color: #f98900; color: #fff; border: 1px solid #ee6f00; }
+.btn-container button.green { background-color: #529c1c; color: #fff; border: 1px solid #427d16; }
+.btn-container button.brown { background-color: #936c6a; color: #fff; border: 1px solid #7e5c5b; }
+.btn-container button.transparent { background-color: #fcfcfc; color: #d6d5d5; border: 1px solid #dadada; }
+
+@media screen and (max-width: 609px) { .btn-container button { display: block; margin-bottom: 10px; width: 100%; box-sizing: border-box; } }
 
 /*# sourceMappingURL=common.css.map */
