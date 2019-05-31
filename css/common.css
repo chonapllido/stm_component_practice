@@ -1,57 +1,43 @@
-<<<<<<< HEAD
-a { text-decoration: none; }
+/*
+Error: Invalid CSS after "..._front_paging1"": expected "{", was ";"
+        on line 2 of css/common.scss
 
-.common_front_paging1 { width: 100%; font: normal 13px 'Malgun Gothic'; margin-top: 15px; text-align: center; }
-.common_front_paging1 div { display: inline-block; text-align: center; }
-.common_front_paging1 div > span.left { display: inline-block; border: 1px solid #cfcfcf; border-bottom: 1px solid #9a9a9a; vertical-align: top; margin-right: 10px; }
-.common_front_paging1 div > span.left > a { display: inline-block; }
-.common_front_paging1 div > span.left > a.first-page { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_first_page.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
-.common_front_paging1 div > span.left > a.back { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_back.png") no-repeat 50% 50%; }
-.common_front_paging1 div > span.right { display: inline-block; border: 1px solid #cfcfcf; vertical-align: top; border-bottom: 1px solid #9a9a9a; margin-left: 10px; }
-.common_front_paging1 div > span.right > a { display: inline-block; }
-.common_front_paging1 div > span.right > a.last-page { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_last_page.png") no-repeat 50% 50%; }
-.common_front_paging1 div > span.right > a.next { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_next.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
-.common_front_paging1 div > ul { margin: 0; padding: 0; border-right: 1px solid #d7d7d7; text-align: center; display: inline-block; }
-.common_front_paging1 div > ul > li { display: block; list-style: none; display: table-cell; height: 25px; min-width: 25px; padding: 0; margin: 0; border: 1px solid #e0e0e0; border-right: none; line-height: 25px; }
-.common_front_paging1 div > ul > li a { display: block; color: #535353; text-decoration: none; }
-.common_front_paging1 div > ul > li.on { color: #fff; border-color: #95001f; border-right: 1px solid #95001f; font-weight: bold; background: #a40022; }
-.common_front_paging1 div > ul > li.on + li { border-left: 0; }
-.common_front_paging1 div > ul > li.on a { color: #fff; text-decoration: none; }
-.common_front_paging1 div > ul > li.total-pages { display: none; }
+1: <<<<<<< HEAD
+2: @import "common_front_paging1";
+3: =======
+4: @import 'common_front_btn1';
+5: >>>>>>> e250e2382b58bf1a577ca5aa3e4c96751d2d7e28
 
-@media screen and (max-width: 640px) { .common_front_paging1 div > ul { border-right: 0; margin-top: 0; }
-  .common_front_paging1 div > ul > li { width: auto; display: none; border: 0; min-width: auto; }
-  .common_front_paging1 div > ul > li.on-page { border-right: 0; background: 0; border: 0; }
-  .common_front_paging1 div > ul > li.on-page a { display: inline-block; color: #a40022; line-height: 15px; }
-  .common_front_paging1 div > ul > li.on-page:after { display: inline-block; content: '/'; color: #535353; margin-right: 0px; margin-left: 2px; font-weight: normal; }
-  .common_front_paging1 div > ul > li:first-child { display: table-cell; }
-  .common_front_paging1 div > ul > li.total-pages { display: table-cell; }
-  .common_front_paging1 div > ul > li.last-page { display: none; } }
-=======
-.btn-container button { padding: 10px 12px 10px; cursor: pointer; font: bold 13px "Malgun Gothic"; }
-.btn-container button.white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
-.btn-container button.white.icon-pill:before { background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%; }
-.btn-container button.white.icon-arrow-left:before { background: url("../images/icon/btn-white-larrow.png") no-repeat 50%; }
-.btn-container button.white.icon-close:before { background: url("../images/icon/btn-white-close.png") no-repeat 50%; }
-.btn-container button.white.icon-trash:before { background: url("../images/icon/btn-white-trash.png") no-repeat 50%; }
-.btn-container button.white.icon-updown:before { background: url("../images/icon/btn-white-updown.png") no-repeat 50%; }
-.btn-container button.white.icon-calendar:before { background: url("../images/icon/btn-white-calendar.png") no-repeat 50%; }
-.btn-container button.red { background-color: #a40022; color: #fff; border: 1px solid #500014; }
-.btn-container button.red.icon-write:before { background: url("../images//icon/btn-red-write.png") no-repeat 50%; }
-.btn-container button.red.icon-plus:before { background: url("../images//icon/btn-red-plus.png") no-repeat 50%; }
-.btn-container button.red.icon-play:before { background: url("../images//icon/btn-red-play.png") no-repeat 50%; }
-.btn-container button.red.icon-paper:before { background: url("../images//icon/btn-red-paper.png") no-repeat 50%; }
-.btn-container button.red.icon-pc:before { background: url("../images//icon/btn-red-pc.png") no-repeat 50%; }
-.btn-container button.red.icon-plus2:before { background: url("../images//icon/btn-red-plus2.png") no-repeat 50%; }
-.btn-container button.orange { background-color: #f98900; color: #fff; border: 1px solid #ee6f00; }
-.btn-container button.green { background-color: #529c1c; color: #fff; border: 1px solid #427d16; }
-.btn-container button.brown { background-color: #936c6a; color: #fff; border: 1px solid #7e5c5b; }
-.btn-container button.transparent { background-color: #fcfcfc; color: #d6d5d5; border: 1px solid #dadada; }
-.btn-container button:before { content: ''; width: 12px; height: 12px; padding: 0 14px; }
-
-@media screen and (max-width: 929px) { .btn-container button { margin-bottom: 10px; } }
-@media screen and (max-width: 609px) { .btn-container button { display: block; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
-  .btn-container button:before { float: left; } }
->>>>>>> e250e2382b58bf1a577ca5aa3e4c96751d2d7e28
-
-/*# sourceMappingURL=common.css.map */
+Backtrace:
+css/common.scss:2
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1308:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1238:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:1233:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:688:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:681:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:707:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:697:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"..._front_paging1\"\": expected \"{\", was \";\"\A         on line 2 of css/common.scss\A \A 1: <<<<<<< HEAD\A 2: @import \"common_front_paging1\";\A 3: =======\A 4: @import 'common_front_btn1';\A 5: >>>>>>> e250e2382b58bf1a577ca5aa3e4c96751d2d7e28"; }
