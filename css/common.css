@@ -28,7 +28,7 @@ a { text-decoration: none; }
   .common_front_paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
 button { padding: 10px 12px 10px 12px; cursor: pointer; height: 40px; font: bold 13px "Malgun Gothic"; }
 button.btn { padding: 10px 20px 10px; }
-button.btn2:before { content: ''; width: 12px; height: 20px; padding: 0 5px 0 10px; margin-right: 7px; }
+button.btn2:before { content: ''; width: 12px; height: 20px; padding: 0 0px 0 14px; margin-right: 5px; }
 button.btn-white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
 button.btn-white.icon-pill:before { background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%; }
 button.btn-white.icon-arrow-left:before { background: url("../images/icon/btn-white-larrow.png") no-repeat 50%; }
