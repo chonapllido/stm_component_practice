@@ -26,7 +26,7 @@ a { text-decoration: none; }
   .common-front-paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
   .common-front-paging1 div > ul > li.total { display: table-cell; position: relative; }
   .common-front-paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
-.btn { padding: 10px 20px 10px !important; display: inline-block; padding: 10px 12px 10px 12px; cursor: pointer; font: bold 13px "Malgun Gothic"; }
+.btn { padding: 10px 20px 10px !important; display: inline-block; padding: 10px 12px 10px 12px; cursor: pointer; font: bold 13px "Malgun Gothic"; margin-bottom: 10px; }
 
 .btn2 { display: inline-block; padding: 10px 12px 10px 12px; cursor: pointer; font: bold 13px "Malgun Gothic"; }
 .btn2:before { content: ''; width: 12px; height: 20px; padding: 0 0px 0 14px; margin-right: 7px; }
