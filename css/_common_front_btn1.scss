@@ -3,10 +3,10 @@ $stm_img: '../images/';
 	button {
 		padding: 10px 12px 10px 12px;
 		cursor: pointer;
-		height: 40px;
 		font: bold 13px "Malgun Gothic";
 		&.btn {
 			padding: 10px 20px 10px;
+			height: 40px;
 		}
 		&.btn2 {
 			&:before {
@@ -14,7 +14,8 @@ $stm_img: '../images/';
 				width: 12px;
 				height: 20px;
 				padding: 0 0px 0 14px;
-    			margin-right: 5px;
+    			margin-right: 7px;
+    			height: 40px;
 			}
 		}
 		&.btn-white {
@@ -167,6 +168,7 @@ $stm_img: '../images/';
 			color: #d6d5d5;
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
+			cursor: no-drop;
 			&.icon-pill {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pill.png') no-repeat 50%;
