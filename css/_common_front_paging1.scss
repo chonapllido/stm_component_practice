@@ -4,7 +4,7 @@ a{
 	text-decoration:none;
 }
 
-.common_front_paging1{
+.common-front-paging1{
 	width: 100%;
 	font: normal 13px 'Malgun Gothic';
 	margin-top:15px;
@@ -64,11 +64,11 @@ a{
 			display:inline-block;
 			>li{
 				display: table-cell;
-				height:25px;
-				min-width:25px;
+				height:24px;
+				min-width:24px;
 				border: 1px solid #e0e0e0;
 				border-right: none;
-				line-height:25px;
+				line-height:24px;
 				a{
 					display:block; 
 					color: #535353;
@@ -97,7 +97,7 @@ a{
 /* 610px */
 /*-------------------------------*/
 @media screen and (max-width:737px) {
-	.common_front_paging1{
+	.common-front-paging1{
 		div{
 			>ul{
 				border-right:0;

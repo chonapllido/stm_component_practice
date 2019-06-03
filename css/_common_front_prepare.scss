@@ -1,0 +1,27 @@
+.common-front-prepare{
+	display:table;
+	border:1px solid #dfdfdf;
+	text-align:center;
+	margin: 0 auto;
+	margin-top:15px;
+	margin: 15px 175px;
+	width: 100%;
+	box-sizing: border-box;
+		img{
+			display:table-cell;
+			width: 80px;
+			height: 80px;
+		}
+		.text{
+			display:table-cell;
+			.heading{
+				em{
+
+				}
+			}
+			span{
+
+			}
+		}
+	
+}
