@@ -207,5 +207,6 @@ ul.combi-tab li:last-child { border-bottom: none; }
   .common-front-prepare > div .text p { display: block; } }
 /* 290 */
 @media screen and (max-width: 449px) { .common-front-prepare > div { padding-left: 20px; padding-right: 20px; } }
+.common-front-search > div { display: table; margin: 0 auto; }
 
 /*# sourceMappingURL=common.css.map */
