@@ -136,6 +136,9 @@ ul.combi-tab{
                 line-height: 18px;
                 border-top:none;
             }
+            @include from-tab{
+                border-top:none;
+            }
             a{
                 @include from-tab{
                     padding-right:21px;

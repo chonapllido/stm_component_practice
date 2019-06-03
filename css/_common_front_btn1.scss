@@ -1,27 +1,31 @@
 $stm_img: '../images/';
 
-	button {
-		padding: 10px 12px 10px 12px;
-		cursor: pointer;
-		font: bold 13px "Malgun Gothic";
-		&.btn {
-			padding: 10px 20px 10px;
-			height: 40px;
+		.btn {
+			padding: 10px 20px 10px !important;
+			display: inline-block;
+			padding: 10px 12px 10px 12px;
+			cursor: pointer;
+			font: bold 13px "Malgun Gothic";
+			margin-bottom: 10px;
 		}
-		&.btn2 {
+		.btn2 {
+			display: inline-block;
+			padding: 10px 12px 10px 12px;
+			cursor: pointer;
+			font: bold 13px "Malgun Gothic";
 			&:before {
 				content: '';
 				width: 12px;
 				height: 20px;
 				padding: 0 0px 0 14px;
     			margin-right: 7px;
-    			height: 40px;
 			}
 		}
-		&.btn-white {
+		.btn-white {
 			background-color: #fff;
 			color: #000;
 			border: 1px solid #bcbcbc;
+			margin-bottom: 10px;
 			&.icon-pill {
 				&:before {
 					background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%;
@@ -53,7 +57,7 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.btn-red {
+		.btn-red {
 			background-color: #a40022;
 			color: #fff;
 			border: 1px solid #500014;
@@ -88,7 +92,7 @@ $stm_img: '../images/';
 				}
 			}		
 		}
-		&.btn-orange {
+		.btn-orange {
 			background-color: #f98900;
 			color: #fff;
 			border: 1px solid #ee6f00;
@@ -113,7 +117,7 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.btn-green {
+		.btn-green {
 			background-color: #529c1c;
 			color: #fff;
 			border: 1px solid #427d16;
@@ -128,7 +132,7 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.btn-brown {
+		.btn-brown {
 			background-color: #936c6a;
 			color: #fff;
 			border: 1px solid #7e5c5b;
@@ -163,12 +167,19 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.btn-transparent {
+		.btn[disabled] {
 			background-color: #fcfcfc;
 			color: #d6d5d5;
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
-			cursor: no-drop;
+			pointer-events: none;
+		}
+		.btn2[disabled] {
+			background-color: #fcfcfc;
+			color: #d6d5d5;
+			margin-bottom: 10px;
+			border: 1px solid #dadada;
+			pointer-events: none;
 			&.icon-pill {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pill.png') no-repeat 50%;
@@ -259,8 +270,12 @@ $stm_img: '../images/';
 					background: url($stm_img + '/icon/btn-trans-pc.png') no-repeat 50%;
 				}
 			}
+			&.icon-calendar {
+				&:before{
+					background: url($stm_img + '/icon/btn-trans-calendar.png') no-repeat 50%;
+				}
+			}
 		}
-	}  
 
 @media screen and (max-width: 929px) {
 	.btn-container {
@@ -271,15 +286,14 @@ $stm_img: '../images/';
 }
 
 @media screen and (max-width: 609px) {
-	.btn-container {
-		button {
-			display: block;
-			margin-bottom: 10px;
-			width: 100%;
-			box-sizing: border-box;
-			&:before {
-				float: left;
-			}
+	.btn, .btn2 {
+		text-align: center;
+		display: block;
+		margin-bottom: 10px;
+		width: 100%;
+		box-sizing: border-box;
+		&:before {
+			float: left;
 		}
 	}
 }
