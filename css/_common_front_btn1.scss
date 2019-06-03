@@ -1,15 +1,18 @@
 $stm_img: '../images/';
 
-	button {
-		padding: 10px 12px 10px 12px;
-		cursor: pointer;
-		font: bold 13px "Malgun Gothic";
+	a {
 		&.btn {
-			padding: 10px 20px 10px;
-			height: 40px;
+			padding: 10px 20px 10px !important;
+			display: inline-block;
+			padding: 10px 12px 10px 12px;
+			cursor: pointer;
+			font: bold 13px "Malgun Gothic";
 		}
 		&.btn2 {
-			height: 40px;
+			display: inline-block;
+			padding: 10px 12px 10px 12px;
+			cursor: pointer;
+			font: bold 13px "Malgun Gothic";
 			&:before {
 				content: '';
 				width: 12px;
@@ -168,14 +171,14 @@ $stm_img: '../images/';
 			color: #d6d5d5;
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
-			cursor: no-drop;
+			pointer-events: none;
 		}
 		&.btn2[disabled] {
 			background-color: #fcfcfc;
 			color: #d6d5d5;
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
-			cursor: no-drop;
+			pointer-events: none;
 			&.icon-pill {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pill.png') no-repeat 50%;
