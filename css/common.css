@@ -17,7 +17,10 @@ a { text-decoration: none; }
 .common_front_paging1 div > ul > li.on a { color: #fff; font-weight: bold; text-decoration: none; }
 .common_front_paging1 div > ul > li.total { display: none; }
 
-@media screen and (max-width: 640px) { .common_front_paging1 div > ul { border-right: 0; }
+/*-------------------------------*/
+/* 610px */
+/*-------------------------------*/
+@media screen and (max-width: 737px) { .common_front_paging1 div > ul { border-right: 0; }
   .common_front_paging1 div > ul > li { display: none; border: none; }
   .common_front_paging1 div > ul > li.on { display: table-cell; min-width: 7px; border-right: 0; background: 0; border: 0; }
   .common_front_paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
