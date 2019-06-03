@@ -3,14 +3,14 @@
 ul.normal-tab { display: flex; flex-direction: column; }
 @media (min-width: 480px) { ul.normal-tab { flex-direction: row; } }
 ul.normal-tab li { height: 46px; width: 100%; background-color: #483f41; text-align: center; }
-ul.normal-tab li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 13px; font-family: 'Malgun Gothic', sans-serif; font-weight: bold; color: #f3e6e6; text-decoration: none; }
+ul.normal-tab li a { display: flex; align-items: center; justify-content: center; height: 100%; font-size: 13px; font-family: 'Malgun Gothic', sans-serif; font-weight: bold; color: #f3e6e6; text-decoration: none; cursor: pointer; }
 ul.normal-tab li.on { background-color: #936c6a; }
-@media (max-width: 480px) { ul.normal-tab li.on { border-bottom: 1px solid #fff; } }
 ul.normal-tab li.on a { color: #fff; }
 ul.normal-tab li:nth-child(n + 2) { border-bottom: 1px solid #fff; }
 @media (min-width: 480px) { ul.normal-tab li:nth-child(n + 2) { border-bottom: none; border-left: 1px solid #fff; } }
 ul.normal-tab li:last-child { border-bottom: none; }
 ul.normal-tab li:first-child a { border-left: none; }
+@media (max-width: 480px) { ul.normal-tab li:first-child { border-bottom: 1px solid #fff; } }
 ul.normal-tab.one { flex-direction: row; }
 ul.normal-tab.one li { height: 64px; border: none; line-height: 18px; }
 @media (min-width: 480px) { ul.normal-tab.one li { height: 46px; } }
