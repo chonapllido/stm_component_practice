@@ -44,16 +44,11 @@ ul.normal-tab li a {
   font-weight: bold;
   color: #f3e6e6;
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul.normal-tab li.on {
   background-color: #936c6a;
-}
-
-@media (max-width: 480px) {
-  ul.normal-tab li.on {
-    border-bottom: 1px solid #fff;
-  }
 }
 
 ul.normal-tab li.on a {
@@ -77,6 +72,12 @@ ul.normal-tab li:last-child {
 
 ul.normal-tab li:first-child a {
   border-left: none;
+}
+
+@media (max-width: 480px) {
+  ul.normal-tab li:first-child {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 ul.normal-tab.one {

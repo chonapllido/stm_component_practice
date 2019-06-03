@@ -49,12 +49,10 @@ ul.small-tab{
             font-family:'Malgun Gothic', sans-serif;
             color:#f3e6e6;
             text-decoration:none;
+            cursor:pointer;
         }
         &.on{
             background-color:#936c6a;
-            @include sm-phone-only{
-                border-bottom:1px solid #fff;
-            }
             a{
                 color:#fff;
             }
@@ -68,6 +66,14 @@ ul.small-tab{
         }
         &:last-child{
             border-bottom:none;
+        }
+        &:first-child{
+            @include sm-phone-only{
+                border-bottom:1px solid #fff;
+            }
+            a{
+                border-left:none;
+            }
         }
     }
     &.one{
@@ -119,7 +125,7 @@ ul.small-tab{
                     border-top:1px solid #fff;
                 }
             }
-            &:nth-child(n + 1) a{
+            &:nth-child(n + 2) a{
                 @include from-phone{
                     border-left:1px solid #fff;
                 }
@@ -149,11 +155,33 @@ ul.small-tab{
             }
         }
     }
+    &.five.wrap{
+        li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+        }
+    }
+    &.six.wrap{
+        li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+        }
+    }
     &.seven.wrap, &.eight.wrap{
         @include from-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include tab{
                 height:48px;
                 line-height: 18px;
@@ -171,6 +199,19 @@ ul.small-tab{
     }
     &.nine.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(4) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
             @include from-tab{
                 width: calc(100% / 3);
                 border-top:none;
@@ -187,6 +228,14 @@ ul.small-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include from-tab{
                 height:48px;
                 line-height: 18px;
@@ -204,6 +253,19 @@ ul.small-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(5) a{
+                @include tab{
+                    border-left:none;
+                }
+            }
             @include tab{
                 width: calc(100% / 4);
                 border-top:none;
@@ -227,6 +289,19 @@ ul.small-tab{
     }
     &.twelve.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(5) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
             @include from-tab{
                 width: calc(100% / 4);
                 border-top:none;

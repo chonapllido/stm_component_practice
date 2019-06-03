@@ -449,16 +449,11 @@ ul.small-tab li a {
   font-family: 'Malgun Gothic', sans-serif;
   color: #f3e6e6;
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul.small-tab li.on {
   background-color: #936c6a;
-}
-
-@media (max-width: 480px) {
-  ul.small-tab li.on {
-    border-bottom: 1px solid #fff;
-  }
 }
 
 ul.small-tab li.on a {
@@ -478,6 +473,16 @@ ul.small-tab li:nth-child(n + 2) {
 
 ul.small-tab li:last-child {
   border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  ul.small-tab li:first-child {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+ul.small-tab li:first-child a {
+  border-left: none;
 }
 
 ul.small-tab.one {
@@ -544,7 +549,7 @@ ul.small-tab.one li:first-child a {
 }
 
 @media (min-width: 480px) {
-  ul.small-tab.wrap li:nth-child(n + 1) a {
+  ul.small-tab.wrap li:nth-child(n + 2) a {
     border-left: 1px solid #fff;
   }
 }
@@ -575,10 +580,30 @@ ul.small-tab.one li:first-child a {
   }
 }
 
+ul.small-tab.five.wrap li:nth-child(odd) a {
+  border-left: none;
+}
+
+ul.small-tab.six.wrap li:nth-child(odd) a {
+  border-left: none;
+}
+
 @media (min-width: 768px) {
   ul.small-tab.seven.wrap, ul.small-tab.eight.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  ul.small-tab.seven.wrap li:nth-child(odd) a, ul.small-tab.eight.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  ul.small-tab.seven.wrap li:nth-child(odd) a, ul.small-tab.eight.wrap li:nth-child(odd) a {
+    border-left: none;
   }
 }
 
@@ -602,6 +627,24 @@ ul.small-tab.one li:first-child a {
   }
 }
 
+@media (min-width: 480px) and (max-width: 639px) {
+  ul.small-tab.nine.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  ul.small-tab.nine.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.small-tab.nine.wrap li:nth-child(4) a {
+    border-left: none;
+  }
+}
+
 @media (min-width: 768px) {
   ul.small-tab.nine.wrap li {
     width: calc(100% / 3);
@@ -619,6 +662,18 @@ ul.small-tab.one li:first-child a {
   ul.small-tab.ten.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  ul.small-tab.ten.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  ul.small-tab.ten.wrap li:nth-child(odd) a {
+    border-left: none;
   }
 }
 
@@ -640,6 +695,24 @@ ul.small-tab.one li:first-child a {
   ul.small-tab.eleven.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  ul.small-tab.eleven.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  ul.small-tab.eleven.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  ul.small-tab.eleven.wrap li:nth-child(5) a {
+    border-left: none;
   }
 }
 
@@ -667,6 +740,24 @@ ul.small-tab.one li:first-child a {
 @media (min-width: 768px) and (max-width: 959px) {
   ul.small-tab.eleven.wrap li:nth-child(n + 5) {
     border-top: 1px solid #fff;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 639px) {
+  ul.small-tab.twelve.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  ul.small-tab.twelve.wrap li:nth-child(odd) a {
+    border-left: none;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.small-tab.twelve.wrap li:nth-child(5) a {
+    border-left: none;
   }
 }
 
@@ -1117,16 +1208,11 @@ ul.normal-tab li a {
   font-weight: bold;
   color: #f3e6e6;
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul.normal-tab li.on {
   background-color: #936c6a;
-}
-
-@media (max-width: 480px) {
-  ul.normal-tab li.on {
-    border-bottom: 1px solid #fff;
-  }
 }
 
 ul.normal-tab li.on a {
@@ -1150,6 +1236,12 @@ ul.normal-tab li:last-child {
 
 ul.normal-tab li:first-child a {
   border-left: none;
+}
+
+@media (max-width: 480px) {
+  ul.normal-tab li:first-child {
+    border-bottom: 1px solid #fff;
+  }
 }
 
 ul.normal-tab.one {

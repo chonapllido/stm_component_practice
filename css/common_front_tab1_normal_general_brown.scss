@@ -50,12 +50,10 @@ ul.normal-tab{
             font-weight:bold;
             color:#f3e6e6;
             text-decoration:none;
+            cursor:pointer;
         }
         &.on{
             background-color:#936c6a;
-            @include sm-phone-only{
-                border-bottom:1px solid #fff;
-            }
             a{
                 color:#fff;
             }
@@ -73,6 +71,9 @@ ul.normal-tab{
         &:first-child{
             a{
                 border-left:none;
+            }
+            @include sm-phone-only{
+                border-bottom:1px solid #fff;
             }
         }
     }
