@@ -91,6 +91,11 @@ ul.small-combi-tab{
                     border-left:1px solid #fff;
                 }
             }
+            &:first-child{
+                a{
+                    border-left:none;
+                }
+            }
         }
     }
     &.two.wrap{
@@ -100,6 +105,11 @@ ul.small-combi-tab{
         li{
             @include from-lg-phone{
                 border-top:none;
+            }
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
             }
         }
     }
@@ -111,6 +121,21 @@ ul.small-combi-tab{
             @include from-tab{
                 border-top:none;
             }
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+        }
+    }
+    &.four.wrap{
+        li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
         }
     }
     &.five.wrap{
@@ -118,6 +143,14 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include tab{
                 height:48px;
                 line-height: 18px;
@@ -139,6 +172,16 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(4) a{
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include lg-phone{
                 width: calc(100% / 3);
                 border-top:none;
@@ -165,6 +208,16 @@ ul.small-combi-tab{
     }
     &.seven.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(4) a{
+                @include from-lg-phone{
+                    border-left:none;
+                }
+            }
             @include from-lg-phone{
                 width: calc(100% / 3);
                 border-top:none;
@@ -178,6 +231,22 @@ ul.small-combi-tab{
     }
     &.eight.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+                @include tab{
+                    border-left:none;
+                }
+            }
+            &:nth-child(4) a{
+                @include desktop{
+                    border-left:none;
+                }
+            }
             @include desktop{
                 width: calc(100% / 3);
                 border-top:none;
@@ -194,6 +263,14 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include from-tab{
                 height:48px;
                 line-height: 18px;
@@ -215,6 +292,19 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(5) a{
+                @include tab{
+                    border-left:none;
+                }
+            }
             @include tab{
                 width: calc(100% / 4);
                 border-top:none;
@@ -239,6 +329,19 @@ ul.small-combi-tab{
     }
     &.eleven.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            &:nth-child(5) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
             @include from-tab{
                 width: calc(100% / 4);
                 border-top:none;
@@ -259,6 +362,26 @@ ul.small-combi-tab{
             &:nth-child(n + 5){
                 @include from-tab{
                     border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.twelve.wrap{
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+                @include tab{
+                    border-left:none;
+                }
+            }
+            &:nth-child(5) a{
+                @include desktop{
+                    border-left:none;
                 }
             }
         }
