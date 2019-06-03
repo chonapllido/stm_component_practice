@@ -1,12 +1,12 @@
 .common-front-prepare{
-	padding-left:145px;
-	padding-right:145px;
 	>div{
 		display:table;
 		overflow:hidden;
 		border:1px solid #dfdfdf;
 		padding:41px 47px;
 		box-sizing:border-box;
+		max-width: 610px;
+		margin: 0 auto;
 		img{
 			display:table-cell;
 			width: 80px;

@@ -190,8 +190,7 @@ ul.combi-tab li:last-child { border-bottom: none; }
 @media (min-width: 960px) { ul.combi-tab.eleven.wrap li, ul.combi-tab.twelve.wrap li { width: calc(100% / 4); border-top: none; } }
 @media (min-width: 768px) { ul.combi-tab.eleven.wrap li:nth-child(n + 5), ul.combi-tab.twelve.wrap li:nth-child(n + 5) { border-top: 1px solid #fff; } }
 
-.common-front-prepare { padding-left: 145px; padding-right: 145px; }
-.common-front-prepare > div { display: table; overflow: hidden; border: 1px solid #dfdfdf; padding: 41px 47px; box-sizing: border-box; }
+.common-front-prepare > div { display: table; overflow: hidden; border: 1px solid #dfdfdf; padding: 41px 47px; box-sizing: border-box; max-width: 610px; margin: 0 auto; }
 .common-front-prepare > div img { display: table-cell; width: 80px; height: 80px; padding-right: 45px; }
 .common-front-prepare > div .text { display: table-cell; width: 100%; table-layout: fixed; vertical-align: middle; }
 .common-front-prepare > div .text .heading { display: block; font: bold 21px/37px 'Malgun Gothic'; color: #000000; }
