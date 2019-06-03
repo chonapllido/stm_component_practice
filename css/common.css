@@ -41,6 +41,7 @@ a { text-decoration: none; }
 
 .btn-red { background-color: #a40022; color: #fff; border: 1px solid #500014; }
 .btn-red.icon-write:before { background: url("../images//icon/btn-red-write.png") no-repeat 50%; }
+.btn-red.icon-edit:before { background: url("../images//icon/btn-red-edit.png") no-repeat 50%; }
 .btn-red.icon-plus:before { background: url("../images//icon/btn-red-plus.png") no-repeat 50%; }
 .btn-red.icon-play:before { background: url("../images//icon/btn-red-play.png") no-repeat 50%; }
 .btn-red.icon-paper:before { background: url("../images//icon/btn-red-paper.png") no-repeat 50%; }
@@ -88,9 +89,18 @@ a { text-decoration: none; }
 .btn2[disabled].icon-pc:before { background: url("../images//icon/btn-trans-pc.png") no-repeat 50%; }
 .btn2[disabled].icon-calendar:before { background: url("../images//icon/btn-trans-calendar.png") no-repeat 50%; }
 
+.btn-grp.align-center { text-align: center; }
+.btn-grp.align-right { text-align: right; }
+.btn-grp.align-left { float: left; }
+.btn-grp.float-right { float: right; }
+.btn-grp .line { display: none; }
+
 @media screen and (max-width: 929px) { .btn-container button { margin-bottom: 10px; } }
 @media screen and (max-width: 609px) { .btn, .btn2 { text-align: center; display: block; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
-  .btn:before, .btn2:before { float: left; } }
+  .btn:before, .btn2:before { float: left; }
+  .btn { padding: 10px 20px 10px 53px !important; }
+  .btn-grp.float-right, .btn-grp.align-left { float: none; }
+  .btn-grp .line { display: block; background: #d4d4d4; height: 1px; margin-bottom: 10px; } }
 .container { max-width: 290px; padding: 15px; }
 @media (min-width: 480px) and (max-width: 639px) { .container { max-width: 450px; } }
 @media (min-width: 640px) and (max-width: 767px) { .container { max-width: 610px; } }
