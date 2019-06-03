@@ -21,6 +21,9 @@
 @mixin sm-phone {
     @media (min-width: 480px) and (max-width: 639px) { @content; }
 }
+@mixin sm-phone-only{
+    @media (max-width: 480px)
+}
 
 .container{
     max-width:290px;
@@ -62,6 +65,9 @@ ul.tab{
         }
         &.on{
             background-color:#936c6a;
+            @include sm-phone-only{
+                border-bottom:1px solid #fff;
+            }
             a{
                 color:#fff;
             }
@@ -90,6 +96,11 @@ ul.tab{
                 a{
                     padding:0 14px;
                     border-right:1px solid #fff;
+                }
+            }
+            &.on{
+                @include sm-phone-only{
+                    border-bottom:none;
                 }
             }
         }
