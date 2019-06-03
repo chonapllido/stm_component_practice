@@ -1,0 +1,276 @@
+
+
+@mixin desktop {
+    @media (min-width: 960px) { @content; }
+}
+@mixin from-tab {
+    @media (min-width: 768px) { @content; }
+}
+@mixin tab {
+    @media (min-width: 768px) and (max-width: 959px) { @content; }
+}
+@mixin from-lg-phone {
+    @media (min-width: 640px) { @content; }
+}
+@mixin lg-phone {
+    @media (min-width: 640px) and (max-width: 767px) { @content; }
+}
+@mixin from-phone {
+    @media (min-width: 480px) { @content; }
+}
+@mixin sm-phone {
+    @media (min-width: 480px) and (max-width: 639px) { @content; }
+}
+
+.container{
+    max-width:290px;
+    padding: 15px;
+    @include sm-phone{
+        max-width:450px;
+    }
+    @include lg-phone{
+        max-width:610px;
+    }
+    @include tab{
+        max-width:738px;
+    }
+    @include desktop{
+        max-width:930px;
+    }
+}
+
+ul.combi-tab{
+    display:flex;
+    flex-direction:column;
+    @include from-phone{
+        flex-direction:row;
+    }
+    li{
+        height:30px;
+        width:100%;
+        background-color:#483f41;
+        text-align:center;
+        a{
+            display:flex;
+            align-items:center;
+            justify-content:flex-start;
+            height:100%;
+            padding-left:9px;
+            font-size:13px;
+            font-family:'Malgun Gothic', sans-serif;
+            color:#f3e6e6;
+            text-decoration:none;
+        }
+        &.on{
+            position:relative;
+            background-color:#936c6a;
+            a{
+                color:#fff;
+            }
+            &:after{
+                content:url('../images/icon/icon-down.png');
+                position:absolute;
+                right:13px;
+                top:45%;
+            }
+        }
+        &:nth-child(n + 2){
+            border-bottom:1px solid #fff;
+            @include from-phone{
+                border-bottom:none;
+                border-left:1px solid #fff;
+            }
+        }
+        &:last-child{
+            border-bottom:none;
+        }
+    }
+    &.wrap{
+        @include from-phone{
+            flex-flow:wrap;
+        }
+        li{
+            @include from-phone{
+                width:50%;
+                border:none;
+            }
+            &:nth-child(n + 3){
+                @include from-phone{
+                    border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(n + 1) a{
+                @include from-phone{
+                    border-left:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.two.wrap{
+        @include from-lg-phone{
+            flex-flow:nowrap;
+        }
+        li{
+            @include from-lg-phone{
+                border-top:none;
+            }
+        }
+    }
+    &.three.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            @include from-tab{
+                border-top:none;
+            }
+        }
+    }
+    &.five.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            @include tab{
+                height:48px;
+                line-height: 18px;
+                border-top:none;
+            }
+            a{
+                @include from-tab{
+                    padding-right:21px;
+                    text-align:left;
+                }
+            }
+        }
+    }
+    &.six.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            @include lg-phone{
+                width: calc(100% / 3);
+                border-top:none;
+            }
+            &:nth-child(n + 4){
+                @include lg-phone{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+        li{
+            @include from-tab{
+                height:48px;
+                line-height: 18px;
+                border-top:none;
+            }
+            a{
+                @include from-tab{
+                    padding-right:29px;
+                    text-align:left;
+                }
+            }
+        }
+    }
+    &.seven.wrap{
+        li{
+            @include from-lg-phone{
+                width: calc(100% / 3);
+                border-top:none;
+            }
+            &:nth-child(n + 4){
+                @include from-lg-phone{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.eight.wrap{
+        li{
+            @include desktop{
+                width: calc(100% / 3);
+                border-top:none;
+            }
+            &:nth-child(n + 4){
+                @include desktop{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.nine.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            @include from-tab{
+                height:48px;
+                line-height: 18px;
+                border-top:none;
+                text-align:left;
+            }
+            a{
+                @include tab{
+                    padding-right:20px;
+                }
+                @include desktop{
+                    padding-right:32px;
+                }
+            }
+        }
+    }
+    &.ten.wrap{
+        @include desktop{
+            flex-flow:nowrap;
+        }
+        li{
+            @include tab{
+                width: calc(100% / 4);
+                border-top:none;
+            }
+            @include desktop{
+                height:48px;
+                line-height: 18px;
+                border-top:none;
+            }
+            a{
+                @include desktop{
+                    padding-right:29px;
+                    text-align:left;
+                }
+            }
+            &:nth-child(n + 5){
+                @include tab{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.eleven.wrap{
+        li{
+            @include from-tab{
+                width: calc(100% / 4);
+                border-top:none;
+            }
+            &:nth-child(n + 5){
+                @include from-tab{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.eleven.wrap,&.twelve.wrap{
+        li{
+            @include desktop{
+                width: calc(100% / 4);
+                border-top:none;
+            }
+            &:nth-child(n + 5){
+                @include from-tab{
+                    border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+}
