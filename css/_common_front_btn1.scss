@@ -1,28 +1,27 @@
 $stm_img: '../images/';
 
-.btn-container {
 	button {
 		padding: 10px 12px 10px 12px;
 		cursor: pointer;
-		height: 40px;
 		font: bold 13px "Malgun Gothic";
-		&.gen {
+		&.btn {
 			padding: 10px 20px 10px;
+			height: 40px;
 		}
-		&.combi {
+		&.btn2 {
 			&:before {
 				content: '';
 				width: 12px;
 				height: 20px;
-				padding: 0 5px 0 10px;
-				margin-right: 4px;
+				padding: 0 0px 0 14px;
+    			margin-right: 7px;
+    			height: 40px;
 			}
 		}
-		&.white {
+		&.btn-white {
 			background-color: #fff;
 			color: #000;
 			border: 1px solid #bcbcbc;
-			border-bottom: 2px solid #bcbcbc;
 			&.icon-pill {
 				&:before {
 					background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%;
@@ -54,11 +53,10 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.red {
+		&.btn-red {
 			background-color: #a40022;
 			color: #fff;
 			border: 1px solid #500014;
-			border-bottom: 2px solid #500014;
 			&.icon-write {
 				&:before{
 					background: url($stm_img + '/icon/btn-red-write.png') no-repeat 50%;
@@ -90,11 +88,10 @@ $stm_img: '../images/';
 				}
 			}		
 		}
-		&.orange {
+		&.btn-orange {
 			background-color: #f98900;
 			color: #fff;
 			border: 1px solid #ee6f00;
-			border-bottom: 2px solid #ee6f00;
 			&.icon-dl {
 				&:before{
 					background: url($stm_img + '/icon/btn-orange-dl.png') no-repeat 50%;
@@ -116,11 +113,10 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.green {
+		&.btn-green {
 			background-color: #529c1c;
 			color: #fff;
 			border: 1px solid #427d16;
-			border-bottom: 2px solid #427d16;
 			&.icon-upload {
 				&:before{
 					background: url($stm_img + '/icon/btn-green-upload.png') no-repeat 50%;
@@ -132,11 +128,10 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.brown {
+		&.btn-brown {
 			background-color: #936c6a;
 			color: #fff;
 			border: 1px solid #7e5c5b;
-			border-bottom: 2px solid #7e5c5b;
 			&.icon-write {
 				&:before{
 					background: url($stm_img + '/icon/btn-brown-write.png') no-repeat 50%;
@@ -168,12 +163,12 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.transparent {
+		&.btn-transparent {
 			background-color: #fcfcfc;
 			color: #d6d5d5;
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
-			border-bottom: 2px solid #dadada;
+			cursor: no-drop;
 			&.icon-pill {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pill.png') no-repeat 50%;
@@ -265,8 +260,7 @@ $stm_img: '../images/';
 				}
 			}
 		}
-	} 
-} 
+	}  
 
 @media screen and (max-width: 929px) {
 	.btn-container {
