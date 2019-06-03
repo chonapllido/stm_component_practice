@@ -29,14 +29,14 @@
     width:100%;
 }
 
-ul.small-tab{
+ul.normal-tab{
     display:flex;
     flex-direction:column;
     @include from-phone{
         flex-direction:row;
     }
     li{
-        height:30px;
+        height:46px;
         width:100%;
         background-color:#483f41;
         text-align:center;
@@ -47,6 +47,7 @@ ul.small-tab{
             height:100%;
             font-size:13px;
             font-family:'Malgun Gothic', sans-serif;
+            font-weight:bold;
             color:#f3e6e6;
             text-decoration:none;
             cursor:pointer;
@@ -68,22 +69,22 @@ ul.small-tab{
             border-bottom:none;
         }
         &:first-child{
-            @include sm-phone-only{
-                border-bottom:1px solid #fff;
-            }
             a{
                 border-left:none;
+            }
+            @include sm-phone-only{
+                border-bottom:1px solid #fff;
             }
         }
     }
     &.one{
         flex-direction:row;
         li{
-            height:48px;
+            height:64px;
             border:none;
             line-height: 18px;
             @include from-phone{
-                height:30px;
+                height:46px;
             }
             &:first-child{
                 a{
@@ -101,7 +102,7 @@ ul.small-tab{
     &.three{
         li{
             @include sm-phone{
-                height:48px;
+                height:64px;
                 line-height: 18px;
             }
             a{
@@ -137,6 +138,11 @@ ul.small-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+            }
             @include from-lg-phone{
                 border-top:none;
             }
@@ -145,7 +151,7 @@ ul.small-tab{
     &.five.wrap{
         li{
             @include lg-phone{
-                height:48px;
+                height:64px;
                 line-height: 18px;
             }
             a{
@@ -155,17 +161,12 @@ ul.small-tab{
             }
         }
     }
-    &.five.wrap{
-        li{
-            &:nth-child(odd) a{
-                border-left:none;
-            }
-        }
-    }
     &.six.wrap{
         li{
             &:nth-child(odd) a{
-                border-left:none;
+                @include from-phone{
+                    border-left:none;
+                }
             }
         }
     }
@@ -183,7 +184,7 @@ ul.small-tab{
                 }
             }
             @include tab{
-                height:48px;
+                height:64px;
                 line-height: 18px;
                 border-top:none;
             }
@@ -207,11 +208,6 @@ ul.small-tab{
                     border-left:none;
                 }
             }
-            &:nth-child(4) a{
-                @include from-tab{
-                    border-left:none;
-                }
-            }
             @include from-tab{
                 width: calc(100% / 3);
                 border-top:none;
@@ -219,6 +215,11 @@ ul.small-tab{
             &:nth-child(n + 4){
                 @include from-tab{
                     border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(4) a{
+                @include from-tab{
+                    border-left:none;
                 }
             }
         }
@@ -237,7 +238,7 @@ ul.small-tab{
                 }
             }
             @include from-tab{
-                height:48px;
+                height:64px;
                 line-height: 18px;
                 border-top:none;
             }
@@ -261,17 +262,12 @@ ul.small-tab{
                     border-left:none;
                 }
             }
-            &:nth-child(5) a{
-                @include tab{
-                    border-left:none;
-                }
-            }
             @include tab{
                 width: calc(100% / 4);
                 border-top:none;
             }
             @include desktop{
-                height:48px;
+                height:64px;
                 line-height: 18px;
                 border-top:none;
             }
@@ -285,22 +281,17 @@ ul.small-tab{
                     border-top:1px solid #fff;
                 }
             }
+            &:nth-child(5) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
         }
     }
     &.twelve.wrap{
         li{
             &:nth-child(odd) a{
-                @include sm-phone{
-                    border-left:none;
-                }
-                @include lg-phone{
-                    border-left:none;
-                }
-            }
-            &:nth-child(5) a{
-                @include from-tab{
-                    border-left:none;
-                }
+                border-left:none;
             }
             @include from-tab{
                 width: calc(100% / 4);
@@ -309,6 +300,11 @@ ul.small-tab{
             &:nth-child(n + 5){
                 @include from-tab{
                     border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(3) a, &:nth-child(7) a{
+                @include from-tab{
+                    border-left:1px solid #fff;
                 }
             }
         }

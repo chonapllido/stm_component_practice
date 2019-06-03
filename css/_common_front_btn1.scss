@@ -64,6 +64,11 @@ $stm_img: '../images/';
 					background: url($stm_img + '/icon/btn-red-write.png') no-repeat 50%;
 				}
 			}
+			&.icon-edit {
+				&:before{
+					background: url($stm_img + '/icon/btn-red-edit.png') no-repeat 50%;
+				}
+			}
 			&.icon-plus {
 				&:before{
 					background: url($stm_img + '/icon/btn-red-plus.png') no-repeat 50%;
@@ -274,6 +279,23 @@ $stm_img: '../images/';
 				}
 			}
 		}
+.btn-grp {
+	&.align-center {
+		text-align: center;
+	}
+	&.align-right {
+		text-align: right;
+	}
+	&.align-left {
+		float: left;
+	}
+	&.float-right {
+		float: right;
+	}
+	.line {
+		display: none;
+	}
+}
 
 @media screen and (max-width: 929px) {
 	.btn-container {
@@ -292,6 +314,20 @@ $stm_img: '../images/';
 		box-sizing: border-box;
 		&:before {
 			float: left;
+		}
+	}
+	.btn {
+		padding: 10px 20px 10px 53px !important;
+	}
+	.btn-grp {
+		&.float-right, &.align-left {
+			float: none;
+		}
+		.line {
+			display: block;
+			background: #d4d4d4;
+			height: 1px;
+			margin-bottom: 10px;
 		}
 	}
 }
