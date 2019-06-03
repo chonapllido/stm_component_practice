@@ -1,31 +1,31 @@
 a { text-decoration: none; }
 
-.common_front_paging1 { width: 100%; font: normal 13px 'Malgun Gothic'; margin-top: 15px; text-align: center; }
-.common_front_paging1 div { display: inline-block; }
-.common_front_paging1 div > span.left { display: inline-block; border: 1px solid #cfcfcf; border-bottom: 1px solid #9a9a9a; margin-right: 10px; box-sizing: border-box; }
-.common_front_paging1 div > span.left > a { display: inline-block; }
-.common_front_paging1 div > span.left > a.first { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_first_page.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
-.common_front_paging1 div > span.left > a.prev { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_back.png") no-repeat 50% 50%; }
-.common_front_paging1 div > span.right { display: inline-block; border: 1px solid #cfcfcf; border-bottom: 1px solid #9a9a9a; margin-left: 10px; box-sizing: border-box; }
-.common_front_paging1 div > span.right > a { display: inline-block; }
-.common_front_paging1 div > span.right > a.last { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_last_page.png") no-repeat 50% 50%; }
-.common_front_paging1 div > span.right > a.next { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_next.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
-.common_front_paging1 div > ul { border-right: 1px solid #d7d7d7; display: inline-block; }
-.common_front_paging1 div > ul > li { display: table-cell; height: 25px; min-width: 25px; border: 1px solid #e0e0e0; border-right: none; line-height: 25px; }
-.common_front_paging1 div > ul > li a { display: block; color: #535353; text-decoration: none; }
-.common_front_paging1 div > ul > li.on { border: 1px solid #95001f; border-right: 1px solid #95001f; background: #a40022; box-sizing: border-box; }
-.common_front_paging1 div > ul > li.on a { color: #fff; font-weight: bold; text-decoration: none; }
-.common_front_paging1 div > ul > li.total { display: none; }
+.common-front-paging1 { width: 100%; font: normal 13px 'Malgun Gothic'; margin-top: 15px; text-align: center; }
+.common-front-paging1 div { display: inline-block; }
+.common-front-paging1 div > span.left { display: inline-block; border: 1px solid #cfcfcf; border-bottom: 1px solid #9a9a9a; margin-right: 10px; box-sizing: border-box; }
+.common-front-paging1 div > span.left > a { display: inline-block; }
+.common-front-paging1 div > span.left > a.first { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_first_page.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
+.common-front-paging1 div > span.left > a.prev { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_back.png") no-repeat 50% 50%; }
+.common-front-paging1 div > span.right { display: inline-block; border: 1px solid #cfcfcf; border-bottom: 1px solid #9a9a9a; margin-left: 10px; box-sizing: border-box; }
+.common-front-paging1 div > span.right > a { display: inline-block; }
+.common-front-paging1 div > span.right > a.last { float: left; width: 29px; height: 25px; background: url("../images/icon/icon_last_page.png") no-repeat 50% 50%; }
+.common-front-paging1 div > span.right > a.next { float: left; width: 25px; height: 25px; background: url("../images/icon/icon_next.png") no-repeat 50% 50%; border-right: 1px solid #d7d7d7; }
+.common-front-paging1 div > ul { border-right: 1px solid #d7d7d7; display: inline-block; }
+.common-front-paging1 div > ul > li { display: table-cell; height: 24px; min-width: 24px; border: 1px solid #e0e0e0; border-right: none; line-height: 24px; }
+.common-front-paging1 div > ul > li a { display: block; color: #535353; text-decoration: none; }
+.common-front-paging1 div > ul > li.on { border: 1px solid #95001f; border-right: 1px solid #95001f; background: #a40022; box-sizing: border-box; }
+.common-front-paging1 div > ul > li.on a { color: #fff; font-weight: bold; text-decoration: none; }
+.common-front-paging1 div > ul > li.total { display: none; }
 
 /*-------------------------------*/
 /* 610px */
 /*-------------------------------*/
-@media screen and (max-width: 737px) { .common_front_paging1 div > ul { border-right: 0; }
-  .common_front_paging1 div > ul > li { display: none; border: none; }
-  .common_front_paging1 div > ul > li.on { display: table-cell; min-width: 7px; border-right: 0; background: 0; border: 0; }
-  .common_front_paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
-  .common_front_paging1 div > ul > li.total { display: table-cell; position: relative; }
-  .common_front_paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
+@media screen and (max-width: 737px) { .common-front-paging1 div > ul { border-right: 0; }
+  .common-front-paging1 div > ul > li { display: none; border: none; }
+  .common-front-paging1 div > ul > li.on { display: table-cell; min-width: 7px; border-right: 0; background: 0; border: 0; }
+  .common-front-paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
+  .common-front-paging1 div > ul > li.total { display: table-cell; position: relative; }
+  .common-front-paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
 .btn-container button { padding: 10px 12px 10px 12px; cursor: pointer; height: 40px; font: bold 13px "Malgun Gothic"; }
 .btn-container button.gen { padding: 10px 20px 10px; }
 .btn-container button.combi:before { content: ''; width: 12px; height: 20px; padding: 0 5px 0 10px; margin-right: 4px; }
@@ -130,5 +130,9 @@ ul.tab.one li:first-child a { padding: 0 14px; border-right: 1px solid #fff; }
 @media (min-width: 768px) and (max-width: 959px) { ul.tab.eleven.wrap li:nth-child(n + 5) { border-top: 1px solid #fff; } }
 @media (min-width: 768px) { ul.tab.twelve.wrap li { width: calc(100% / 4); border-top: none; } }
 @media (min-width: 768px) { ul.tab.twelve.wrap li:nth-child(n + 5) { border-top: 1px solid #fff; } }
+
+.common-front-prepare { display: table; border: 1px solid #dfdfdf; text-align: center; margin: 0 auto; margin-top: 15px; margin: 15px 175px; width: 100%; box-sizing: border-box; }
+.common-front-prepare img { display: table-cell; width: 80px; height: 80px; }
+.common-front-prepare .text { display: table-cell; }
 
 /*# sourceMappingURL=common.css.map */
