@@ -6,7 +6,6 @@ $stm_img: '../images/';
 			padding: 10px 12px 10px 12px;
 			cursor: pointer;
 			font: bold 13px "Malgun Gothic";
-			margin-bottom: 10px;
 		}
 		.btn2 {
 			display: inline-block;
@@ -25,7 +24,6 @@ $stm_img: '../images/';
 			background-color: #fff;
 			color: #000;
 			border: 1px solid #bcbcbc;
-			margin-bottom: 10px;
 			&.icon-pill {
 				&:before {
 					background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%;
