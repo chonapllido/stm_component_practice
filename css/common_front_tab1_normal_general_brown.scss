@@ -1,0 +1,311 @@
+
+
+@mixin desktop {
+    @media (min-width: 960px) { @content; }
+}
+@mixin from-tab {
+    @media (min-width: 768px) { @content; }
+}
+@mixin tab {
+    @media (min-width: 768px) and (max-width: 959px) { @content; }
+}
+@mixin from-lg-phone {
+    @media (min-width: 640px) { @content; }
+}
+@mixin lg-phone {
+    @media (min-width: 640px) and (max-width: 767px) { @content; }
+}
+@mixin from-phone {
+    @media (min-width: 480px) { @content; }
+}
+@mixin sm-phone {
+    @media (min-width: 480px) and (max-width: 639px) { @content; }
+}
+@mixin sm-phone-only{
+    @media (max-width: 480px) { @content; }
+}
+
+.container{
+    width:100%;
+}
+
+ul.tab{
+    display:flex;
+    flex-direction:column;
+    @include from-phone{
+        flex-direction:row;
+    }
+    li{
+        height:46px;
+        width:100%;
+        background-color:#483f41;
+        text-align:center;
+        a{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:100%;
+            font-size:13px;
+            font-family:'Malgun Gothic', sans-serif;
+            font-weight:bold;
+            color:#f3e6e6;
+            text-decoration:none;
+        }
+        &.on{
+            background-color:#936c6a;
+            @include sm-phone-only{
+                border-bottom:1px solid #fff;
+            }
+            a{
+                color:#fff;
+            }
+        }
+        &:nth-child(n + 2){
+            border-bottom:1px solid #fff;
+            @include from-phone{
+                border-bottom:none;
+                border-left:1px solid #fff;
+            }
+        }
+        &:last-child{
+            border-bottom:none;
+        }
+        &:first-child{
+            a{
+                border-left:none;
+            }
+        }
+    }
+    &.one{
+        flex-direction:row;
+        li{
+            height:64px;
+            border:none;
+            line-height: 18px;
+            @include from-phone{
+                height:46px;
+            }
+            &:first-child{
+                a{
+                    padding:0 14px;
+                    border-right:1px solid #fff;
+                }
+            }
+            &.on{
+                @include sm-phone-only{
+                    border-bottom:none;
+                }
+            }
+        }
+    }
+    &.three{
+        li{
+            @include sm-phone{
+                height:64px;
+                line-height: 18px;
+            }
+            a{
+                @include sm-phone{
+                    padding:0 16px;
+                }
+            }
+        }
+    }
+    &.wrap{
+        @include from-phone{
+            flex-flow:wrap;
+        }
+        li{
+            @include from-phone{
+                width:50%;
+                border:none;
+            }
+            &:nth-child(n + 3){
+                @include from-phone{
+                    border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(n + 2) a{
+                @include from-phone{
+                    border-left:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.four.wrap, &.five.wrap{
+        @include from-lg-phone{
+            flex-flow:nowrap;
+        }
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+            }
+            @include from-lg-phone{
+                border-top:none;
+            }
+        }
+    }
+    &.five.wrap{
+        li{
+            @include lg-phone{
+                height:64px;
+                line-height: 18px;
+            }
+            a{
+                @include lg-phone{
+                    padding:0 16px;
+                }
+            }
+        }
+    }
+    &.six.wrap{
+        li{
+            &:nth-child(odd) a{
+                @include from-phone{
+                    border-left:none;
+                }
+            }
+        }
+    }
+    &.seven.wrap, &.eight.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            @include tab{
+                height:64px;
+                line-height: 18px;
+                border-top:none;
+            }
+            @include from-tab{
+                border-top:none;
+            }
+            a{
+                @include tab{
+                    padding:0 14px;
+                }
+            }
+        }
+    }
+    &.nine.wrap{
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            @include from-tab{
+                width: calc(100% / 3);
+                border-top:none;
+            }
+            &:nth-child(n + 4){
+                @include from-tab{
+                    border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(4) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
+        }
+    }
+    &.ten.wrap{
+        @include from-tab{
+            flex-flow:nowrap;
+        }
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            @include from-tab{
+                height:64px;
+                line-height: 18px;
+                border-top:none;
+            }
+            a{
+                @include from-tab{
+                    padding:0 13px;
+                }
+            }
+        }
+    }
+    &.eleven.wrap{
+        @include desktop{
+            flex-flow:nowrap;
+        }
+        li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            @include tab{
+                width: calc(100% / 4);
+                border-top:none;
+            }
+            @include desktop{
+                height:64px;
+                line-height: 18px;
+                border-top:none;
+            }
+            a{
+                @include desktop{
+                    padding:0 16px;
+                }
+            }
+            &:nth-child(n + 5){
+                @include tab{
+                    border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(5) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
+        }
+    }
+    &.twelve.wrap{
+        li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+            @include from-tab{
+                width: calc(100% / 4);
+                border-top:none;
+            }
+            &:nth-child(n + 5){
+                @include from-tab{
+                    border-top:1px solid #fff;
+                }
+            }
+            &:nth-child(3) a, &:nth-child(7) a{
+                @include from-tab{
+                    border-left:1px solid #fff;
+                }
+            }
+        }
+    }
+}
