@@ -74,6 +74,12 @@ ul.tab li.on {
   background-color: #936c6a;
 }
 
+@media (max-width: 480px) {
+  ul.tab li.on {
+    border-bottom: 1px solid #fff;
+  }
+}
+
 ul.tab li.on a {
   color: #fff;
 }
@@ -115,6 +121,12 @@ ul.tab.one li {
 ul.tab.one li:first-child a {
   padding: 0 14px;
   border-right: 1px solid #fff;
+}
+
+@media (max-width: 480px) {
+  ul.tab.one li.on {
+    border-bottom: none;
+  }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
