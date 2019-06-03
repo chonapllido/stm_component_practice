@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-ul.combi-tab {
+ul.combi-normal-tab {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,7 +13,7 @@ ul.combi-tab {
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab {
+  ul.combi-normal-tab {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -21,14 +21,14 @@ ul.combi-tab {
   }
 }
 
-ul.combi-tab li {
+ul.combi-normal-tab li {
   height: 46px;
   width: 100%;
   background-color: #483f41;
   text-align: center;
 }
 
-ul.combi-tab li a {
+ul.combi-normal-tab li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,147 +48,147 @@ ul.combi-tab li a {
   cursor: pointer;
 }
 
-ul.combi-tab li.on {
+ul.combi-normal-tab li.on {
   position: relative;
   background-color: #936c6a;
 }
 
 @media (max-width: 480px) {
-  ul.combi-tab li.on {
+  ul.combi-normal-tab li.on {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
 }
 
-ul.combi-tab li.on a {
+ul.combi-normal-tab li.on a {
   color: #fff;
 }
 
-ul.combi-tab li.on:after {
+ul.combi-normal-tab li.on:after {
   content: url("../images/icon/icon-down-normal.png");
   position: absolute;
   right: 20px;
   top: 45%;
 }
 
-ul.combi-tab li:nth-child(n + 2) {
+ul.combi-normal-tab li:nth-child(n + 2) {
   border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab li:nth-child(n + 2) {
+  ul.combi-normal-tab li:nth-child(n + 2) {
     border-bottom: none;
     border-left: 1px solid #fff;
   }
 }
 
-ul.combi-tab li:last-child {
+ul.combi-normal-tab li:last-child {
   border-bottom: none;
 }
 
-ul.combi-tab li:first-child a {
+ul.combi-normal-tab li:first-child a {
   border-left: none;
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab.wrap {
+  ul.combi-normal-tab.wrap {
     -ms-flex-flow: wrap;
         flex-flow: wrap;
   }
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab.wrap li {
+  ul.combi-normal-tab.wrap li {
     width: 50%;
     border: none;
   }
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab.wrap li:nth-child(n + 3) {
+  ul.combi-normal-tab.wrap li:nth-child(n + 3) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 480px) {
-  ul.combi-tab.wrap li:nth-child(n + 2) a {
+  ul.combi-normal-tab.wrap li:nth-child(n + 2) a {
     border-left: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.two.wrap {
+  ul.combi-normal-tab.two.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
-ul.combi-tab.two.wrap li:nth-child(odd) a {
+ul.combi-normal-tab.two.wrap li:nth-child(odd) a {
   border-left: none;
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.two.wrap li {
+  ul.combi-normal-tab.two.wrap li {
     border-top: none;
     border-left: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.three.wrap {
+  ul.combi-normal-tab.three.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
-ul.combi-tab.three.wrap li:nth-child(odd) a {
+ul.combi-normal-tab.three.wrap li:nth-child(odd) a {
   border-left: none;
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.three.wrap li {
+  ul.combi-normal-tab.three.wrap li {
     height: 64px;
     line-height: 18px;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.three.wrap li {
+  ul.combi-normal-tab.three.wrap li {
     border-top: none;
     border-left: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.three.wrap li a {
+  ul.combi-normal-tab.three.wrap li a {
     padding-right: 45px;
     text-align: left;
   }
 }
 
-ul.combi-tab.four.wrap li:nth-child(odd) a {
+ul.combi-normal-tab.four.wrap li:nth-child(odd) a {
   border-left: none;
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.five.wrap {
+  ul.combi-normal-tab.five.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
-ul.combi-tab.five.wrap li:nth-child(odd) a {
+ul.combi-normal-tab.five.wrap li:nth-child(odd) a {
   border-left: none;
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.five.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.five.wrap li:nth-child(odd) a {
     border-left: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.five.wrap li {
+  ul.combi-normal-tab.five.wrap li {
     height: 64px;
     line-height: 18px;
     border-top: none;
@@ -196,53 +196,53 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.five.wrap li {
+  ul.combi-normal-tab.five.wrap li {
     border-top: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.five.wrap li a {
+  ul.combi-normal-tab.five.wrap li a {
     padding-right: 45px;
     text-align: left;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.five.wrap li a {
+  ul.combi-normal-tab.five.wrap li a {
     padding-right: 54px;
     text-align: left;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.six.wrap {
+  ul.combi-normal-tab.six.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.six.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.six.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.six.wrap li:nth-child(4) a {
+  ul.combi-normal-tab.six.wrap li:nth-child(4) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.six.wrap li {
+  ul.combi-normal-tab.six.wrap li {
     width: calc(100% / 3);
     border-top: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.six.wrap li {
+  ul.combi-normal-tab.six.wrap li {
     height: 82px;
     line-height: 18px;
     border-top: none;
@@ -250,7 +250,7 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.six.wrap li {
+  ul.combi-normal-tab.six.wrap li {
     height: 64px;
     line-height: 18px;
     border-top: none;
@@ -258,108 +258,108 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.six.wrap li:nth-child(n + 4) {
+  ul.combi-normal-tab.six.wrap li:nth-child(n + 4) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.six.wrap li a {
+  ul.combi-normal-tab.six.wrap li a {
     padding-right: 46px;
     text-align: left;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.six.wrap li a {
+  ul.combi-normal-tab.six.wrap li a {
     padding-right: 39px;
     text-align: left;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.seven.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.seven.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.seven.wrap li:nth-child(4) a {
+  ul.combi-normal-tab.seven.wrap li:nth-child(4) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) {
-  ul.combi-tab.seven.wrap li {
+  ul.combi-normal-tab.seven.wrap li {
     width: calc(100% / 3);
     border-top: none;
   }
 }
 
 @media (min-width: 640px) {
-  ul.combi-tab.seven.wrap li:nth-child(n + 4) {
+  ul.combi-normal-tab.seven.wrap li:nth-child(n + 4) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.eight.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.eight.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.eight.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.eight.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.eight.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.eight.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.eight.wrap li {
+  ul.combi-normal-tab.eight.wrap li {
     width: calc(100% / 3);
     border-top: none;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.eight.wrap li:nth-child(n + 4) {
+  ul.combi-normal-tab.eight.wrap li:nth-child(n + 4) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.eight.wrap li:nth-child(4) a {
+  ul.combi-normal-tab.eight.wrap li:nth-child(4) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.nine.wrap {
+  ul.combi-normal-tab.nine.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.nine.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.nine.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.nine.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.nine.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.nine.wrap li {
+  ul.combi-normal-tab.nine.wrap li {
     line-height: 18px;
     border-top: none;
     text-align: left;
@@ -367,50 +367,50 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.nine.wrap li {
+  ul.combi-normal-tab.nine.wrap li {
     height: 100px;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.nine.wrap li {
+  ul.combi-normal-tab.nine.wrap li {
     height: 64px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.nine.wrap li a {
+  ul.combi-normal-tab.nine.wrap li a {
     padding-right: 40px;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.nine.wrap li a {
+  ul.combi-normal-tab.nine.wrap li a {
     padding-right: 42px;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.ten.wrap {
+  ul.combi-normal-tab.ten.wrap {
     -ms-flex-flow: nowrap;
         flex-flow: nowrap;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.ten.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.ten.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.ten.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.ten.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.ten.wrap li {
+  ul.combi-normal-tab.ten.wrap li {
     width: calc(100% / 4);
     border-top: none;
     height: 64px;
@@ -418,7 +418,7 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.ten.wrap li {
+  ul.combi-normal-tab.ten.wrap li {
     height: 82px;
     line-height: 18px;
     border-top: none;
@@ -426,94 +426,94 @@ ul.combi-tab.five.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.ten.wrap li a {
+  ul.combi-normal-tab.ten.wrap li a {
     padding-right: 45px;
     text-align: left;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.ten.wrap li a {
+  ul.combi-normal-tab.ten.wrap li a {
     padding-right: 38px;
     text-align: left;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.ten.wrap li:nth-child(n + 5) {
+  ul.combi-normal-tab.ten.wrap li:nth-child(n + 5) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.ten.wrap li:nth-child(5) a {
+  ul.combi-normal-tab.ten.wrap li:nth-child(5) a {
     border-left: none;
   }
 }
 
 @media (min-width: 480px) and (max-width: 639px) {
-  ul.combi-tab.eleven.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.eleven.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 640px) and (max-width: 767px) {
-  ul.combi-tab.eleven.wrap li:nth-child(odd) a {
+  ul.combi-normal-tab.eleven.wrap li:nth-child(odd) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.eleven.wrap li {
+  ul.combi-normal-tab.eleven.wrap li {
     height: 64px;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.eleven.wrap li {
+  ul.combi-normal-tab.eleven.wrap li {
     width: calc(100% / 4);
     border-top: none;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.eleven.wrap li:nth-child(5) a {
+  ul.combi-normal-tab.eleven.wrap li:nth-child(5) a {
     border-left: none;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.eleven.wrap li:nth-child(n + 5) {
+  ul.combi-normal-tab.eleven.wrap li:nth-child(n + 5) {
     border-top: 1px solid #fff;
   }
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
-  ul.combi-tab.eleven.wrap li a {
+  ul.combi-normal-tab.eleven.wrap li a {
     padding-right: 45px;
     text-align: left;
   }
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.eleven.wrap li, ul.combi-tab.twelve.wrap li {
+  ul.combi-normal-tab.eleven.wrap li, ul.combi-normal-tab.twelve.wrap li {
     width: calc(100% / 4);
     border-top: none;
   }
 }
 
 @media (min-width: 768px) {
-  ul.combi-tab.eleven.wrap li:nth-child(n + 5), ul.combi-tab.twelve.wrap li:nth-child(n + 5) {
+  ul.combi-normal-tab.eleven.wrap li:nth-child(n + 5), ul.combi-normal-tab.twelve.wrap li:nth-child(n + 5) {
     border-top: 1px solid #fff;
   }
 }
 
-ul.combi-tab.twelve.wrap li:nth-child(odd) a {
+ul.combi-normal-tab.twelve.wrap li:nth-child(odd) a {
   border-left: none;
 }
 
 @media (min-width: 960px) {
-  ul.combi-tab.twelve.wrap li:nth-child(3) a, ul.combi-tab.twelve.wrap li:nth-child(7) a {
+  ul.combi-normal-tab.twelve.wrap li:nth-child(3) a, ul.combi-normal-tab.twelve.wrap li:nth-child(7) a {
     border-left: 1px solid #fff;
   }
 }

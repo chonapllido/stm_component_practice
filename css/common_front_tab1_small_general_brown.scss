@@ -26,23 +26,10 @@
 }
 
 .container{
-    max-width:290px;
-    padding: 15px;
-    @include sm-phone{
-        max-width:450px;
-    }
-    @include lg-phone{
-        max-width:610px;
-    }
-    @include tab{
-        max-width:738px;
-    }
-    @include desktop{
-        max-width:930px;
-    }
+    width:100%;
 }
 
-ul.tab{
+ul.small-tab{
     display:flex;
     flex-direction:column;
     @include from-phone{

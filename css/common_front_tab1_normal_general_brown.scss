@@ -29,7 +29,7 @@
     width:100%;
 }
 
-ul.tab{
+ul.normal-tab{
     display:flex;
     flex-direction:column;
     @include from-phone{
