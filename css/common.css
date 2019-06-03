@@ -26,9 +26,9 @@ a { text-decoration: none; }
   .common_front_paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
   .common_front_paging1 div > ul > li.total { display: table-cell; position: relative; }
   .common_front_paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
-button { padding: 10px 12px 10px 12px; cursor: pointer; height: 40px; font: bold 13px "Malgun Gothic"; }
-button.btn { padding: 10px 20px 10px; }
-button.btn2:before { content: ''; width: 12px; height: 20px; padding: 0 0px 0 14px; margin-right: 5px; }
+button { padding: 10px 12px 10px 12px; cursor: pointer; font: bold 13px "Malgun Gothic"; }
+button.btn { padding: 10px 20px 10px; height: 40px; }
+button.btn2:before { content: ''; width: 12px; height: 20px; padding: 0 0px 0 14px; margin-right: 7px; height: 40px; }
 button.btn-white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
 button.btn-white.icon-pill:before { background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%; }
 button.btn-white.icon-arrow-left:before { background: url("../images/icon/btn-white-larrow.png") no-repeat 50%; }
@@ -58,7 +58,7 @@ button.btn-brown.icon-add:before { background: url("../images//icon/btn-brown-ad
 button.btn-brown.icon-settings:before { background: url("../images//icon/btn-brown-settings.png") no-repeat 50%; }
 button.btn-brown.icon-dialogue:before { background: url("../images//icon/btn-brown-dialogue.png") no-repeat 50%; }
 button.btn-brown.icon-edit:before { background: url("../images//icon/btn-brown-edit.png") no-repeat 50%; }
-button.btn-transparent { background-color: #fcfcfc; color: #d6d5d5; margin-bottom: 10px; border: 1px solid #dadada; }
+button.btn-transparent { background-color: #fcfcfc; color: #d6d5d5; margin-bottom: 10px; border: 1px solid #dadada; cursor: no-drop; }
 button.btn-transparent.icon-pill:before { background: url("../images//icon/btn-trans-pill.png") no-repeat 50%; }
 button.btn-transparent.icon-left:before { background: url("../images//icon/btn-trans-left.png") no-repeat 50%; }
 button.btn-transparent.icon-close:before { background: url("../images//icon/btn-trans-close.png") no-repeat 50%; }
