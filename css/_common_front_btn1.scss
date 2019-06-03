@@ -9,13 +9,13 @@ $stm_img: '../images/';
 			height: 40px;
 		}
 		&.btn2 {
+			height: 40px;
 			&:before {
 				content: '';
 				width: 12px;
 				height: 20px;
 				padding: 0 0px 0 14px;
     			margin-right: 7px;
-    			height: 40px;
 			}
 		}
 		&.btn-white {
@@ -163,7 +163,14 @@ $stm_img: '../images/';
 				}
 			}
 		}
-		&.btn-transparent {
+		&.btn[disabled] {
+			background-color: #fcfcfc;
+			color: #d6d5d5;
+			margin-bottom: 10px;
+			border: 1px solid #dadada;
+			cursor: no-drop;
+		}
+		&.btn2[disabled] {
 			background-color: #fcfcfc;
 			color: #d6d5d5;
 			margin-bottom: 10px;
@@ -257,6 +264,11 @@ $stm_img: '../images/';
 			&.icon-pc {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pc.png') no-repeat 50%;
+				}
+			}
+			&.icon-calendar {
+				&:before{
+					background: url($stm_img + '/icon/btn-trans-calendar.png') no-repeat 50%;
 				}
 			}
 		}
