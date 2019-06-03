@@ -4,9 +4,20 @@ $stm_img: '../images/';
 	button {
 		padding: 10px 12px 10px 12px;
 		cursor: pointer;
-		margin-bottom: 10px;
 		height: 40px;
 		font: bold 13px "Malgun Gothic";
+		&.gen {
+			padding: 10px 20px 10px;
+		}
+		&.combi {
+			&:before {
+				content: '';
+				width: 12px;
+				height: 20px;
+				padding: 0 5px 0 10px;
+				margin-right: 4px;
+			}
+		}
 		&.white {
 			background-color: #fff;
 			color: #000;
@@ -160,6 +171,7 @@ $stm_img: '../images/';
 		&.transparent {
 			background-color: #fcfcfc;
 			color: #d6d5d5;
+			margin-bottom: 10px;
 			border: 1px solid #dadada;
 			border-bottom: 2px solid #dadada;
 			&.icon-pill {
@@ -252,13 +264,6 @@ $stm_img: '../images/';
 					background: url($stm_img + '/icon/btn-trans-pc.png') no-repeat 50%;
 				}
 			}
-		}
-		&:before {
-			content: '';
-			width: 12px;
-			height: 20px;
-			padding: 0 5px 0 10px;
-			margin-right: 4px;
 		}
 	} 
 } 
