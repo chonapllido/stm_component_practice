@@ -81,6 +81,7 @@ ul.combi-normal-tab{
             border-bottom:none;
         }
         &:first-child{
+            border-left:none;
             a{
                 border-left:none;
             }
@@ -115,9 +116,16 @@ ul.combi-normal-tab{
             &:nth-child(odd) a{
                 border-left:none;
             }
-            @include from-tab{
-                border-top:none;
-                border-left:1px solid #fff;
+            &:nth-child(n + 2) a{
+                @include from-tab{
+                    border-top:none;
+                    border-left:1px solid #fff;
+                }
+            }
+            &:nth-child(n + 2){
+                @include from-tab{
+                    border-top:none;
+                }
             }
         }
     }
@@ -135,12 +143,17 @@ ul.combi-normal-tab{
             }
             @include from-tab{
                 border-top:none;
-                border-left:1px solid #fff;
+            }
+            &:nth-child(n + 2) a{
+                @include from-tab{
+                    border-left:1px solid #fff;
+                }
             }
             a{
                 @include tab{
                     padding-right:45px;
-                    text-align:left;}
+                    text-align:left;
+                }
             }
         }
     }
@@ -159,6 +172,9 @@ ul.combi-normal-tab{
                 @include from-tab{
                     border-left:1px solid #fff;
                 }
+            }
+            &:first-child a{
+                border-left:none;
             }
             @include from-tab{
                 height:64px;

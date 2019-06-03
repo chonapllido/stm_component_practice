@@ -1653,6 +1653,10 @@ ul.combi-normal-tab li:last-child {
   border-bottom: none;
 }
 
+ul.combi-normal-tab li:first-child {
+  border-left: none;
+}
+
 ul.combi-normal-tab li:first-child a {
   border-left: none;
 }
@@ -1695,9 +1699,15 @@ ul.combi-normal-tab.two.wrap li:nth-child(odd) a {
 }
 
 @media (min-width: 768px) {
-  ul.combi-normal-tab.two.wrap li {
+  ul.combi-normal-tab.two.wrap li:nth-child(n + 2) a {
     border-top: none;
     border-left: 1px solid #fff;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.combi-normal-tab.two.wrap li:nth-child(n + 2) {
+    border-top: none;
   }
 }
 
@@ -1722,6 +1732,11 @@ ul.combi-normal-tab.three.wrap li:nth-child(odd) a {
 @media (min-width: 768px) {
   ul.combi-normal-tab.three.wrap li {
     border-top: none;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.combi-normal-tab.three.wrap li:nth-child(n + 2) a {
     border-left: 1px solid #fff;
   }
 }
@@ -1752,6 +1767,10 @@ ul.combi-normal-tab.five.wrap li:nth-child(odd) a {
   ul.combi-normal-tab.five.wrap li:nth-child(odd) a {
     border-left: 1px solid #fff;
   }
+}
+
+ul.combi-normal-tab.five.wrap li:first-child a {
+  border-left: none;
 }
 
 @media (min-width: 768px) {
