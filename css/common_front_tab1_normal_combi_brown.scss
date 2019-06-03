@@ -21,19 +21,22 @@
 @mixin sm-phone {
     @media (min-width: 480px) and (max-width: 639px) { @content; }
 }
+@mixin phone-only {
+    @media (max-width: 480px) { @content; }
+}
 
 .container{
     width:100%;
 }
 
-ul.small-combi-tab{
+ul.combi-normal-tab{
     display:flex;
     flex-direction:column;
     @include from-phone{
         flex-direction:row;
     }
     li{
-        height:30px;
+        height:46px;
         width:100%;
         background-color:#483f41;
         text-align:center;
@@ -42,22 +45,28 @@ ul.small-combi-tab{
             align-items:center;
             justify-content:flex-start;
             height:100%;
-            padding-left:9px;
+            padding-left:17px;
             font-size:13px;
             font-family:'Malgun Gothic', sans-serif;
+            font-weight:bold;
             color:#f3e6e6;
             text-decoration:none;
+            cursor:pointer;
         }
         &.on{
             position:relative;
             background-color:#936c6a;
+            @include phone-only{
+                border-top:1px solid #fff;
+                border-bottom:1px solid #fff;
+            }
             a{
                 color:#fff;
             }
             &:after{
-                content:url('../images/icon/icon-down.png');
+                content:url('../images/icon/icon-down-normal.png');
                 position:absolute;
-                right:13px;
+                right:20px;
                 top:45%;
             }
         }
@@ -70,6 +79,11 @@ ul.small-combi-tab{
         }
         &:last-child{
             border-bottom:none;
+        }
+        &:first-child{
+            a{
+                border-left:none;
+            }
         }
     }
     &.wrap{
@@ -86,7 +100,7 @@ ul.small-combi-tab{
                     border-top:1px solid #fff;
                 }
             }
-            &:nth-child(n + 1) a{
+            &:nth-child(n + 2) a{
                 @include from-phone{
                     border-left:1px solid #fff;
                 }
@@ -94,12 +108,16 @@ ul.small-combi-tab{
         }
     }
     &.two.wrap{
-        @include from-lg-phone{
+        @include from-tab{
             flex-flow:nowrap;
         }
         li{
-            @include from-lg-phone{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+            @include from-tab{
                 border-top:none;
+                border-left:1px solid #fff;
             }
         }
     }
@@ -108,9 +126,27 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+            @include tab{
+                height:64px;
+                line-height:18px;
+            }
             @include from-tab{
                 border-top:none;
+                border-left:1px solid #fff;
             }
+            a{
+                @include tab{
+                    padding-right:45px;
+                    text-align:left;}
+            }
+        }
+    }
+    &.four.wrap{
+        li:nth-child(odd) a{
+            border-left:none;
         }
     }
     &.five.wrap{
@@ -118,8 +154,14 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
-            @include tab{
-                height:48px;
+            &:nth-child(odd) a{
+                border-left:none;
+                @include from-tab{
+                    border-left:1px solid #fff;
+                }
+            }
+            @include from-tab{
+                height:64px;
                 line-height: 18px;
                 border-top:none;
             }
@@ -127,8 +169,12 @@ ul.small-combi-tab{
                 border-top:none;
             }
             a{
-                @include from-tab{
-                    padding-right:21px;
+                @include tab{
+                    padding-right:45px;
+                    text-align:left;
+                }
+                @include desktop{
+                    padding-right:54px;
                     text-align:left;
                 }
             }
@@ -139,8 +185,28 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            @include sm-phone{
+                &:nth-child(odd) a{
+                    border-left:none;
+                }
+            }
+            @include lg-phone{
+                &:nth-child(4) a{
+                    border-left:none;
+                }
+            }
             @include lg-phone{
                 width: calc(100% / 3);
+                border-top:none;
+            }
+            @include tab{
+                height:82px;
+                line-height:18px;
+                border-top:none;
+            }
+            @include desktop{
+                height:64px;
+                line-height:18px;
                 border-top:none;
             }
             &:nth-child(n + 4){
@@ -148,16 +214,13 @@ ul.small-combi-tab{
                     border-top:1px solid #fff;
                 }
             }
-        }
-        li{
-            @include from-tab{
-                height:48px;
-                line-height: 18px;
-                border-top:none;
-            }
             a{
-                @include from-tab{
-                    padding-right:29px;
+                @include tab{
+                    padding-right:46px;
+                    text-align:left;
+                }
+                @include desktop{
+                    padding-right:39px;
                     text-align:left;
                 }
             }
@@ -165,6 +228,16 @@ ul.small-combi-tab{
     }
     &.seven.wrap{
         li{
+            @include sm-phone{
+                &:nth-child(odd) a{
+                    border-left:none;
+                }
+            }
+            @include lg-phone{
+                &:nth-child(4) a{
+                    border-left:none;
+                }
+            }
             @include from-lg-phone{
                 width: calc(100% / 3);
                 border-top:none;
@@ -178,6 +251,17 @@ ul.small-combi-tab{
     }
     &.eight.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+                @include tab{
+                    border-left:none;
+                }
+            }
             @include desktop{
                 width: calc(100% / 3);
                 border-top:none;
@@ -187,6 +271,11 @@ ul.small-combi-tab{
                     border-top:1px solid #fff;
                 }
             }
+            &:nth-child(4) a{
+                @include desktop{
+                    border-left:none;
+                }
+            }
         }
     }
     &.nine.wrap{
@@ -194,18 +283,31 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include from-tab{
-                height:48px;
                 line-height: 18px;
                 border-top:none;
                 text-align:left;
             }
+            @include tab{
+                height:100px;
+            }
+            @include desktop{
+                height:64px;
+            }
             a{
                 @include tab{
-                    padding-right:20px;
+                    padding-right:40px;
                 }
                 @include desktop{
-                    padding-right:32px;
+                    padding-right:42px;
                 }
             }
         }
@@ -215,18 +317,31 @@ ul.small-combi-tab{
             flex-flow:nowrap;
         }
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
             @include tab{
                 width: calc(100% / 4);
                 border-top:none;
+                height:64px;
             }
             @include desktop{
-                height:48px;
-                line-height: 18px;
+                height:82px;
+                line-height:18px;
                 border-top:none;
             }
             a{
+                @include tab{
+                    padding-right:45px;
+                    text-align:left;
+                }
                 @include desktop{
-                    padding-right:29px;
+                    padding-right:38px;
                     text-align:left;
                 }
             }
@@ -235,17 +350,44 @@ ul.small-combi-tab{
                     border-top:1px solid #fff;
                 }
             }
+            &:nth-child(5) a{
+                @include tab{
+                    border-left:none;
+                }
+            }
         }
     }
     &.eleven.wrap{
         li{
+            &:nth-child(odd) a{
+                @include sm-phone{
+                    border-left:none;
+                }
+                @include lg-phone{
+                    border-left:none;
+                }
+            }
+            @include tab{
+                height:64px;
+            }
             @include from-tab{
                 width: calc(100% / 4);
                 border-top:none;
             }
+            &:nth-child(5) a{
+                @include from-tab{
+                    border-left:none;
+                }
+            }
             &:nth-child(n + 5){
                 @include from-tab{
                     border-top:1px solid #fff;
+                }
+            }
+            a{
+                @include tab{
+                    padding-right:45px;
+                    text-align:left;
                 }
             }
         }
@@ -259,6 +401,18 @@ ul.small-combi-tab{
             &:nth-child(n + 5){
                 @include from-tab{
                     border-top:1px solid #fff;
+                }
+            }
+        }
+    }
+    &.twelve.wrap{
+        li{
+            &:nth-child(odd) a{
+                border-left:none;
+            }
+            &:nth-child(3) a, &:nth-child(7) a{
+                @include desktop{
+                    border-left:1px solid #fff;
                 }
             }
         }
