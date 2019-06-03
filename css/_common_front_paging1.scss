@@ -75,15 +75,16 @@ a{
 					text-decoration:none;
 				}
 				&.on{
-					color:#fff;
-					border-color:#95001f;
-					border-right:1px solid #95001f;
-					font-weight:bold;
+					border:1px solid #95001f;
+					border-right: 1px solid #95001f;
 					background:#a40022;
+					box-sizing: border-box;
 					a{
 						color:#fff;
+						font-weight:bold;
 						text-decoration:none;
 					}
+
 				}
 				&.total{
 					display:none;
