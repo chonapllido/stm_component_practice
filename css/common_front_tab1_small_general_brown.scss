@@ -22,14 +22,6 @@
     @media (min-width: 480px) and (max-width: 639px) { @content; }
 }
 
-body{
-    font-size:13px;
-    font-family:'Malgun Gothic', sans-serif;
-}
-a{
-    color:#f3e6e6;
-    text-decoration:none;
-}
 .container{
     max-width:290px;
     padding: 15px;
@@ -63,6 +55,10 @@ ul.tab{
             align-items:center;
             justify-content:center;
             height:100%;
+            font-size:13px;
+            font-family:'Malgun Gothic', sans-serif;
+            color:#f3e6e6;
+            text-decoration:none;
         }
         &.on{
             background-color:#936c6a;
