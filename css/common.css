@@ -26,57 +26,57 @@ a { text-decoration: none; }
   .common_front_paging1 div > ul > li.on a { display: inline-block; color: #a40022; line-height: 15px; }
   .common_front_paging1 div > ul > li.total { display: table-cell; position: relative; }
   .common_front_paging1 div > ul > li.total:before { position: absolute; left: 0; content: '/'; color: #535353; font-weight: normal; } }
-.btn-container button { padding: 10px 12px 10px 12px; cursor: pointer; height: 40px; font: bold 13px "Malgun Gothic"; }
-.btn-container button.gen { padding: 10px 20px 10px; }
-.btn-container button.combi:before { content: ''; width: 12px; height: 20px; padding: 0 5px 0 10px; margin-right: 4px; }
-.btn-container button.white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; border-bottom: 2px solid #bcbcbc; }
-.btn-container button.white.icon-pill:before { background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%; }
-.btn-container button.white.icon-arrow-left:before { background: url("../images/icon/btn-white-larrow.png") no-repeat 50%; }
-.btn-container button.white.icon-close:before { background: url("../images/icon/btn-white-close.png") no-repeat 50%; }
-.btn-container button.white.icon-trash:before { background: url("../images/icon/btn-white-trash.png") no-repeat 50%; }
-.btn-container button.white.icon-updown:before { background: url("../images/icon/btn-white-updown.png") no-repeat 50%; }
-.btn-container button.white.icon-calendar:before { background: url("../images/icon/btn-white-calendar.png") no-repeat 50%; }
-.btn-container button.red { background-color: #a40022; color: #fff; border: 1px solid #500014; border-bottom: 2px solid #500014; }
-.btn-container button.red.icon-write:before { background: url("../images//icon/btn-red-write.png") no-repeat 50%; }
-.btn-container button.red.icon-plus:before { background: url("../images//icon/btn-red-plus.png") no-repeat 50%; }
-.btn-container button.red.icon-play:before { background: url("../images//icon/btn-red-play.png") no-repeat 50%; }
-.btn-container button.red.icon-paper:before { background: url("../images//icon/btn-red-paper.png") no-repeat 50%; }
-.btn-container button.red.icon-pc:before { background: url("../images//icon/btn-red-pc.png") no-repeat 50%; }
-.btn-container button.red.icon-plus2:before { background: url("../images//icon/btn-red-plus2.png") no-repeat 50%; }
-.btn-container button.orange { background-color: #f98900; color: #fff; border: 1px solid #ee6f00; border-bottom: 2px solid #ee6f00; }
-.btn-container button.orange.icon-dl:before { background: url("../images//icon/btn-orange-dl.png") no-repeat 50%; }
-.btn-container button.orange.icon-updown:before { background: url("../images//icon/btn-orange-updown.png") no-repeat 50%; }
-.btn-container button.orange.icon-power:before { background: url("../images//icon/btn-orange-power.png") no-repeat 50%; }
-.btn-container button.orange.icon-dialogue:before { background: url("../images//icon/btn-orange-dialogue.png") no-repeat 50%; }
-.btn-container button.green { background-color: #529c1c; color: #fff; border: 1px solid #427d16; border-bottom: 2px solid #427d16; }
-.btn-container button.green.icon-upload:before { background: url("../images//icon/btn-green-upload.png") no-repeat 50%; }
-.btn-container button.green.icon-download:before { background: url("../images//icon/btn-green-download.png") no-repeat 50%; }
-.btn-container button.brown { background-color: #936c6a; color: #fff; border: 1px solid #7e5c5b; border-bottom: 2px solid #7e5c5b; }
-.btn-container button.brown.icon-write:before { background: url("../images//icon/btn-brown-write.png") no-repeat 50%; }
-.btn-container button.brown.icon-reset:before { background: url("../images//icon/btn-brown-reset.png") no-repeat 50%; }
-.btn-container button.brown.icon-add:before { background: url("../images//icon/btn-brown-add.png") no-repeat 50%; }
-.btn-container button.brown.icon-settings:before { background: url("../images//icon/btn-brown-settings.png") no-repeat 50%; }
-.btn-container button.brown.icon-dialogue:before { background: url("../images//icon/btn-brown-dialogue.png") no-repeat 50%; }
-.btn-container button.brown.icon-edit:before { background: url("../images//icon/btn-brown-edit.png") no-repeat 50%; }
-.btn-container button.transparent { background-color: #fcfcfc; color: #d6d5d5; margin-bottom: 10px; border: 1px solid #dadada; border-bottom: 2px solid #dadada; }
-.btn-container button.transparent.icon-pill:before { background: url("../images//icon/btn-trans-pill.png") no-repeat 50%; }
-.btn-container button.transparent.icon-left:before { background: url("../images//icon/btn-trans-left.png") no-repeat 50%; }
-.btn-container button.transparent.icon-close:before { background: url("../images//icon/btn-trans-close.png") no-repeat 50%; }
-.btn-container button.transparent.icon-trash:before { background: url("../images//icon/btn-trans-trash.png") no-repeat 50%; }
-.btn-container button.transparent.icon-updown:before { background: url("../images//icon/btn-trans-updown.png") no-repeat 50%; }
-.btn-container button.transparent.icon-write:before { background: url("../images//icon/btn-trans-write.png") no-repeat 50%; }
-.btn-container button.transparent.icon-edit:before { background: url("../images//icon/btn-trans-edit.png") no-repeat 50%; }
-.btn-container button.transparent.icon-plus:before { background: url("../images//icon/btn-trans-plus.png") no-repeat 50%; }
-.btn-container button.transparent.icon-power:before { background: url("../images//icon/btn-trans-power.png") no-repeat 50%; }
-.btn-container button.transparent.icon-download:before { background: url("../images//icon/btn-trans-download.png") no-repeat 50%; }
-.btn-container button.transparent.icon-dialogue:before { background: url("../images//icon/btn-trans-dialogue.png") no-repeat 50%; }
-.btn-container button.transparent.icon-ul:before { background: url("../images//icon/btn-trans-ul.png") no-repeat 50%; }
-.btn-container button.transparent.icon-dl:before { background: url("../images//icon/btn-trans-dl.png") no-repeat 50%; }
-.btn-container button.transparent.icon-plus2:before { background: url("../images//icon/btn-trans-plus2.png") no-repeat 50%; }
-.btn-container button.transparent.icon-reset:before { background: url("../images//icon/btn-trans-reset.png") no-repeat 50%; }
-.btn-container button.transparent.icon-settings:before { background: url("../images//icon/btn-trans-settings.png") no-repeat 50%; }
-.btn-container button.transparent.icon-paper:before { background: url("../images//icon/btn-trans-paper.png") no-repeat 50%; }
-.btn-container button.transparent.icon-pc:before { background: url("../images//icon/btn-trans-pc.png") no-repeat 50%; }
+button { padding: 10px 12px 10px 12px; cursor: pointer; height: 40px; font: bold 13px "Malgun Gothic"; }
+button.btn { padding: 10px 20px 10px; }
+button.btn2:before { content: ''; width: 12px; height: 20px; padding: 0 5px 0 10px; margin-right: 7px; }
+button.btn-white { background-color: #fff; color: #000; border: 1px solid #bcbcbc; }
+button.btn-white.icon-pill:before { background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%; }
+button.btn-white.icon-arrow-left:before { background: url("../images/icon/btn-white-larrow.png") no-repeat 50%; }
+button.btn-white.icon-close:before { background: url("../images/icon/btn-white-close.png") no-repeat 50%; }
+button.btn-white.icon-trash:before { background: url("../images/icon/btn-white-trash.png") no-repeat 50%; }
+button.btn-white.icon-updown:before { background: url("../images/icon/btn-white-updown.png") no-repeat 50%; }
+button.btn-white.icon-calendar:before { background: url("../images/icon/btn-white-calendar.png") no-repeat 50%; }
+button.btn-red { background-color: #a40022; color: #fff; border: 1px solid #500014; }
+button.btn-red.icon-write:before { background: url("../images//icon/btn-red-write.png") no-repeat 50%; }
+button.btn-red.icon-plus:before { background: url("../images//icon/btn-red-plus.png") no-repeat 50%; }
+button.btn-red.icon-play:before { background: url("../images//icon/btn-red-play.png") no-repeat 50%; }
+button.btn-red.icon-paper:before { background: url("../images//icon/btn-red-paper.png") no-repeat 50%; }
+button.btn-red.icon-pc:before { background: url("../images//icon/btn-red-pc.png") no-repeat 50%; }
+button.btn-red.icon-plus2:before { background: url("../images//icon/btn-red-plus2.png") no-repeat 50%; }
+button.btn-orange { background-color: #f98900; color: #fff; border: 1px solid #ee6f00; }
+button.btn-orange.icon-dl:before { background: url("../images//icon/btn-orange-dl.png") no-repeat 50%; }
+button.btn-orange.icon-updown:before { background: url("../images//icon/btn-orange-updown.png") no-repeat 50%; }
+button.btn-orange.icon-power:before { background: url("../images//icon/btn-orange-power.png") no-repeat 50%; }
+button.btn-orange.icon-dialogue:before { background: url("../images//icon/btn-orange-dialogue.png") no-repeat 50%; }
+button.btn-green { background-color: #529c1c; color: #fff; border: 1px solid #427d16; }
+button.btn-green.icon-upload:before { background: url("../images//icon/btn-green-upload.png") no-repeat 50%; }
+button.btn-green.icon-download:before { background: url("../images//icon/btn-green-download.png") no-repeat 50%; }
+button.btn-brown { background-color: #936c6a; color: #fff; border: 1px solid #7e5c5b; }
+button.btn-brown.icon-write:before { background: url("../images//icon/btn-brown-write.png") no-repeat 50%; }
+button.btn-brown.icon-reset:before { background: url("../images//icon/btn-brown-reset.png") no-repeat 50%; }
+button.btn-brown.icon-add:before { background: url("../images//icon/btn-brown-add.png") no-repeat 50%; }
+button.btn-brown.icon-settings:before { background: url("../images//icon/btn-brown-settings.png") no-repeat 50%; }
+button.btn-brown.icon-dialogue:before { background: url("../images//icon/btn-brown-dialogue.png") no-repeat 50%; }
+button.btn-brown.icon-edit:before { background: url("../images//icon/btn-brown-edit.png") no-repeat 50%; }
+button.btn-transparent { background-color: #fcfcfc; color: #d6d5d5; margin-bottom: 10px; border: 1px solid #dadada; }
+button.btn-transparent.icon-pill:before { background: url("../images//icon/btn-trans-pill.png") no-repeat 50%; }
+button.btn-transparent.icon-left:before { background: url("../images//icon/btn-trans-left.png") no-repeat 50%; }
+button.btn-transparent.icon-close:before { background: url("../images//icon/btn-trans-close.png") no-repeat 50%; }
+button.btn-transparent.icon-trash:before { background: url("../images//icon/btn-trans-trash.png") no-repeat 50%; }
+button.btn-transparent.icon-updown:before { background: url("../images//icon/btn-trans-updown.png") no-repeat 50%; }
+button.btn-transparent.icon-write:before { background: url("../images//icon/btn-trans-write.png") no-repeat 50%; }
+button.btn-transparent.icon-edit:before { background: url("../images//icon/btn-trans-edit.png") no-repeat 50%; }
+button.btn-transparent.icon-plus:before { background: url("../images//icon/btn-trans-plus.png") no-repeat 50%; }
+button.btn-transparent.icon-power:before { background: url("../images//icon/btn-trans-power.png") no-repeat 50%; }
+button.btn-transparent.icon-download:before { background: url("../images//icon/btn-trans-download.png") no-repeat 50%; }
+button.btn-transparent.icon-dialogue:before { background: url("../images//icon/btn-trans-dialogue.png") no-repeat 50%; }
+button.btn-transparent.icon-ul:before { background: url("../images//icon/btn-trans-ul.png") no-repeat 50%; }
+button.btn-transparent.icon-dl:before { background: url("../images//icon/btn-trans-dl.png") no-repeat 50%; }
+button.btn-transparent.icon-plus2:before { background: url("../images//icon/btn-trans-plus2.png") no-repeat 50%; }
+button.btn-transparent.icon-reset:before { background: url("../images//icon/btn-trans-reset.png") no-repeat 50%; }
+button.btn-transparent.icon-settings:before { background: url("../images//icon/btn-trans-settings.png") no-repeat 50%; }
+button.btn-transparent.icon-paper:before { background: url("../images//icon/btn-trans-paper.png") no-repeat 50%; }
+button.btn-transparent.icon-pc:before { background: url("../images//icon/btn-trans-pc.png") no-repeat 50%; }
 
 @media screen and (max-width: 929px) { .btn-container button { margin-bottom: 10px; } }
 @media screen and (max-width: 609px) { .btn-container button { display: block; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
