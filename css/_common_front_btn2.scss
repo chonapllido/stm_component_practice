@@ -1,1 +1,61 @@
 $stm_img: '../images/';
+
+.btn-2 {
+	height: 38px;
+	padding: 10px 49px 10px 13px;
+	font: bold 13px "Malgun Gothic";
+	text-style: none;
+	cursor: pointer;
+	&.btn-white-2 {
+		position: relative;
+		border: 1px solid #bcbcbc;
+		background: #fff;
+		margin-left: 5px;
+	}
+	&.icon-ptr {
+		&:after {
+			content: '';
+			background: url("../images/icon/btn2-white-ptr.png") no-repeat 100% #fcfcfc;
+			width: 16px;
+			height: 16px;
+			padding: 0;
+			position: absolute;
+			right: 8px;
+			z-index: 3;
+		}
+		&:before {
+			content: '';
+			background: #fcfcfc;
+			padding: 0 17px;
+			position: absolute;
+			right: 0;
+			height: 36px;
+			z-index: 2;
+			border-left: 1px solid #e9e9e9;
+			top: 0;
+		}
+	}
+	&.icon-search {
+		&:after {
+			content: '';
+			background: url("../images/icon/btn2-white-search.png") no-repeat 100% #fcfcfc;
+			width: 16px;
+			height: 16px;
+			padding: 0;
+			position: absolute;
+			right: 8px;
+			z-index: 3;
+		}
+		&:before {
+			content: '';
+			background: #fcfcfc;
+			padding: 0 17px;
+			position: absolute;
+			right: 0;
+			height: 36px;
+			z-index: 2;
+			border-left: 1px solid #e9e9e9;
+			top: 0;
+		}
+	}
+}
