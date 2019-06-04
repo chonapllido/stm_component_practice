@@ -144,6 +144,18 @@ ul.normal-tab{
 
 @media screen and (max-width: 639px) and (min-width: 480px) {
     ul.normal-tab{
+        &.three{
+            li{
+                a{
+                    display:flex;
+                    align-items:center;
+                    padding-left:16px;
+                    padding-right:16px;
+                    justify-content:center;
+                    height:calc(100% - 30px);
+                }
+            }
+        }
         &.four, &.five{
             flex-flow:wrap;
             li{

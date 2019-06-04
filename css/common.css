@@ -248,7 +248,8 @@ ul.normal-tab.twelve li:nth-child(n + 5) a { border-top: 1px solid #fff; }
   ul.normal-tab.seven li:nth-child(odd) a, ul.normal-tab.eight li:nth-child(odd) a, ul.normal-tab.nine li:nth-child(odd) a, ul.normal-tab.ten li:nth-child(odd) a, ul.normal-tab.eleven li:nth-child(odd) a, ul.normal-tab.twelve li:nth-child(odd) a { border-left: none; }
   ul.normal-tab.seven li:nth-child(n + 3) a, ul.normal-tab.eight li:nth-child(n + 3) a, ul.normal-tab.nine li:nth-child(n + 3) a, ul.normal-tab.ten li:nth-child(n + 3) a, ul.normal-tab.eleven li:nth-child(n + 3) a, ul.normal-tab.twelve li:nth-child(n + 3) a { border-top: 1px solid #fff; }
   ul.normal-tab.seven li:nth-child(even) a, ul.normal-tab.eight li:nth-child(even) a, ul.normal-tab.nine li:nth-child(even) a, ul.normal-tab.ten li:nth-child(even) a, ul.normal-tab.eleven li:nth-child(even) a, ul.normal-tab.twelve li:nth-child(even) a { border-left: 1px solid #fff; } }
-@media screen and (max-width: 639px) and (min-width: 480px) { ul.normal-tab.four, ul.normal-tab.five { flex-flow: wrap; }
+@media screen and (max-width: 639px) and (min-width: 480px) { ul.normal-tab.three li a { display: flex; align-items: center; padding-left: 16px; padding-right: 16px; justify-content: center; height: calc(100% - 30px); }
+  ul.normal-tab.four, ul.normal-tab.five { flex-flow: wrap; }
   ul.normal-tab.four li, ul.normal-tab.five li { width: 50%; }
   ul.normal-tab.four li:nth-child(odd) a, ul.normal-tab.five li:nth-child(odd) a { border-left: none; }
   ul.normal-tab.four li:nth-child(n + 3) a, ul.normal-tab.five li:nth-child(n + 3) a { border-top: 1px solid #fff; } }
