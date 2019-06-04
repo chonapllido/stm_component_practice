@@ -58,4 +58,115 @@ $stm_img: '../images/';
 			top: 0;
 		}
 	}
+	&.btn-gray-2 {
+		position: relative;
+		border: 1px solid #5f5f5f;
+		background: #7c7c7c;
+		margin-left: 5px;
+		color: #dcdcdc;
+		&.icon-ptr-gray {
+			&:after {
+				content: '';
+				background: url("../images/icon/btn2-gray-ptr.png") no-repeat 100% #696969;
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				position: absolute;
+				right: 8px;
+				z-index: 3;
+			}
+			&:before {
+				content: '';
+				background: #696969;
+				padding: 0 17px;
+				position: absolute;
+				right: 0;
+				height: 36px;
+				z-index: 2;
+				top: 0;
+			}
+		}
+		&.icon-search-gray {
+			&:after {
+				content: '';
+				background: url("../images/icon/btn2-gray-search.png") no-repeat 100% #696969;
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				position: absolute;
+				right: 8px;
+				z-index: 3;
+			}
+			&:before {
+				content: '';
+				background: #696969;
+				padding: 0 17px;
+				position: absolute;
+				right: 0;
+				height: 36px;
+				z-index: 2;
+				top: 0;
+			}
+		}
+	}
+	&.btn-brown-2 {
+		position: relative;
+		border: 1px solid #816d63;
+		background: #978276;
+		margin-left: 5px;
+		color: #dcdcdc;
+		&.icon-ptr-brown {
+			&:after {
+				content: '';
+				background: url("../images/icon/btn2-brown-ptr.png") no-repeat 100% #8e786d;
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				position: absolute;
+				right: 8px;
+				z-index: 3;
+			}
+			&:before {
+				content: '';
+				background: #8e786d;
+				padding: 0 17px;
+				position: absolute;
+				right: 0;
+				height: 36px;
+				z-index: 2;
+				top: 0;
+			}
+		}
+		&.icon-search-brown {
+			&:after {
+				content: '';
+				background: url("../images/icon/btn2-brown-search.png") no-repeat 100% #8e786d;
+				width: 16px;
+				height: 16px;
+				padding: 0;
+				position: absolute;
+				right: 8px;
+				z-index: 3;
+			}
+			&:before {
+				content: '';
+				background: #8e786d;
+				padding: 0 17px;
+				position: absolute;
+				right: 0;
+				height: 36px;
+				z-index: 2;
+				top: 0;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 539px) {
+	.btn-2 {
+		display: block;
+		text-align: left;
+		width: 100%;
+		box-sizing: border-box;
+	}
 }
