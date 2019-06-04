@@ -98,7 +98,8 @@ a { text-decoration: none; }
 @media screen and (max-width: 939px) { .btn-container button { margin-bottom: 10px; } }
 @media screen and (max-width: 639px) { .btn, .btn2 { text-align: center; display: block; margin-bottom: 10px; width: 100%; box-sizing: border-box; }
   .btn:before, .btn2:before { float: left; }
-  .btn2 { padding: 10px 12px 10px 5px !important; }
+  .btn2 { position: relative; padding: 10px 12px 10px 5px !important; }
+  .btn2:before { content: ''; position: absolute; left: 6px; top: 9px; }
   .btn { padding: 10px 20px 10px 53px !important; }
   .btn-grp.float-right, .btn-grp.align-left { float: none; }
   .btn-grp .line { display: block; background: #d4d4d4; height: 1px; margin-bottom: 10px; } }
