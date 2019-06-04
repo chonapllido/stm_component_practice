@@ -226,5 +226,9 @@ ul.small-combi-tab li:last-child { border-bottom: none; }
 /* 290 */
 @media screen and (max-width: 449px) { .common-front-prepare > div { padding-left: 20px; padding-right: 20px; } }
 .common-front-search > div { display: table; margin: 0 auto; }
+.common-front-search > div > div { background: #f7f7f7; width: 930px; height: 52px; }
+.common-front-search > div > div .input-form > span { display: table-cell; vertical-align: middle; }
+.common-front-search > div > div .input-form > span input { width: 100%; }
+.common-front-search > div > div .input-form > span button { border: 1px solid black; background: pink; width: 70px; height: 30px; }
 
 /*# sourceMappingURL=common.css.map */
