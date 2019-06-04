@@ -4,12 +4,23 @@
 		margin: 0 auto;
 
 		>div{
+			
+			background: #f7f7f7;
+			width: 930px;
+			height: 52px;
 			.input-form{
-				input{
-
-				}
-				button{
-
+				>span{
+					display: table-cell;
+					vertical-align: middle;
+					input{
+						width: 100%;
+					}
+					button{
+						border: 1px solid black;
+						background: pink;
+						width: 70px;
+						height: 30px;
+					}
 				}
 			}
 		}
