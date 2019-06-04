@@ -24,6 +24,7 @@ $stm_img: '../images/';
 			background-color: #fff;
 			color: #000;
 			border: 1px solid #bcbcbc;
+			box-shadow: 0px 1px 0px 0px #bcbcbc;
 			&.icon-pill {
 				&:before {
 					background: url("../images/icon/btn-white-pill.png") no-repeat 50% 50%;
@@ -59,6 +60,7 @@ $stm_img: '../images/';
 			background-color: #a40022;
 			color: #fff;
 			border: 1px solid #500014;
+			box-shadow: 0px 1px 0px 0px #500014;
 			&.icon-write {
 				&:before{
 					background: url($stm_img + '/icon/btn-red-write.png') no-repeat 50%;
@@ -99,6 +101,7 @@ $stm_img: '../images/';
 			background-color: #f98900;
 			color: #fff;
 			border: 1px solid #ee6f00;
+			box-shadow: 0px 1px 0px 0px #d24f00;
 			&.icon-dl {
 				&:before{
 					background: url($stm_img + '/icon/btn-orange-dl.png') no-repeat 50%;
@@ -124,6 +127,7 @@ $stm_img: '../images/';
 			background-color: #529c1c;
 			color: #fff;
 			border: 1px solid #427d16;
+			box-shadow: 0px 1px 0px 0px #2a500e;
 			&.icon-upload {
 				&:before{
 					background: url($stm_img + '/icon/btn-green-upload.png') no-repeat 50%;
@@ -139,6 +143,7 @@ $stm_img: '../images/';
 			background-color: #936c6a;
 			color: #fff;
 			border: 1px solid #7e5c5b;
+			box-shadow: 0px 1px 0px 0px #4f3938;
 			&.icon-write {
 				&:before{
 					background: url($stm_img + '/icon/btn-brown-write.png') no-repeat 50%;
@@ -176,6 +181,7 @@ $stm_img: '../images/';
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
 			pointer-events: none;
+			box-shadow: 0px 1px 0px 0px #bebebe;
 		}
 		.btn2[disabled] {
 			background-color: #fcfcfc;
@@ -183,6 +189,7 @@ $stm_img: '../images/';
 			margin-bottom: 10px;
 			border: 1px solid #dadada;
 			pointer-events: none;
+			box-shadow: 0px 1px 0px 0px #bebebe;
 			&.icon-pill {
 				&:before{
 					background: url($stm_img + '/icon/btn-trans-pill.png') no-repeat 50%;
@@ -297,7 +304,7 @@ $stm_img: '../images/';
 	}
 }
 
-@media screen and (max-width: 929px) {
+@media screen and (max-width: 939px) {
 	.btn-container {
 		button {
 			margin-bottom: 10px;
@@ -305,7 +312,7 @@ $stm_img: '../images/';
 	}
 }
 
-@media screen and (max-width: 609px) {
+@media screen and (max-width: 639px) {
 	.btn, .btn2 {
 		text-align: center;
 		display: block;
