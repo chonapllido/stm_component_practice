@@ -2,7 +2,7 @@ $stm_img: '../images/';
 
 .btn-2 {
 	height: 38px;
-	padding: 10px 49px 10px 13px;
+	padding: 8px 49px 12px 13px;
 	font: 13px "Malgun Gothic";
 	text-style: none;
 	cursor: pointer;
@@ -313,6 +313,21 @@ $stm_img: '../images/';
 	}
 }
 
+@media screen and (max-width: 767px) {
+	.btn-grp {
+		.line {
+			display: none;
+		}
+		&.btn-grp2 {
+			.align-center {
+				text-align: unset;
+			}
+			.align-left {
+				float: left;
+			}
+		}
+	}
+}
 @media screen and (max-width: 539px) {
 	.btn-2 {
 		display: block;
@@ -325,6 +340,16 @@ $stm_img: '../images/';
 		text-align: left;
 		width: 100%;
 		box-sizing: border-box;
+	}
+	.btn-grp {
+		&.btn-grp2 {
+			.align-center {
+				text-align: unset;
+			}
+			.align-left {
+				float: left !important;
+			}
+		}
 	}
 }
 @media screen and (max-width: 449px) {
