@@ -3,7 +3,7 @@ $stm_img: '../images/';
 .btn-2 {
 	height: 38px;
 	padding: 8px 49px 12px 13px;
-	font: 13px "Malgun Gothic";
+	font: bold 13px "Malgun Gothic";
 	text-style: none;
 	cursor: pointer;
 	&.btn-white-2 {
@@ -21,6 +21,7 @@ $stm_img: '../images/';
 			padding: 0;
 			position: absolute;
 			right: 8px;
+			top: 11px;
 			z-index: 3;
 		}
 		&:before {
@@ -44,6 +45,7 @@ $stm_img: '../images/';
 			padding: 0;
 			position: absolute;
 			right: 8px;
+			top: 10px;
 			z-index: 3;
 		}
 		&:before {
@@ -52,7 +54,7 @@ $stm_img: '../images/';
 			padding: 0 17px;
 			position: absolute;
 			right: 0;
-			height: 36px;
+			height: 37px;
 			z-index: 2;
 			border-left: 1px solid #e9e9e9;
 			top: 0;
@@ -74,6 +76,7 @@ $stm_img: '../images/';
 				position: absolute;
 				right: 8px;
 				z-index: 3;
+				top: 11px;
 			}
 			&:before {
 				content: '';
@@ -81,7 +84,7 @@ $stm_img: '../images/';
 				padding: 0 17px;
 				position: absolute;
 				right: 0;
-				height: 36px;
+				height: 37px;
 				z-index: 2;
 				top: 0;
 			}
@@ -95,6 +98,7 @@ $stm_img: '../images/';
 				padding: 0;
 				position: absolute;
 				right: 8px;
+				top: 10px;
 				z-index: 3;
 			}
 			&:before {
@@ -103,7 +107,7 @@ $stm_img: '../images/';
 				padding: 0 17px;
 				position: absolute;
 				right: 0;
-				height: 36px;
+				height: 37px;
 				z-index: 2;
 				top: 0;
 			}
@@ -124,6 +128,7 @@ $stm_img: '../images/';
 				padding: 0;
 				position: absolute;
 				right: 8px;
+				top: 11px;
 				z-index: 3;
 			}
 			&:before {
@@ -132,7 +137,7 @@ $stm_img: '../images/';
 				padding: 0 17px;
 				position: absolute;
 				right: 0;
-				height: 36px;
+				height: 37px;
 				z-index: 2;
 				top: 0;
 			}
@@ -146,6 +151,7 @@ $stm_img: '../images/';
 				padding: 0;
 				position: absolute;
 				right: 8px;
+				top: 10px;
 				z-index: 3;
 			}
 			&:before {
@@ -154,7 +160,7 @@ $stm_img: '../images/';
 				padding: 0 17px;
 				position: absolute;
 				right: 0;
-				height: 36px;
+				height: 37px;
 				z-index: 2;
 				top: 0;
 			}
@@ -165,7 +171,7 @@ $stm_img: '../images/';
 .btn-social {
 	height: 38px;
 	padding: 10px 49px 12px 13px;
-	font: 13px/12px "Malgun Gothic";
+	font: bold 13px/12px "Malgun Gothic";
 	text-style: none;
 	cursor: pointer;
 	color: #ffffff;
@@ -219,7 +225,7 @@ $stm_img: '../images/';
 			background: #1a90eb;
 			padding: 0 17px;
 			right: 0;
-			height: 36px;
+			height: 37px;
 			z-index: 2;
 			top: 0;
 			width: 1px;
@@ -313,18 +319,30 @@ $stm_img: '../images/';
 	}
 }
 
+.btn-grp2 {
+	&.align-center {
+		text-align: center;
+	}
+	&.align-left {
+		float: left;
+	}
+	&.align-right {
+		float: right;
+	}
+	.line {
+		display: none;
+	}
+}
+
 @media screen and (max-width: 767px) {
-	.btn-grp {
-		.line {
-			display: none;
+	.btn-grp2 {
+		.align-left {
+			float: none !important;
+			text-align: left !important;
 		}
-		&.btn-grp2 {
-			.align-center {
-				text-align: unset;
-			}
-			.align-left {
-				float: left;
-			}
+		.align-right {
+			float: none !important;
+			text-align: right !important;
 		}
 	}
 }
@@ -341,20 +359,28 @@ $stm_img: '../images/';
 		width: 100%;
 		box-sizing: border-box;
 	}
-	.btn-grp {
-		&.btn-grp2 {
-			.align-center {
-				text-align: unset;
-			}
-			.align-left {
-				float: left !important;
-			}
-		}
-	}
 }
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 539px) {
 	.btn-2 {
 		width: 100%;
 		box-sizing: border-box;
+	}
+	.btn-social {
+		&.btn-fb, &.btn-blog, &.btn-yt, &.btn-ig, &.btn-twitter {
+			margin-left: 0;
+		}
+	}
+	.btn-2 {
+		&.btn-gray-2, &.btn-white-2, &.btn-brown-2 {
+			margin-left: 0;
+		}
+	}
+	.btn-grp2 {
+		.line {
+			display: block !important;
+			background: #d4d4d4;
+			height: 1px;
+			margin-bottom: 10px;
+		}
 	}
 }
