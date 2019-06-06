@@ -12,8 +12,11 @@ ul.combi-normal-tab{
         width:100%;
         background-color:#483f41;
         a{
-            display:block;
+            display:flex;
+            align-items:center;
+            height:calc(100% - 30px);
             padding:15px 17px;
+            padding-right:47px;
             line-height:17px;
             font-size:13px;
             font-family:'Malgun Gothic', sans-serif;
@@ -35,7 +38,7 @@ ul.combi-normal-tab{
                 content:url('../images/icon/icon-down-normal.png');
                 position:absolute;
                 right:20px;
-                top:50%;
+                top:calc(50% - 1px);
             }
         }
     }
@@ -48,16 +51,6 @@ ul.combi-normal-tab{
             }
             &:nth-child(n + 3) a{
                 border-top:1px solid #fff;
-            }
-        }
-    }
-    &.five, &.six, &.nine, &.ten{
-        li{
-            a{
-                display:flex;
-                align-items:center;
-                height:calc(100% - 30px);
-                padding-right:47px;
             }
         }
     }
@@ -90,16 +83,6 @@ ul.combi-normal-tab{
 
 @media screen and (max-width: 959px) and (min-width: 768px) {
     ul.combi-normal-tab{
-        &.three{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    height:calc(100% - 30px);
-                    padding-right:47px;
-                }
-            }
-        }
         &.eight, &.twelve{
             flex-flow:wrap;
             li{
@@ -124,12 +107,6 @@ ul.combi-normal-tab{
                 }
                 &:nth-child(n + 5) a{
                     border-top:1px solid #fff;
-                }
-                a{
-                    display:flex;
-                    align-items:center;
-                    height:calc(100% - 30px);
-                    padding-right:47px;
                 }
             }
         }

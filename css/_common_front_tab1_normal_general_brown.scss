@@ -9,8 +9,11 @@ ul.normal-tab{
         width:100%;
         background-color:#483f41;
         a{
-            display:block;
-            padding:15px 0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:calc(100% - 30px);
+            padding:15px 16px;
             line-height:17px;
             text-align:center;
             font-size:13px;
@@ -55,18 +58,6 @@ ul.normal-tab{
             }
         }
     }
-    &.ten, &.eleven{
-        li{
-            a{
-                display:flex;
-                align-items:center;
-                padding-left:16px;
-                padding-right:16px;
-                justify-content:center;
-                height:calc(100% - 30px);
-            }
-        }
-    }
     &.twelve{
         flex-flow:wrap;
         li{
@@ -83,18 +74,6 @@ ul.normal-tab{
 
 @media screen and (max-width: 959px) and (min-width: 768px) {
     ul.normal-tab{
-        &.seven, &.eight{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    padding-left:16px;
-                    padding-right:16px;
-                    justify-content:center;
-                    height:calc(100% - 30px);
-                }
-            }
-        }
         &.eleven{
             flex-flow:wrap;
             li{
@@ -112,18 +91,6 @@ ul.normal-tab{
 
 @media screen and (max-width: 767px) and (min-width: 480px) {
     ul.normal-tab{
-        &.five{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    padding-left:16px;
-                    padding-right:16px;
-                    justify-content:center;
-                    height:calc(100% - 30px);
-                }
-            }
-        }
         &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
             flex-flow:wrap;
             li{
@@ -144,18 +111,6 @@ ul.normal-tab{
 
 @media screen and (max-width: 639px) and (min-width: 480px) {
     ul.normal-tab{
-        &.three{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    padding-left:16px;
-                    padding-right:16px;
-                    justify-content:center;
-                    height:calc(100% - 30px);
-                }
-            }
-        }
         &.four, &.five{
             flex-flow:wrap;
             li{
@@ -173,18 +128,6 @@ ul.normal-tab{
 
 @media screen and (max-width: 479px) {
     ul.normal-tab{
-        &.one{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    padding-left:16px;
-                    padding-right:16px;
-                    justify-content:center;
-                    height:calc(100% - 30px);
-                }
-            }
-        }
         &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
             flex-direction:column;
             li{

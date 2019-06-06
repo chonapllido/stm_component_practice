@@ -8,8 +8,11 @@ ul.combi-small-tab{
         width:100%;
         background-color:#483f41;
         a{
-            display:block;
+            display:flex;
+            align-items:center;
+            height:calc(100% - 14px);
             padding:7px 15px;
+            padding-right:32px;
             line-height:17px;
             font-size:13px;
             font-family:'Malgun Gothic', sans-serif;
@@ -30,7 +33,7 @@ ul.combi-small-tab{
                 content:url('../images/icon/icon-down.png');
                 position:absolute;
                 right:13px;
-                top:50%;
+                top:calc(50% - 1px);
             }
         }
     }
@@ -43,16 +46,6 @@ ul.combi-small-tab{
             }
             &:nth-child(n + 3) a{
                 border-top:1px solid #fff;
-            }
-        }
-    }
-    &.six, &.nine, &.ten{
-        li{
-            a{
-                display:flex;
-                align-items:center;
-                height:calc(100% - 14px);
-                padding-right:32px;
             }
         }
     }
@@ -84,16 +77,6 @@ ul.combi-small-tab{
 
 @media screen and (max-width: 959px) and (min-width: 768px) {
     ul.combi-small-tab{
-        &.five{
-            li{
-                a{
-                    display:flex;
-                    align-items:center;
-                    height:calc(100% - 14px);
-                    padding-right:32px;
-                }
-            }
-        }
         &.eight, &.twelve{
             flex-flow:wrap;
             li{
