@@ -320,6 +320,17 @@ ul.combi-normal-tab.eleven li:nth-child(n + 5) a, ul.combi-normal-tab.twelve li:
   .btn-grp2 .line { display: block !important; background: #d4d4d4; height: 1px; margin-bottom: 10px; }
   .btn-2 { display: block; text-align: left; width: 100%; box-sizing: border-box; }
   .btn-social { display: block; text-align: left; width: 100%; box-sizing: border-box; } }
+.btn-3 { display: inline-block; font: bold 13px "Malgun Gothic"; padding: 5px 8px 5px 8px; color: #fff; cursor: pointer; }
+.btn-3.btn-white-3 { background: #fff; color: #000; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
+.btn-3.btn-red-3 { background: #a40022; border: 1px solid #84001f; border-bottom: 1px solid #500014; }
+.btn-3.btn-orange-3 { background: #f98900; border: 1px solid #ee6f00; border-bottom: 1px solid #d24f00; }
+.btn-3.btn-peach-3 { background: #bf5c53; border: 1px solid #a94e44; border-bottom: 1px solid #87392d; }
+.btn-3.btn-gray-3 { background: #555d68; border: 1px solid #474d56; border-bottom: 1px solid #32363d; }
+.btn-3.btn-green-3 { background: #529c1c; border: 1px solid #427d16; border-bottom: 1px solid #2a500e; }
+.btn-3.btn-brown-3 { background: #936c6a; border: 1px solid #7e5c5b; border-bottom: 1px solid #4f3938; }
+
+.btn-3[disabled] { background: #d8d8d8; border: 1px solid #cecece; border-bottom: 1px solid #b4b4b4; color: #fff; pointer-events: none; }
+
 .container { width: 100%; }
 
 ul.combi-large-tab { display: flex; }
