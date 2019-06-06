@@ -679,7 +679,7 @@ ul.combi-small-tab li.on:after {
   content: url("../images/icon/icon-down.png");
   position: absolute;
   right: 13px;
-  top: 50%;
+  top: calc(50% - 1px);
 }
 
 ul.combi-small-tab.four {
@@ -1140,7 +1140,7 @@ ul.combi-normal-tab li.on:after {
   content: url("../images/icon/icon-down-normal.png");
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: calc(50% - 1px);
 }
 
 ul.combi-normal-tab.four {
@@ -1715,7 +1715,7 @@ ul.combi-large-tab li.on:after {
   content: url("../images/icon/icon-down-large.png");
   position: absolute;
   right: 22px;
-  top: 45%;
+  top: calc(45% - 1px);
 }
 
 ul.combi-large-tab.four {

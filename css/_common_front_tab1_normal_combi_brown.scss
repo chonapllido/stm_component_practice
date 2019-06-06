@@ -38,7 +38,7 @@ ul.combi-normal-tab{
                 content:url('../images/icon/icon-down-normal.png');
                 position:absolute;
                 right:20px;
-                top:50%;
+                top:calc(50% - 1px);
             }
         }
     }

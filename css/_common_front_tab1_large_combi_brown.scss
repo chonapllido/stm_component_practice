@@ -34,7 +34,7 @@ ul.combi-large-tab{
                 content:url('../images/icon/icon-down-large.png');
                 position:absolute;
                 right:22px;
-                top:45%;
+                top:calc(45% - 1px);
             }
         }
     }
