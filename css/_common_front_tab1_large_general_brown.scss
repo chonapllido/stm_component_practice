@@ -9,8 +9,11 @@ ul.large-tab{
         width:100%;
         background-color:#483f41;
         a{
-            display:block;
-            padding:17px 0;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            height:calc(100% - 34px);
+            padding:17px 18px;
             line-height:18px;
             text-align:center;
             font-size:15px;
@@ -45,13 +48,10 @@ ul.large-tab{
     }
     &.eight{
         li a{
-            display:flex;
-            align-items:center;
             padding-left:20px;
             padding-right:20px;
             line-height: 19px;            
             justify-content:center;
-            height:calc(100% - 34px);
         }
     }
     &.nine{
@@ -68,13 +68,10 @@ ul.large-tab{
     }
     &.ten, &.eleven{
         li a{
-            display:flex;
-            align-items:center;
             padding-left:18px;
             padding-right:18px;
             line-height: 19px;            
             justify-content:center;
-            height:calc(100% - 34px);
         }
     }
     &.twelve{
@@ -95,13 +92,10 @@ ul.large-tab{
     ul.large-tab{
         &.five, &.seven{
             li a{
-                display:flex;
-                align-items:center;
                 padding-left:24px;
                 padding-right:24px;
                 line-height: 19px;            
                 justify-content:center;
-                height:calc(100% - 34px);
             }
         }
         &.eleven, &.twelve{
@@ -109,13 +103,10 @@ ul.large-tab{
             li{
                 width:25%;
                 a{
-                    display:flex;
-                    align-items:center;
                     padding-left:22px;
                     padding-right:22px;
                     line-height: 19px;            
                     justify-content:center;
-                    height:calc(100% - 34px);
                 }
                 &:nth-child(5) a{
                     border-left:none;
@@ -132,13 +123,10 @@ ul.large-tab{
     ul.large-tab{
         &.five{
             li a{
-                display:flex;
-                align-items:center;
                 padding-left:24px;
                 padding-right:24px;
                 line-height: 19px;            
                 justify-content:center;
-                height:calc(100% - 34px);
             }
         }
     }
@@ -171,13 +159,10 @@ ul.large-tab{
     ul.large-tab{
         &.three{
             li a{
-                display:flex;
-                align-items:center;
                 padding-left:24px;
                 padding-right:24px;
                 line-height: 19px;            
                 justify-content:center;
-                height:calc(100% - 34px);
             }
         }
         &.four, &.five{
@@ -205,13 +190,10 @@ ul.large-tab{
     ul.large-tab{
         &.one{
             li a{
-                display:flex;
-                align-items:center;
                 padding-left:24px;
                 padding-right:24px;
                 line-height: 19px;            
                 justify-content:center;
-                height:calc(100% - 34px);
             }
         }
         &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
