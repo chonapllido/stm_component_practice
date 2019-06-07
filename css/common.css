@@ -364,6 +364,48 @@ ul.combi-normal-tab.eleven li:nth-child(n + 5) a, ul.combi-normal-tab.twelve li:
 
 .btn-3[disabled] { background: #d8d8d8; border: 1px solid #cecece; border-bottom: 1px solid #b4b4b4; color: #fff; pointer-events: none; }
 
+.btn-icon-only { display: inline-block; width: 24px; height: 23px; cursor: pointer; }
+.btn-icon-only.btn-white-3 { background: #fff; color: #000; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
+.btn-icon-only.btn-white-3.icon-plus:before { background: url("../images/icon/btn-white-add.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-white-3.icon-trash:before { background: url("../images/icon/btn-white-trash.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-white-3.icon-close:before { background: url("../images/icon/btn-white-close.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-white-3.icon-faq:before { background: url("../images/icon/btn-white-faq.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-red-3 { background: #a40022; border: 1px solid #84001f; border-bottom: 1px solid #500014; }
+.btn-icon-only.btn-red-3.icon-plus:before { background: url("../images/icon/btn-red-plus.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-red-3.icon-trash:before { background: url("../images/icon/btn-red-trash.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-red-3.icon-play:before { background: url("../images/icon/btn-red-play.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-orange-3 { background: #f98900; border: 1px solid #ee6f00; border-bottom: 1px solid #d24f00; }
+.btn-icon-only.btn-orange-3.icon-dl:before { background: url("../images/icon/btn-orange-dl.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-orange-3.icon-play:before { background: url("../images/icon/btn-orange-power.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-orange-3.icon-dialogue:before { background: url("../images/icon/btn-orange-dialogue.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-orange-3.icon-power:before { background: url("../images/icon/btn-trans2-power.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-orange-3.icon-dl2:before { background: url("../images/icon/btn-trans2-dialogue.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-peach-3 { background: #bf5c53; border: 1px solid #a94e44; border-bottom: 1px solid #87392d; }
+.btn-icon-only.btn-peach-3.icon-home:before { background: url("../images/icon/btn-peach-home.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-peach-3.icon-edit:before { background: url("../images/icon/btn-peach-edit.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-peach-3.icon-home2:before { background: url("../images/icon/btn-trans2-home.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-peach-3.icon-edit2:before { background: url("../images/icon/btn-trans2-edit.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-gray-3 { background: #555d68; border: 1px solid #474d56; border-bottom: 1px solid #32363d; }
+.btn-icon-only.btn-gray-3.icon-search:before { background: url("../images/icon/btn-gray-search.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-gray-3.icon-search:before { background: url("../images/icon/btn-gray-search.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-gray-3.icon-check:before { background: url("../images/icon/btn-gray-check.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-green-3 { background: #529c1c; border: 1px solid #427d16; border-bottom: 1px solid #2a500e; }
+.btn-icon-only.btn-green-3.icon-upload:before { background: url("../images/icon/btn-green-upload.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-green-3.icon-download:before { background: url("../images/icon/btn-green-download.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3 { background: #936c6a; border: 1px solid #7e5c5b; border-bottom: 1px solid #4f3938; }
+.btn-icon-only.btn-brown-3.icon-add:before { background: url("../images/icon/btn-red-plus.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-close:before { background: url("../images/icon/btn-brown-close.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-faq:before { background: url("../images/icon/btn-brown-faq.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-faq2:before { background: url("../images/icon/btn-trans-faq.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-calcu:before { background: url("../images/icon/btn-brown-calcu.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-settings:before { background: url("../images/icon/btn-brown-settings.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-edit:before { background: url("../images/icon/btn-peach-edit.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-calcu:before { background: url("../images/icon/btn-trans-calcu.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only.btn-brown-3.icon-s2:before { background: url("../images/icon/btn-trans2-settings.png") no-repeat 50%; padding: 0 0 0 13px; margin: 2px -11px 0px; }
+.btn-icon-only:before { content: ''; display: inline-block; width: 15px; height: 15px; }
+
+.btn-icon-only[disabled] { background: #d8d8d8; border: 1px solid #cecece; border-bottom: 1px solid #b4b4b4; color: #fff; pointer-events: none; }
+
 .container { width: 100%; }
 
 ul.combi-large-tab { display: flex; }
