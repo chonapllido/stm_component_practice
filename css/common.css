@@ -1592,27 +1592,25 @@ ul.combi-normal-tab.eleven li:nth-child(n + 5) a, ul.combi-normal-tab.twelve li:
 }
 
 ul.combi-large-tab {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 ul.combi-large-tab li {
+  display: table-cell;
+  vertical-align: middle;
   width: 100%;
+  height: 52px;
   background-color: #483f41;
+  height: 52px;
 }
 
 ul.combi-large-tab li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: calc(100% - 34px);
-  padding: 17px 19px;
-  padding-right: 54px;
-  line-height: 18px;
+  display: block;
+  height: 100%;
+  padding: 19px 19px;
+  padding-right: 53px;
   font-size: 15px;
   font-family: 'Malgun Gothic', sans-serif;
   font-weight: bold;
@@ -1621,158 +1619,42 @@ ul.combi-large-tab li a {
   cursor: pointer;
 }
 
-ul.combi-large-tab li:not(:first-child) a {
+ul.combi-large-tab li:nth-child(n+2) a {
   border-left: 1px solid #fff;
-}
-
-ul.combi-large-tab li.on {
-  position: relative;
-  background-color: #936c6a;
-}
-
-ul.combi-large-tab li.on a {
-  color: #fff;
-}
-
-ul.combi-large-tab li.on:after {
-  content: url("../images/icon/icon-down-large.png");
-  position: absolute;
-  right: 22px;
-  top: calc(45% - 1px);
-}
-
-ul.combi-large-tab.four {
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
 }
 
 ul.combi-large-tab.four li {
   width: 50%;
+  float: left;
 }
 
-ul.combi-large-tab.four li:nth-child(odd) a {
-  border-left: none;
+ul.combi-large-tab.four li a {
+  height: auto;
 }
 
-ul.combi-large-tab.four li:nth-child(n + 3) a {
+ul.combi-large-tab.four li:nth-child(n+3) a {
   border-top: 1px solid #fff;
 }
 
-ul.combi-large-tab.five li a, ul.combi-large-tab.six li a, ul.combi-large-tab.nine li a, ul.combi-large-tab.ten li a {
-  line-height: 19px;
-}
-
-ul.combi-large-tab.seven, ul.combi-large-tab.eight {
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
+ul.combi-large-tab.four li:nth-child(3) a {
+  border-left: none;
 }
 
 ul.combi-large-tab.seven li, ul.combi-large-tab.eight li {
   width: calc(100% / 3);
+  float: left;
+}
+
+ul.combi-large-tab.seven li a, ul.combi-large-tab.eight li a {
+  height: auto;
+}
+
+ul.combi-large-tab.seven li:nth-child(n+4) a, ul.combi-large-tab.eight li:nth-child(n+4) a {
+  border-top: 1px solid #fff;
 }
 
 ul.combi-large-tab.seven li:nth-child(4) a, ul.combi-large-tab.eight li:nth-child(4) a {
   border-left: none;
-}
-
-ul.combi-large-tab.seven li:nth-child(n + 4) a, ul.combi-large-tab.eight li:nth-child(n + 4) a {
-  border-top: 1px solid #fff;
-}
-
-ul.combi-large-tab.eleven, ul.combi-large-tab.twelve {
-  -ms-flex-flow: wrap;
-      flex-flow: wrap;
-}
-
-ul.combi-large-tab.eleven li, ul.combi-large-tab.twelve li {
-  width: 25%;
-}
-
-ul.combi-large-tab.eleven li:nth-child(5) a, ul.combi-large-tab.twelve li:nth-child(5) a {
-  border-left: none;
-}
-
-ul.combi-large-tab.eleven li:nth-child(n + 5) a, ul.combi-large-tab.twelve li:nth-child(n + 5) a {
-  border-top: 1px solid #fff;
-}
-
-@media screen and (max-width: 959px) and (min-width: 768px) {
-  ul.combi-large-tab.three li a, ul.combi-large-tab.eleven li a {
-    line-height: 19px;
-  }
-  ul.combi-large-tab.eight, ul.combi-large-tab.twelve {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-  }
-  ul.combi-large-tab.eight li, ul.combi-large-tab.twelve li {
-    width: 50%;
-  }
-  ul.combi-large-tab.eight li:nth-child(odd) a, ul.combi-large-tab.twelve li:nth-child(odd) a {
-    border-left: none;
-  }
-  ul.combi-large-tab.eight li:nth-child(even) a, ul.combi-large-tab.twelve li:nth-child(even) a {
-    border-left: 1px solid #fff;
-  }
-  ul.combi-large-tab.eight li:nth-child(n + 3) a, ul.combi-large-tab.twelve li:nth-child(n + 3) a {
-    border-top: 1px solid #fff;
-  }
-  ul.combi-large-tab.eight li a, ul.combi-large-tab.twelve li a {
-    line-height: 18px;
-  }
-  ul.combi-large-tab.ten {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-  }
-  ul.combi-large-tab.ten li {
-    width: 25%;
-  }
-  ul.combi-large-tab.ten li:nth-child(5) a {
-    border-left: none;
-  }
-  ul.combi-large-tab.ten li:nth-child(n + 5) a {
-    border-top: 1px solid #fff;
-  }
-}
-
-@media screen and (max-width: 767px) and (min-width: 480px) {
-  ul.combi-large-tab.two, ul.combi-large-tab.three, ul.combi-large-tab.five, ul.combi-large-tab.six, ul.combi-large-tab.seven, ul.combi-large-tab.eight, ul.combi-large-tab.nine, ul.combi-large-tab.ten, ul.combi-large-tab.eleven, ul.combi-large-tab.twelve {
-    -ms-flex-flow: wrap;
-        flex-flow: wrap;
-  }
-  ul.combi-large-tab.two li, ul.combi-large-tab.three li, ul.combi-large-tab.five li, ul.combi-large-tab.six li, ul.combi-large-tab.seven li, ul.combi-large-tab.eight li, ul.combi-large-tab.nine li, ul.combi-large-tab.ten li, ul.combi-large-tab.eleven li, ul.combi-large-tab.twelve li {
-    width: 50%;
-  }
-  ul.combi-large-tab.two li:nth-child(odd) a, ul.combi-large-tab.three li:nth-child(odd) a, ul.combi-large-tab.five li:nth-child(odd) a, ul.combi-large-tab.six li:nth-child(odd) a, ul.combi-large-tab.seven li:nth-child(odd) a, ul.combi-large-tab.eight li:nth-child(odd) a, ul.combi-large-tab.nine li:nth-child(odd) a, ul.combi-large-tab.ten li:nth-child(odd) a, ul.combi-large-tab.eleven li:nth-child(odd) a, ul.combi-large-tab.twelve li:nth-child(odd) a {
-    border-left: none;
-  }
-  ul.combi-large-tab.two li:nth-child(even) a, ul.combi-large-tab.three li:nth-child(even) a, ul.combi-large-tab.five li:nth-child(even) a, ul.combi-large-tab.six li:nth-child(even) a, ul.combi-large-tab.seven li:nth-child(even) a, ul.combi-large-tab.eight li:nth-child(even) a, ul.combi-large-tab.nine li:nth-child(even) a, ul.combi-large-tab.ten li:nth-child(even) a, ul.combi-large-tab.eleven li:nth-child(even) a, ul.combi-large-tab.twelve li:nth-child(even) a {
-    border-left: 1px solid #fff;
-  }
-  ul.combi-large-tab.two li:nth-child(n + 3) a, ul.combi-large-tab.three li:nth-child(n + 3) a, ul.combi-large-tab.five li:nth-child(n + 3) a, ul.combi-large-tab.six li:nth-child(n + 3) a, ul.combi-large-tab.seven li:nth-child(n + 3) a, ul.combi-large-tab.eight li:nth-child(n + 3) a, ul.combi-large-tab.nine li:nth-child(n + 3) a, ul.combi-large-tab.ten li:nth-child(n + 3) a, ul.combi-large-tab.eleven li:nth-child(n + 3) a, ul.combi-large-tab.twelve li:nth-child(n + 3) a {
-    border-top: 1px solid #fff;
-  }
-  ul.combi-large-tab.two li a, ul.combi-large-tab.three li a, ul.combi-large-tab.five li a, ul.combi-large-tab.six li a, ul.combi-large-tab.seven li a, ul.combi-large-tab.eight li a, ul.combi-large-tab.nine li a, ul.combi-large-tab.ten li a, ul.combi-large-tab.eleven li a, ul.combi-large-tab.twelve li a {
-    line-height: 18px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  ul.combi-large-tab.one, ul.combi-large-tab.two, ul.combi-large-tab.three, ul.combi-large-tab.four, ul.combi-large-tab.five, ul.combi-large-tab.six, ul.combi-large-tab.seven, ul.combi-large-tab.eight, ul.combi-large-tab.nine, ul.combi-large-tab.ten, ul.combi-large-tab.eleven, ul.combi-large-tab.twelve {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  ul.combi-large-tab.one li, ul.combi-large-tab.two li, ul.combi-large-tab.three li, ul.combi-large-tab.four li, ul.combi-large-tab.five li, ul.combi-large-tab.six li, ul.combi-large-tab.seven li, ul.combi-large-tab.eight li, ul.combi-large-tab.nine li, ul.combi-large-tab.ten li, ul.combi-large-tab.eleven li, ul.combi-large-tab.twelve li {
-    width: 100%;
-  }
-  ul.combi-large-tab.one li a, ul.combi-large-tab.two li a, ul.combi-large-tab.three li a, ul.combi-large-tab.four li a, ul.combi-large-tab.five li a, ul.combi-large-tab.six li a, ul.combi-large-tab.seven li a, ul.combi-large-tab.eight li a, ul.combi-large-tab.nine li a, ul.combi-large-tab.ten li a, ul.combi-large-tab.eleven li a, ul.combi-large-tab.twelve li a {
-    border-left: none;
-    line-height: 18px;
-  }
-  ul.combi-large-tab.one li:not(:first-child) a, ul.combi-large-tab.two li:not(:first-child) a, ul.combi-large-tab.three li:not(:first-child) a, ul.combi-large-tab.four li:not(:first-child) a, ul.combi-large-tab.five li:not(:first-child) a, ul.combi-large-tab.six li:not(:first-child) a, ul.combi-large-tab.seven li:not(:first-child) a, ul.combi-large-tab.eight li:not(:first-child) a, ul.combi-large-tab.nine li:not(:first-child) a, ul.combi-large-tab.ten li:not(:first-child) a, ul.combi-large-tab.eleven li:not(:first-child) a, ul.combi-large-tab.twelve li:not(:first-child) a {
-    border-top: 1px solid #fff;
-  }
 }
 
 .container {
