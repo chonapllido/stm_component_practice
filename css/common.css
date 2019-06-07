@@ -2108,8 +2108,8 @@ ul.large-tab.twelve li:nth-child(n + 5) a {
 }
 
 .board-list .calendar {
-  width: 88px;
-  height: 28px;
+  width: 72px;
+  height: 26px;
   border: 1px solid #bababa;
 }
 
@@ -2258,7 +2258,7 @@ ul.count-tab li.number a .key {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 143px;
+  width: 127px;
 }
 
 .calendar-tab .calendar1 .calendar-wrapper, .calendar-tab .calendar2 .calendar-wrapper {
@@ -3256,8 +3256,8 @@ ul.count-tab li.number a .key {
 }
 
 .board-list .calendar {
-  width: 88px;
-  height: 28px;
+  width: 72px;
+  height: 26px;
   border: 1px solid #bababa;
 }
 
@@ -3406,7 +3406,7 @@ ul.count-tab li.number a .key {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 143px;
+  width: 127px;
 }
 
 .calendar-tab .calendar1 .calendar-wrapper, .calendar-tab .calendar2 .calendar-wrapper {
