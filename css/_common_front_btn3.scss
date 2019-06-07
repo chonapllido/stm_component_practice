@@ -2,8 +2,8 @@ $stm_img: '../images/';
 
 .btn-3 {
 	display: inline-block;
-	font: bold 13px/17px "Malgun Gothic";
-	padding: 5px 8px 5px 3px !important;
+	font: bold 13px/13px "Malgun Gothic";
+	padding: 4px 8px 5px 3px !important;
 	color: #fff;
 	cursor: pointer;
 	margin-bottom: 10px;
@@ -512,3 +512,14 @@ $stm_img: '../images/';
 	color: #fff;
 	pointer-events: none;
 }
+
+.btn3-grp {
+	display: block;
+	&.align-center {
+		text-align: center;
+	}
+	&.float-left {
+		float: left;
+	}
+}
+

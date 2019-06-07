@@ -320,7 +320,7 @@ ul.combi-normal-tab.eleven li:nth-child(n + 5) a, ul.combi-normal-tab.twelve li:
   .btn-grp2 .line { display: block !important; background: #d4d4d4; height: 1px; margin-bottom: 10px; }
   .btn-2 { display: block; text-align: left; width: 100%; box-sizing: border-box; }
   .btn-social { display: block; text-align: left; width: 100%; box-sizing: border-box; } }
-.btn-3 { display: inline-block; font: bold 13px/17px "Malgun Gothic"; padding: 5px 8px 5px 3px !important; color: #fff; cursor: pointer; margin-bottom: 10px; }
+.btn-3 { display: inline-block; font: bold 13px/13px "Malgun Gothic"; padding: 4px 8px 5px 3px !important; color: #fff; cursor: pointer; margin-bottom: 10px; }
 .btn-3.btn-white-3 { background: #fff; color: #000; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
 .btn-3.btn-white-3.icon-plus:before { background: url("../images/icon/btn-white-add.png") no-repeat 50%; padding: 0 0 0 13px; }
 .btn-3.btn-white-3.icon-trash:before { background: url("../images/icon/btn-white-trash.png") no-repeat 50%; padding: 0 0 0 13px; }
@@ -405,6 +405,10 @@ ul.combi-normal-tab.eleven li:nth-child(n + 5) a, ul.combi-normal-tab.twelve li:
 .btn-icon-only:before { content: ''; display: inline-block; width: 15px; height: 15px; }
 
 .btn-icon-only[disabled] { background: #d8d8d8; border: 1px solid #cecece; border-bottom: 1px solid #b4b4b4; color: #fff; pointer-events: none; }
+
+.btn3-grp { display: block; }
+.btn3-grp.align-center { text-align: center; }
+.btn3-grp.float-left { float: left; }
 
 .container { width: 100%; }
 
