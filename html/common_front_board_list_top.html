@@ -13,17 +13,60 @@
         padding: 15px;
         min-width: 290px;
     }
-    .large-tab:not(:first-child){
+    div:not(:first-child){
         margin-top:30px;
+    }
+    div.second-select{
+        margin:0;
     }
 </style>
 <body>
 
     <div class="container">
-        <ul class="count-tab">
-            <li class=""><a href="#">TOTAL</a></li>
-            <li>1,000,000</li>
+
+        <!-- Count -->
+        <ul class="board-list count-tab">
+            <li class="total"><a href="#">TOTAL</a></li>
+            <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
         </ul>
+
+        <!-- Sort -->
+        <div class="board-list sort-tab">
+            <select>
+                <option>전체</option>
+            </select>
+            <button>선택</button>
+        </div>
+
+        <!-- Search 1 -->
+        <div class="board-list search-tab one">
+            <input type="search" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+
+        <!-- Search 2 -->
+        <div class="board-list search-tab two">
+            <select>
+                <option>전체</option>
+            </select>
+            <input type="search" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+
+        <!-- Search 3 -->
+        <div class="board-list search-tab three">
+            <select>
+                <option>선택</option>
+            </select>
+            <div class="second-select">
+                <select>
+                    <option>전체</option>
+                </select>
+            </div>
+            <input type="search" placeholder="검색어 입력">
+            <button>검색</button>
+        </div>
+
     </div>
 
 </body>
