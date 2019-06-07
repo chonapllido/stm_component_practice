@@ -493,8 +493,9 @@ ul.count-tab li.number a .key { margin-left: 4px; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span { display: table-cell; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar { background: url("../images/bg/bg_border_gray.png") no-repeat 100% 50%; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span { display: table-cell; }
-.common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 92% 50%; }
+.common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container input { width: 90px; height: 30px; padding: 9px 7px; font: normal 13px/28px 'Malgun Gothic'; border: 1px solid #bababa; }
+.common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container .ui-datepicker-trigger { position: absolute; margin: 4px 9px; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container > span.dash { padding: 0; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
 .common-front-search > div > div.input-form4 > form > span.form-container > span.for-input { padding: 10px; width: 100%; }
@@ -507,8 +508,9 @@ ul.count-tab li.number a .key { margin-left: 4px; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span { display: table-cell; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar { background: url("../images/bg/bg_border_gray.png") no-repeat 100% 50%; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span { display: table-cell; }
-.common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 92% 50%; }
+.common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container input { width: 90px; height: 30px; padding: 9px 7px; font: normal 13px/28px 'Malgun Gothic'; border: 1px solid #bababa; }
+.common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container .ui-datepicker-trigger { position: absolute; margin: 4px 9px; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container > span.dash { padding: 0; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
 .common-front-search > div > div.input-form5 > form > span.form-container > span.sub-container { width: 100%; }
@@ -525,8 +527,9 @@ ul.count-tab li.number a .key { margin-left: 4px; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span { display: table-cell; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar { background: url("../images/bg/bg_border_gray.png") no-repeat 100% 50%; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span { display: table-cell; }
-.common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 92% 50%; }
+.common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 40px 10px 15px; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container input { width: 90px; height: 30px; padding: 9px 7px; font: normal 13px/28px 'Malgun Gothic'; border: 1px solid #bababa; }
+.common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container .ui-datepicker-trigger { position: absolute; margin: 4px 9px; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container > span.dash { padding: 0; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
 .common-front-search > div > div.input-form6 > form > span.form-container > span.for-select { background: url("../images/bg/bg_border_gray.png") no-repeat 100% 50%; padding: 10px; }
@@ -583,14 +586,14 @@ ul.count-tab li.number a .key { margin-left: 4px; }
   .common-front-search > div > div.input-form4 > form > span { display: block; }
   .common-front-search > div > div.input-form4 > form > span.form-container > span { display: block; }
   .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar { background: none; }
-  .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 95% 50%; }
+  .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; }
   .common-front-search > div > div.input-form4 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
   .common-front-search > div > div.input-form4 > form > span.form-container > span.for-input { margin-top: -10px; box-sizing: border-box; padding: 10px 15px; }
   .common-front-search > div > div.input-form4 > form > span.search { border-top: 1px solid #e9e9e9; border-left: none; padding: 10px 15px; }
   .common-front-search > div > div.input-form4 > form > span.search button { width: 100%; background: #eb5b5e url("../images/icon/icon_front_search.png") no-repeat center left 10px; text-align: center; }
   .common-front-search > div > div.input-form5 { height: 143px; }
   .common-front-search > div > div.input-form5 > form > span { display: block; }
-  .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 95% 50%; }
+  .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; }
   .common-front-search > div > div.input-form5 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
   .common-front-search > div > div.input-form5 > form > span.form-container > span.sub-container > span.for-input { padding: 10px 15px; }
   .common-front-search > div > div.input-form5 > form > span.search { border-top: 1px solid #e9e9e9; border-left: none; padding: 10px 15px; }
@@ -599,7 +602,7 @@ ul.count-tab li.number a .key { margin-left: 4px; }
   .common-front-search > div > div.input-form6 > form > span { display: block; }
   .common-front-search > div > div.input-form6 > form > span.form-container > span { display: block; }
   .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar { background: none; }
-  .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; background: url("../images/icon/icon_calendar.png") no-repeat 95% 50%; }
+  .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.calendar-container { padding: 10px 33px 10px 15px; }
   .common-front-search > div > div.input-form6 > form > span.form-container > span.for-calendar > span.two { padding-left: 10px; }
   .common-front-search > div > div.input-form6 > form > span.form-container > span.for-select { margin-top: -10px; padding: 10px 15px; }
   .common-front-search > div > div.input-form6 > form > span.form-container > span.for-select select { width: 100%; }

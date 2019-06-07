@@ -195,13 +195,16 @@
 										display: table-cell;
 										&.calendar-container{
 											padding: 10px 40px 10px 15px;
-											background: url($img + 'icon/icon_calendar.png') no-repeat 92% 50%;
 											input{
 												width: 90px;
 												height: 30px;
 												padding: 9px 7px;
 												font: normal 13px/28px 'Malgun Gothic';
 												border: 1px solid #bababa;
+											}
+											.ui-datepicker-trigger{
+												position: absolute;
+												margin:4px 9px;
 											}
 											>span{
 												&.dash{
@@ -212,7 +215,6 @@
 										&.two{
 											padding-left:10px;
 										}
-
 									}
 								}
 								&.for-input{
@@ -265,13 +267,16 @@
 										display: table-cell;
 										&.calendar-container{
 											padding: 10px 40px 10px 15px;
-											background: url($img + 'icon/icon_calendar.png') no-repeat 92% 50%;
 											input{
 												width: 90px;
 												height: 30px;
 												padding: 9px 7px;
 												font: normal 13px/28px 'Malgun Gothic';
 												border: 1px solid #bababa;
+											}
+											.ui-datepicker-trigger{
+												position: absolute;
+												margin:4px 9px;
 											}
 											>span{
 												&.dash{
@@ -353,13 +358,16 @@
 										display: table-cell;
 										&.calendar-container{
 											padding: 10px 40px 10px 15px;
-											background: url($img + 'icon/icon_calendar.png') no-repeat 92% 50%;
 											input{
 												width: 90px;
 												height: 30px;
 												padding: 9px 7px;
 												font: normal 13px/28px 'Malgun Gothic';
 												border: 1px solid #bababa;
+											}
+											.ui-datepicker-trigger{
+												position: absolute;
+												margin:4px 9px;
 											}
 											>span{
 												&.dash{
@@ -644,7 +652,6 @@
 										>span{
 											&.calendar-container{
 												padding: 10px 33px 10px 15px;
-												background: url($img + 'icon/icon_calendar.png') no-repeat 95% 50%;
 											}
 											&.two{
 												padding-left: 10px;
@@ -682,7 +689,6 @@
 										>span{
 											&.calendar-container{
 												padding: 10px 33px 10px 15px;
-												background: url($img + 'icon/icon_calendar.png') no-repeat 95% 50%;
 											}
 											&.two{
 												padding-left: 10px;
@@ -726,7 +732,6 @@
 										>span{
 											&.calendar-container{
 												padding: 10px 33px 10px 15px;
-												background: url($img + 'icon/icon_calendar.png') no-repeat 95% 50%;
 											}
 											&.two{
 												padding-left: 10px;
