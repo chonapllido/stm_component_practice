@@ -16,6 +16,7 @@
         overflow:hidden;
         background:url('../images/icon/board-list-icon2.png') no-repeat;
         background-position:calc(100% - 4px) center;
+        -webkit-appearance: none;
         appearance:none;
         cursor:pointer;
         &:focus{
@@ -63,8 +64,13 @@
     .calendar{
         width:88px;
         height:28px;
-        padding:0;
         border:1px solid #bababa;
+    }
+    input{
+        font-size:13px;
+        font-family:'Malgun Gothic', sans-serif;
+        padding-left:7px;
+        padding-right:7px;
     }
 }
 
@@ -180,13 +186,14 @@ ul.count-tab{
     .calendar1, .calendar2{
         display:flex;
         position:relative;
+        width:143px;
+        .calendar-wrapper{
+            width:100%;
+        }
     }
-    label{
-        width:20px;
-        height:30px;
-        margin:0 8px;
-        cursor:pointer;
-        background:url('../images/icon/board-list-icon8.png') no-repeat center;
+    img{
+        position:absolute;
+        margin:4px 9px;
     }
     .divider{
         width:7px;
@@ -240,7 +247,7 @@ ul.count-tab{
             width:calc(50% - 34px);
         }
         &.calendar-tab input {
-            width:calc(100% - 38px);;
+            width:calc(100% - 55px);;
         }
     }
     ul.button-tabs{
@@ -292,6 +299,14 @@ ul.count-tab{
             input {
                 width: calc(100% - 171px);
             }
+        }
+    }
+}
+
+@media screen and (max-width: 360px){
+    .calendar-tab{
+        input{
+            font-size:10px;
         }
     }
 }

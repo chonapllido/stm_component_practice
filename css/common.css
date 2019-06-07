@@ -2039,8 +2039,8 @@ ul.large-tab.twelve li:nth-child(n + 5) a {
   background: url("../images/icon/board-list-icon2.png") no-repeat;
   background-position: calc(100% - 4px) center;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   cursor: pointer;
 }
 
@@ -2110,8 +2110,14 @@ ul.large-tab.twelve li:nth-child(n + 5) a {
 .board-list .calendar {
   width: 88px;
   height: 28px;
-  padding: 0;
   border: 1px solid #bababa;
+}
+
+.board-list input {
+  font-size: 13px;
+  font-family: 'Malgun Gothic', sans-serif;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 ul.count-tab {
@@ -2252,14 +2258,16 @@ ul.count-tab li.number a .key {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 143px;
 }
 
-.calendar-tab label {
-  width: 20px;
-  height: 30px;
-  margin: 0 8px;
-  cursor: pointer;
-  background: url("../images/icon/board-list-icon8.png") no-repeat center;
+.calendar-tab .calendar1 .calendar-wrapper, .calendar-tab .calendar2 .calendar-wrapper {
+  width: 100%;
+}
+
+.calendar-tab img {
+  position: absolute;
+  margin: 4px 9px;
 }
 
 .calendar-tab .divider {
@@ -2321,7 +2329,7 @@ ul.count-tab li.number a .key {
     width: calc(50% - 34px);
   }
   .board-list.calendar-tab input {
-    width: calc(100% - 38px);
+    width: calc(100% - 55px);
   }
   ul.button-tabs li {
     width: 50%;
@@ -2378,6 +2386,12 @@ ul.count-tab li.number a .key {
   }
   .board-list.search-tab.three input {
     width: calc(100% - 171px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .calendar-tab input {
+    font-size: 10px;
   }
 }
 
@@ -3173,8 +3187,8 @@ ul.count-tab li.number a .key {
   background: url("../images/icon/board-list-icon2.png") no-repeat;
   background-position: calc(100% - 4px) center;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   cursor: pointer;
 }
 
@@ -3244,8 +3258,14 @@ ul.count-tab li.number a .key {
 .board-list .calendar {
   width: 88px;
   height: 28px;
-  padding: 0;
   border: 1px solid #bababa;
+}
+
+.board-list input {
+  font-size: 13px;
+  font-family: 'Malgun Gothic', sans-serif;
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 ul.count-tab {
@@ -3386,14 +3406,16 @@ ul.count-tab li.number a .key {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  width: 143px;
 }
 
-.calendar-tab label {
-  width: 20px;
-  height: 30px;
-  margin: 0 8px;
-  cursor: pointer;
-  background: url("../images/icon/board-list-icon8.png") no-repeat center;
+.calendar-tab .calendar1 .calendar-wrapper, .calendar-tab .calendar2 .calendar-wrapper {
+  width: 100%;
+}
+
+.calendar-tab img {
+  position: absolute;
+  margin: 4px 9px;
 }
 
 .calendar-tab .divider {
@@ -3455,7 +3477,7 @@ ul.count-tab li.number a .key {
     width: calc(50% - 34px);
   }
   .board-list.calendar-tab input {
-    width: calc(100% - 38px);
+    width: calc(100% - 55px);
   }
   ul.button-tabs li {
     width: 50%;
@@ -3512,6 +3534,12 @@ ul.count-tab li.number a .key {
   }
   .board-list.search-tab.three input {
     width: calc(100% - 171px);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .calendar-tab input {
+    font-size: 10px;
   }
 }
 
