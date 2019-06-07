@@ -2,7 +2,7 @@ $stm_img: '../images/';
 
 .btn-3 {
 	display: inline-block;
-	font: bold 13px/13px "Malgun Gothic";
+	font: bold 13px/17px "Malgun Gothic";
 	padding: 5px 8px 5px 3px !important;
 	color: #fff;
 	cursor: pointer;
@@ -227,13 +227,13 @@ $stm_img: '../images/';
 		content: '';
 		width: 20px;
 		height: 20px;
-		margin: 0 7px 0 -2px;
+		margin: 0 3px 0 -2px;
 	}
 }
 
 .btn-icon {
 	display: inline-block;
-	font: bold 13px "Malgun Gothic";
+	font: bold 13px/17px "Malgun Gothic";
 	padding: 2px 8px 3px 8px !important;
 	color: #fff;
 	cursor: pointer;
