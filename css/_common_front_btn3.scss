@@ -3,7 +3,7 @@ $stm_img: '../images/';
 .btn-3 {
 	display: inline-block;
 	font: bold 13px/13px "Malgun Gothic";
-	padding: 4px 8px 5px 3px !important;
+	padding: 4px 8px 5px 6px !important;
 	color: #fff;
 	cursor: pointer;
 	margin-bottom: 10px;
@@ -233,7 +233,7 @@ $stm_img: '../images/';
 
 .btn-icon {
 	display: inline-block;
-	font: bold 13px/17px "Malgun Gothic";
+	font: bold 13px/18px "Malgun Gothic";
 	padding: 2px 8px 3px 8px !important;
 	color: #fff;
 	cursor: pointer;
@@ -250,7 +250,7 @@ $stm_img: '../images/';
 .btn-icon-only {
 	display: inline-block;
 	width: 24px;
-	height: 23px;
+	height: 24px;
 	cursor: pointer;
 	&.btn-white-3 {
 		background: #fff; 
@@ -261,28 +261,28 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-white-add.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-trash {
 			&:before {
 				background: url($stm_img + 'icon/btn-white-trash.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-close {
 			&:before {
 				background: url($stm_img + 'icon/btn-white-close.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-faq {
 			&:before {
 				background: url($stm_img + 'icon/btn-white-faq.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -294,21 +294,21 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-trash {
 			&:before {
 				background: url($stm_img + 'icon/btn-red-trash.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-play {
 			&:before {
 				background: url($stm_img + 'icon/btn-red-play.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -320,35 +320,35 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-orange-dl.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-play {
 			&:before {
 				background: url($stm_img + 'icon/btn-orange-power.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-dialogue {
 			&:before {
 				background: url($stm_img + 'icon/btn-orange-dialogue.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-power {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans2-power.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-dl2 {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans2-dialogue.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -360,28 +360,28 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-peach-home.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-edit {
 			&:before {
 				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-home2 {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans2-home.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-edit2 {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans2-edit.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -393,21 +393,21 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-search {
 			&:before {
 				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-check {
 			&:before {
 				background: url($stm_img + 'icon/btn-gray-check.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -419,14 +419,14 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-green-upload.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-download {
 			&:before {
 				background: url($stm_img + 'icon/btn-green-download.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -438,63 +438,63 @@ $stm_img: '../images/';
 			&:before {
 				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-close {
 			&:before {
 				background: url($stm_img + 'icon/btn-brown-close.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-faq {
 			&:before {
 				background: url($stm_img + 'icon/btn-brown-faq.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-faq2 {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans-faq.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-calcu {
 			&:before {
 				background: url($stm_img + 'icon/btn-brown-calcu.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-settings {
 			&:before {
 				background: url($stm_img + 'icon/btn-brown-settings.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-edit {
 			&:before {
 				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-calcu {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans-calcu.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 		&.icon-s2 {
 			&:before {
 				background: url($stm_img + 'icon/btn-trans2-settings.png') no-repeat 50%;
 				padding: 0 0 0 13px;
-				margin: 2px -11px 0px;
+				margin: -3px -11px 0px;
 			}
 		}
 	}
@@ -502,7 +502,7 @@ $stm_img: '../images/';
 		content: '';
 		display: inline-block;
 		width: 15px;
-		height: 15px;
+		height: 11px;
 	}
 }
 .btn-icon-only[disabled] {
@@ -521,5 +521,23 @@ $stm_img: '../images/';
 	&.float-left {
 		float: left;
 	}
+	&.float-right {
+		float: right;
+	}
+	&.align-right {
+		text-align: right;
+	}
 }
 
+@media screen and (max-width: 767px) {
+	.btn3-grp {
+		&.float-right {
+			float: none;
+			text-align: right;
+		}
+		&.float-left {
+			float: none;
+			text-align: left;
+		}
+	}
+}
