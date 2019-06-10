@@ -1,4 +1,5 @@
 .front-board{
+    display:inline-block;
     button{
         position:relative;
         height:30px;
@@ -205,6 +206,8 @@
 }
 
 .combi-tab{
+    display:inline-block;
+    width:100%;
     .right-combi{
         float:right;
         ul.front-board.button-tabs{
