@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
-    <title>common-prepare</title>
+    <title>common-front-board-list-top</title>
     <link rel="stylesheet" class="text/css" href="../css/reset.css" />
     <link rel="stylesheet" class="text/css" href="../css/common.css" />
     <link rel="stylesheet" href="../js/jquery-ui-1.11.2.custom/jquery-ui.css"/>
@@ -20,35 +20,40 @@
         padding: 15px;
         min-width: 290px;
     }
-    .spacer:not(:first-child){
-        margin-top:30px;
+    .space{
+        margin-bottom:30px;
+        clear: both;
     }
 </style>
 <body>
-
-
         <!-- Count -->
-        <ul class="spacer count-tab">
+        <ul class="front-board count-tab">
             <li class="total"><a href="#">TOTAL</a></li>
             <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
         </ul>
 
+        <div class="space"></div>
+
         <!-- Sort -->
-        <div class="spacer board-list sort-tab">
+        <div class="front-board sort-tab">
             <select>
                 <option>전체</option>
             </select>
             <button>선택</button>
         </div>
 
+        <div class="space"></div>
+
         <!-- Search 1 -->
-        <div class="spacer board-list search-tab one">
+        <div class="front-board search-tab one">
             <input type="search" placeholder="검색어 입력">
             <button>검색</button>
         </div>
 
+        <div class="space"></div>
+
         <!-- Search 2 -->
-        <div class="spacer board-list search-tab two">
+        <div class="front-board search-tab two">
             <select>
                 <option>전체</option>
             </select>
@@ -56,47 +61,57 @@
             <button>검색</button>
         </div>
 
+        <div class="space"></div>
+
         <!-- Search 3 -->
-        <div class="spacer board-list search-tab three">
-            <div class="first-select">
+        <div class="front-board search-tab three">
+            <div class="second-select">
                 <select>
                     <option>선택</option>
                 </select>
             </div>
-            <div class="second-select">
-                <select>
-                    <option>전체</option>
-                </select>
-            </div>
+            <select>
+                <option>전체</option>
+            </select>
             <input type="search" placeholder="검색어 입력">
             <button>검색</button>
         </div>
 
+        <div class="space"></div>
+        
         <!-- Button Mode -->
-        <ul class="spacer board-list button-tabs">
+        <ul class="front-board button-tabs">
             <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
             <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
         </ul>
 
+        <div class="space"></div>
+
         <!-- Calendar -->
-        <div class="spacer board-list calendar-tab">
-            <div class="calendar1">
-                <input type="text" class="calendar" placeholder="2000-00-00" value="2000-00-00">
-            </div>
-            <span class="divider"></span>
-            <div class="calendar2">
-                <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
-            </div>
+        <div class="front-board calendar-tab">
+            <span class="form-container">
+                <span class="for-calendar">
+                    <span class="calendar-container">
+                        <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                    </span>
+                    <span class="dash">~</span>
+                    <span class="calendar-container two">
+                        <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                    </span>
+                </span>
+            </span>
             <button>선택</button>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination1 -->
-        <div class="spacer combi-tab one">
-            <ul class="count-tab">
+        <div class="combi-tab one">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="board-list sort-tab">
+            <div class="front-board sort-tab">
                 <select>
                     <option>전체</option>
                 </select>
@@ -104,25 +119,29 @@
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination2 -->
-        <div class="spacer combi-tab two">
-            <ul class="count-tab">
+        <div class="combi-tab two">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="board-list search-tab one">
+            <div class="front-board search-tab one">
                 <input type="search" placeholder="검색어 입력">
                 <button>검색</button>
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination3 -->
-        <div class="spacer combi-tab three">
-            <ul class="count-tab">
+        <div class="combi-tab three">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="board-list search-tab two">
+            <div class="front-board search-tab two">
                 <select>
                     <option>전체</option>
                 </select>
@@ -131,52 +150,56 @@
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination4 -->
-        <div class="spacer combi-tab four">
-            <ul class="count-tab">
+        <div class="combi-tab four">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="board-list search-tab three">
-                <div class="first-select">
+            <div class="front-board search-tab three">
+                <div class="second-select">
                     <select>
                         <option>선택</option>
                     </select>
                 </div>
-                <div class="second-select">
-                    <select>
-                        <option>전체</option>
-                    </select>
-                </div>
+                <select>
+                    <option>전체</option>
+                </select>
                 <input type="search" placeholder="검색어 입력">
                 <button>검색</button>
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination5 -->
-        <div class="spacer combi-tab five">
-            <ul class="count-tab">
+        <div class="combi-tab five">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <ul class="board-list button-tabs">
+            <ul class="front-board button-tabs">
                 <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
                 <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
             </ul>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination6 -->
-        <div class="spacer combi-tab six">
-            <ul class="count-tab">
+        <div class="combi-tab six">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="combi-right">
-                <ul class="board-list button-tabs">
+            <div class="right-combi">
+                <ul class="front-board button-tabs">
                     <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
                     <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
                 </ul>
-                <div class="board-list sort-tab">
+                <div class="front-board sort-tab">
                     <select>
                         <option>전체</option>
                     </select>
@@ -184,37 +207,41 @@
                 </div>
             </div>
         </div>
+
+        <div class="space"></div>
 
         <!-- Combination7 -->
-        <div class="spacer combi-tab seven">
-            <ul class="count-tab">
+        <div class="combi-tab seven">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="combi-right">
-                <ul class="board-list button-tabs">
+            <div class="right-combi">
+                <ul class="front-board button-tabs">
                     <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
                     <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
                 </ul>
-                <div class="board-list search-tab one">
+                <div class="front-board search-tab one">
                     <input type="search" placeholder="검색어 입력">
                     <button>검색</button>
                 </div>
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination8 -->
-        <div class="spacer combi-tab eight">
-            <ul class="count-tab">
+        <div class="combi-tab eight">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="combi-right">
-                <ul class="board-list button-tabs">
+            <div class="right-combi">
+                <ul class="front-board button-tabs">
                     <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
                     <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
                 </ul>
-                <div class="board-list search-tab two">
+                <div class="front-board search-tab two">
                     <select>
                         <option>전체</option>
                     </select>
@@ -224,49 +251,60 @@
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination9 -->
-        <div class="spacer combi-tab nine">
-            <ul class="count-tab">
+        <div class="combi-tab nine">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="combi-right">
-                <div class="board-list calendar-tab">
-                    <div class="calendar1">
-                        <input type="text" class="calendar" placeholder="2000-00-00" value="2000-00-00">
-                    </div>
-                    <span class="divider"></span>
-                    <div class="calendar2">
-                        <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
-                    </div>
-                    <button>선택</button>
-                </div>
+            <div class="front-board calendar-tab">
+                <span class="form-container">
+                    <span class="for-calendar">
+                        <span class="calendar-container">
+                            <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                        </span>
+                        <span class="dash">~</span>
+                        <span class="calendar-container two">
+                            <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                        </span>
+                    </span>
+                </span>
+                <button>선택</button>
             </div>
         </div>
 
+        <div class="space"></div>
+
         <!-- Combination10 -->
-        <div class="spacer combi-tab ten">
-            <ul class="count-tab">
+        <div class="combi-tab ten">
+            <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
                 <li class="number"><a href="#"><span class="values">1,000,000</span><span class="key">건</span></a></li>
             </ul>
-            <div class="combi-right">
-                <ul class="board-list button-tabs">
+            <div class="right-combi">
+                <ul class="front-board button-tabs">
                     <li class="list-tab on"><a href="#"><span>목록형</span></a></li>
                     <li class="gallery-tab"><a href="#"><span>갤러리형</span></a></li>    
                 </ul>
-                <div class="board-list calendar-tab">
-                    <div class="calendar1">
-                        <input type="text" class="calendar" placeholder="2000-00-00" value="2000-00-00">
-                    </div>
-                    <span class="divider"></span>
-                    <div class="calendar2">
-                        <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
-                    </div>
+                <div class="front-board calendar-tab">
+                    <span class="form-container">
+                        <span class="for-calendar">
+                            <span class="calendar-container">
+                                <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                            </span>
+                            <span class="dash">~</span>
+                            <span class="calendar-container two">
+                                <input type="text" class="calendar" name="" placeholder="2000-00-00" value="2000-00-00">
+                            </span>
+                        </span>
+                    </span>
                     <button>선택</button>
                 </div>
             </div>
         </div>
 
+        <div class="space"></div>
 </body>
 </html>

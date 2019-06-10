@@ -1,0 +1,92 @@
+
+
+.general-empty-data{
+    .combi-tab.one{
+        margin-bottom:20px;
+    }
+    position:relative;
+    .list{
+        display:block;
+        position:relative;
+        clear:both;
+        margin:0;
+        padding-bottom:15px;
+        border-top:2px solid #a40022;
+        border-bottom:2px solid #313131;
+        .top{
+            border-bottom:1px solid #313131;
+            ul{
+                display:table;
+                width:100%;
+                li{
+                    display:table-cell;
+                    padding:16px 10px;
+                    font-family:'Malgun Gothic', sans-serif;
+                    color:#755332;
+                    font-weight:bold;
+                    text-align:center;
+                    &.number, &.lookup{
+                        width:57px;
+                    }
+                    &.attachment{
+                        width:45px;
+                    }
+                    &.date{
+                        width:73px;
+                    }
+                    &:not(:first-child){
+                        border-left:1px solid #e6e6e6;
+                    }
+                }
+            }
+        }
+        .bottom{
+            margin-top:15px;
+            p{
+                padding:13px;
+                background-color:#fbfbfb;
+                border:1px solid #e9e9e9;
+                font-size:13px;
+                font-family:'Malgun Gothic', sans-serif;
+                color:#959595;
+                text-align:center;
+                line-height:12px;
+                span{
+                    position:relative;
+                    &:before{
+                        content:url('../images/icon/gallery-empty-data-icon1.png');
+                        position:absolute;
+                        left:-27px;
+                        top:0;
+                    }
+                }
+            }
+        }
+    }
+    .common-front-paging1{
+        margin-top:20px;
+    }
+    .common-front-search{
+        margin-top:20px;
+        div.common-search{
+            form .form-container > span.group-container > span.sub-container > span.for-select select{
+                background-position: calc(100% - 4px) center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .general-empty-data{
+        .list{
+            padding-bottom:30px;
+            .top{
+                display:none;
+            }
+            .bottom{
+                margin-top:30px;
+            }
+        }
+    }
+}
