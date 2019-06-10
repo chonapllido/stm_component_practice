@@ -2,47 +2,243 @@ $stm_img: '../images/';
 
 .btn-3 {
 	display: inline-block;
-	font: bold 13px "Malgun Gothic";
-	padding: 5px 8px 5px 8px;
+	font: bold 13px/13px "Malgun Gothic";
+	padding: 4px 8px 5px 3px !important;
 	color: #fff;
 	cursor: pointer;
+	margin-bottom: 10px;
 	&.btn-white-3 {
-		background: #fff;
-		color: #000;
+		background: #fff; 
+		color: #000; 
 		border: 1px solid #bcbcbc;
 		border-bottom: 1px solid #888888;
+		&.icon-plus {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-add.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-trash {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-trash.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-close {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-close.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-faq {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-red-3 {
 		background: #a40022;
 		border: 1px solid #84001f;
 		border-bottom: 1px solid #500014;
+		&.icon-plus {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-trash {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-trash.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-play {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-play.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-orange-3 {
 		background: #f98900;
 		border: 1px solid #ee6f00;
 		border-bottom: 1px solid #d24f00;
+		&.icon-dl {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-dl.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-play {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-power.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-dialogue {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-dialogue.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-power {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-power.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-dl2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-dialogue.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-peach-3 {
 		background: #bf5c53;
 		border: 1px solid #a94e44;
 		border-bottom: 1px solid #87392d;
+		&.icon-home {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-home.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-edit {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-home2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-home.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-edit2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-gray-3 {
 		background: #555d68;
 		border: 1px solid #474d56;
 		border-bottom: 1px solid #32363d;
+		&.icon-search {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-search {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-check {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-check.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-green-3 {
 		background: #529c1c;
 		border: 1px solid #427d16;
 		border-bottom: 1px solid #2a500e;
+		&.icon-upload {
+			&:before {
+				background: url($stm_img + 'icon/btn-green-upload.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-download {
+			&:before {
+				background: url($stm_img + 'icon/btn-green-download.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
 	}
 	&.btn-brown-3 {
 		background: #936c6a;
 		border: 1px solid #7e5c5b;
 		border-bottom: 1px solid #4f3938;
+		&.icon-add {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-close {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-close.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-faq {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-faq2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-calcu {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-calcu.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-settings {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-settings.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-edit {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-calcu {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans-calcu.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+		&.icon-s2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-settings.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+			}
+		}
+	}
+	&:before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		margin: 0 3px 0 -2px;
 	}
 }
+
+.btn-icon {
+	display: inline-block;
+	font: bold 13px/17px "Malgun Gothic";
+	padding: 2px 8px 3px 8px !important;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 8px 5px 0;
+}	
 .btn-3[disabled] {
 	background: #d8d8d8;
 	border: 1px solid #cecece;
@@ -50,3 +246,280 @@ $stm_img: '../images/';
 	color: #fff;
 	pointer-events: none;
 }
+
+.btn-icon-only {
+	display: inline-block;
+	width: 24px;
+	height: 23px;
+	cursor: pointer;
+	&.btn-white-3 {
+		background: #fff; 
+		color: #000; 
+		border: 1px solid #bcbcbc;
+		border-bottom: 1px solid #888888;
+		&.icon-plus {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-add.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-trash {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-trash.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-close {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-close.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-faq {
+			&:before {
+				background: url($stm_img + 'icon/btn-white-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-red-3 {
+		background: #a40022;
+		border: 1px solid #84001f;
+		border-bottom: 1px solid #500014;
+		&.icon-plus {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-trash {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-trash.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-play {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-play.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-orange-3 {
+		background: #f98900;
+		border: 1px solid #ee6f00;
+		border-bottom: 1px solid #d24f00;
+		&.icon-dl {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-dl.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-play {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-power.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-dialogue {
+			&:before {
+				background: url($stm_img + 'icon/btn-orange-dialogue.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-power {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-power.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-dl2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-dialogue.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-peach-3 {
+		background: #bf5c53;
+		border: 1px solid #a94e44;
+		border-bottom: 1px solid #87392d;
+		&.icon-home {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-home.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-edit {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-home2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-home.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-edit2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-gray-3 {
+		background: #555d68;
+		border: 1px solid #474d56;
+		border-bottom: 1px solid #32363d;
+		&.icon-search {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-search {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-search.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-check {
+			&:before {
+				background: url($stm_img + 'icon/btn-gray-check.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-green-3 {
+		background: #529c1c;
+		border: 1px solid #427d16;
+		border-bottom: 1px solid #2a500e;
+		&.icon-upload {
+			&:before {
+				background: url($stm_img + 'icon/btn-green-upload.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-download {
+			&:before {
+				background: url($stm_img + 'icon/btn-green-download.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&.btn-brown-3 {
+		background: #936c6a;
+		border: 1px solid #7e5c5b;
+		border-bottom: 1px solid #4f3938;
+		&.icon-add {
+			&:before {
+				background: url($stm_img + 'icon/btn-red-plus.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-close {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-close.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-faq {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-faq2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans-faq.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-calcu {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-calcu.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-settings {
+			&:before {
+				background: url($stm_img + 'icon/btn-brown-settings.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-edit {
+			&:before {
+				background: url($stm_img + 'icon/btn-peach-edit.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-calcu {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans-calcu.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+		&.icon-s2 {
+			&:before {
+				background: url($stm_img + 'icon/btn-trans2-settings.png') no-repeat 50%;
+				padding: 0 0 0 13px;
+				margin: 2px -11px 0px;
+			}
+		}
+	}
+	&:before {
+		content: '';
+		display: inline-block;
+		width: 15px;
+		height: 15px;
+	}
+}
+.btn-icon-only[disabled] {
+	background: #d8d8d8;
+	border: 1px solid #cecece;
+	border-bottom: 1px solid #b4b4b4;
+	color: #fff;
+	pointer-events: none;
+}
+
+.btn3-grp {
+	display: block;
+	&.align-center {
+		text-align: center;
+	}
+	&.float-left {
+		float: left;
+	}
+}
+
