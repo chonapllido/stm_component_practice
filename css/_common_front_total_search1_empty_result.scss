@@ -29,10 +29,12 @@
 							display: table-cell;
 							border:1px solid #bc3e3f;
 							color: #ffffff;
-							padding: 8px 13px;
+							padding: 10.5px 13px;
 							width: 70px;
-							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 20% 50%;
-							box-sizing: border-box;
+							line-height: 13px;
+							text-align: right;
+							vertical-align: middle;
+							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 20% 55%;
 						}
 					}
 				}
@@ -58,7 +60,7 @@
 				>span{
 					&.text{
 						display: inline-block;
-						background: url($img + 'icon/icon_right.png') no-repeat;
+						background: url($img + 'icon/icon_right.png') no-repeat 0 50%;
 						padding:0 25px;
 						box-sizing: border-box;
 						>strong{
@@ -111,6 +113,11 @@
 				}
 				>div{
 					text-align: left;
+					>span{
+						&.text{
+							background: url($img + 'icon/icon_right.png') no-repeat 0 10%;
+						}
+					}
 				}
 			}
 		}
