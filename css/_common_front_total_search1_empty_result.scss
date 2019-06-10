@@ -1,0 +1,125 @@
+.common-front-total-search-empty-result{
+	>div{
+		display:table;
+		margin: 0 auto;
+		width: 100%;
+		border-top:2px solid #a40022;
+		>form{
+			>span{
+				display: table;
+				padding: 25px 187px;
+				width: 100%;
+				box-sizing: border-box;
+				.search{
+					display: table-cell;
+					.search-container{
+						display: table;
+						>span{
+							display: table-cell;
+							vertical-align: top;
+							width: 100%;
+							input{
+								width: 100%;
+								height: 36px;
+								border: 1px solid #bababa;
+								border-right:none;
+							}
+						}
+						button{
+							display: table-cell;
+							border:1px solid #bc3e3f;
+							color: #ffffff;
+							padding: 10.5px 13px;
+							width: 70px;
+							line-height: 13px;
+							text-align: right;
+							vertical-align: middle;
+							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 20% 55%;
+						}
+					}
+				}
+				.checkbox{
+					display: table-cell;
+					color:#b5b5b5;
+					font:normal 13px 'Malgun Gothic';
+					width: 120px;
+					padding:0 20px;
+					input{
+						vertical-align: top;
+					}
+				}
+			}
+			>div{
+				border-top:1px solid #484142;
+				border-bottom: 2px solid #262223;
+				padding: 11px 23px;
+				font: normal 13px 'Malgun Gothic';
+				background: #62585a;
+				color:#ffffff;
+				text-align: center;
+				>span{
+					&.text{
+						display: inline-block;
+						background: url($img + 'icon/icon_right.png') no-repeat 0 50%;
+						padding:0 25px;
+						box-sizing: border-box;
+						>strong{
+							font-weight:bold;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 768 */
+@media screen and (max-width:959px) {
+	.common-front-total-search-empty-result{
+		>div{
+			>form{
+				>span{
+					padding: 25px 91px;
+				}
+			}
+		}
+	}
+}
+/* 640 */
+@media screen and (max-width:767px) {
+	.common-front-total-search-empty-result{
+		>div{
+			>form{
+				>span{
+					padding: 25px 27px;
+				}
+			}
+		}
+	}
+}
+/* 480 */
+@media screen and (max-width:639px) {
+	.common-front-total-search-empty-result{
+		>div{
+			>form{
+				>span{
+					padding: 25px 15px;
+					.search{
+						display: block;
+					}
+					.checkbox{
+						display: block;
+						padding: 10px 0 0 0;
+					}
+				}
+				>div{
+					text-align: left;
+					>span{
+						&.text{
+							background: url($img + 'icon/icon_right.png') no-repeat 0 10%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
