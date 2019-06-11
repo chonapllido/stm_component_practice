@@ -1,0 +1,126 @@
+
+
+.general-event-login-after{
+    .combi-tab.one{
+        margin-bottom:20px;
+    }
+    position:relative;
+    .list{
+        display:block;
+        position:relative;
+        clear:both;
+        margin:0;
+        border-top:2px solid #a40022;
+        border-bottom:2px solid #313131;
+        .top{
+            ul{
+                display:table;
+                width:100%;
+                li{
+                    display:table-cell;
+                    padding:16px 9px;
+                    font-size:13px;
+                    font-family:'Malgun Gothic', sans-serif;
+                    color:#755332;
+                    font-weight:bold;
+                    text-align:center;
+                    line-height:12px;
+                    &.number{
+                        width:8.2%;
+                    }
+                    &.receipt{
+                        width:6.5%;
+                    }
+                    &.division{
+                        width:7.3%;
+                    }
+                    &.date{
+                        width:10%;
+                    }
+                    &.garden{
+                        width:9.5%;
+                    }
+                    &.status{
+                        width:8.8%;
+                    }
+                    &.apply{
+                        width:11.2%;
+                    }
+                    &:not(:first-child){
+                        border-left:1px solid #e6e6e6;
+                    }
+                }
+                &.title{
+                    border-bottom:1px solid #313131;
+                }
+                &.details{
+                    li{
+                        color:#000;
+                        font-size:13px;
+                        font-weight:normal;
+                        &.receipt{
+                            span{
+                                color:#535353;
+                                padding:4px 8px;
+                                font-size:11px;
+                                line-height:11px;
+                                font-weight:bold;
+                                border:1px solid #c0c0c0;
+                                color:#b5b5b5;
+                                &.in-progress{
+                                    background-color:#79b800;
+                                    color:#fff;
+                                    border:1px solid #70ab00;
+                                }
+                            }
+                        }
+                        &.title{
+                            position:relative;
+                            padding:16px 15px;
+                            text-align:left;
+                            &.new:after{
+                                content:url('../images/icon/event_login_icon_new.png');
+                            }
+                            a{
+                                text-decoration:none;
+                                color:#000;
+                                &:hover{
+                                    text-decoration:underline;
+                                }
+                            }
+                        }
+                    }
+                    &:not(:first-child){
+                        border-top:1px solid #e3e3e3;
+                    }
+                }
+            }
+        }
+    }
+    .common-front-paging1{
+        margin-top:20px;
+    }
+    .common-front-search{
+        margin-top:20px;
+        div.common-search{
+            form .form-container > span.group-container > span.sub-container > span.for-select select{
+                background-position: calc(100% - 4px) center;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .general-empty-data{
+        .list{
+            padding-bottom:30px;
+            .top{
+                display:none;
+            }
+            .bottom{
+                margin-top:30px;
+            }
+        }
+    }
+}

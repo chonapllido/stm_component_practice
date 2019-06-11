@@ -3231,4 +3231,142 @@ ul.large-tab.twelve li:nth-child(n + 5) a {
     border-bottom: 2px solid #313131;
   }
 }
+
+.general-event-login-after {
+  position: relative;
+}
+
+.general-event-login-after .combi-tab.one {
+  margin-bottom: 20px;
+}
+
+.general-event-login-after .list {
+  display: block;
+  position: relative;
+  clear: both;
+  margin: 0;
+  border-top: 2px solid #a40022;
+  border-bottom: 2px solid #313131;
+}
+
+.general-event-login-after .list .top ul {
+  display: table;
+  width: 100%;
+}
+
+.general-event-login-after .list .top ul li {
+  display: table-cell;
+  padding: 16px 9px;
+  font-size: 13px;
+  font-family: 'Malgun Gothic', sans-serif;
+  color: #755332;
+  font-weight: bold;
+  text-align: center;
+  line-height: 12px;
+}
+
+.general-event-login-after .list .top ul li.number {
+  width: 8.2%;
+}
+
+.general-event-login-after .list .top ul li.receipt {
+  width: 6.5%;
+}
+
+.general-event-login-after .list .top ul li.division {
+  width: 7.3%;
+}
+
+.general-event-login-after .list .top ul li.date {
+  width: 10%;
+}
+
+.general-event-login-after .list .top ul li.garden {
+  width: 9.5%;
+}
+
+.general-event-login-after .list .top ul li.status {
+  width: 8.8%;
+}
+
+.general-event-login-after .list .top ul li.apply {
+  width: 11.2%;
+}
+
+.general-event-login-after .list .top ul li:not(:first-child) {
+  border-left: 1px solid #e6e6e6;
+}
+
+.general-event-login-after .list .top ul.title {
+  border-bottom: 1px solid #313131;
+}
+
+.general-event-login-after .list .top ul.details li {
+  color: #000;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.general-event-login-after .list .top ul.details li.receipt span {
+  color: #535353;
+  padding: 4px 8px;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: bold;
+  border: 1px solid #c0c0c0;
+  color: #b5b5b5;
+}
+
+.general-event-login-after .list .top ul.details li.receipt span.in-progress {
+  background-color: #79b800;
+  color: #fff;
+  border: 1px solid #70ab00;
+}
+
+.general-event-login-after .list .top ul.details li.title {
+  position: relative;
+  padding: 16px 15px;
+  text-align: left;
+}
+
+.general-event-login-after .list .top ul.details li.title.new:after {
+  content: url("../images/icon/event_login_icon_new.png");
+}
+
+.general-event-login-after .list .top ul.details li.title a {
+  text-decoration: none;
+  color: #000;
+}
+
+.general-event-login-after .list .top ul.details li.title a:hover {
+  text-decoration: underline;
+}
+
+.general-event-login-after .list .top ul.details:not(:first-child) {
+  border-top: 1px solid #e3e3e3;
+}
+
+.general-event-login-after .common-front-paging1 {
+  margin-top: 20px;
+}
+
+.general-event-login-after .common-front-search {
+  margin-top: 20px;
+}
+
+.general-event-login-after .common-front-search div.common-search form .form-container > span.group-container > span.sub-container > span.for-select select {
+  background-position: calc(100% - 4px) center;
+}
+
+@media screen and (max-width: 767px) {
+  .general-empty-data .list {
+    padding-bottom: 30px;
+  }
+  .general-empty-data .list .top {
+    display: none;
+  }
+  .general-empty-data .list .bottom {
+    margin-top: 30px;
+  }
+}
 /*# sourceMappingURL=common.css.map */
