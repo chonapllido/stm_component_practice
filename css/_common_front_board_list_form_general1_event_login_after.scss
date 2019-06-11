@@ -1,6 +1,6 @@
 
 
-.general-event-login-after{
+.general-event-login{
     .combi-tab.one{
         margin-bottom:20px;
     }
@@ -18,7 +18,7 @@
                 width:100%;
                 li{
                     display:table-cell;
-                    padding:16px 9px;
+                    padding:16px 5px;
                     font-size:13px;
                     font-family:'Malgun Gothic', sans-serif;
                     color:#755332;
@@ -26,25 +26,25 @@
                     text-align:center;
                     line-height:12px;
                     &.number{
-                        width:8.2%;
-                    }
-                    &.receipt{
-                        width:6.5%;
-                    }
-                    &.division{
-                        width:7.3%;
-                    }
-                    &.date{
-                        width:10%;
-                    }
-                    &.garden{
-                        width:9.5%;
+                        width:66px;
                     }
                     &.status{
-                        width:8.8%;
+                        width:50px;
+                    }
+                    &.sort{
+                        width:84px;
+                    }
+                    &.date{
+                        width:80px;
+                    }
+                    &.fix-num{
+                        width:77px;
+                    }
+                    &.condition{
+                        width:70px;
                     }
                     &.apply{
-                        width:11.2%;
+                        width:94px;
                     }
                     &:not(:first-child){
                         border-left:1px solid #e6e6e6;
@@ -55,10 +55,11 @@
                 }
                 &.details{
                     li{
-                        color:#000;
+                        color:#535353;
                         font-size:13px;
                         font-weight:normal;
-                        &.receipt{
+                        line-height:12px;
+                        &.status{
                             span{
                                 color:#535353;
                                 padding:4px 8px;
@@ -75,18 +76,31 @@
                             }
                         }
                         &.title{
+                            color:#000;
                             position:relative;
-                            padding:16px 15px;
+                            padding:16px 14px;
                             text-align:left;
+                            line-height: 16px;
                             &.new:after{
                                 content:url('../images/icon/event_login_icon_new.png');
                             }
                             a{
+                                margin-right:6px;
                                 text-decoration:none;
                                 color:#000;
                                 &:hover{
                                     text-decoration:underline;
                                 }
+                            }
+                        }
+                        &.apply{
+                            width:104px;
+                            padding:0;
+                            button{
+                                width:88px;
+                                height:24px;
+                                margin: 0;
+                                padding:0;
                             }
                         }
                     }
@@ -103,23 +117,97 @@
     .common-front-search{
         margin-top:20px;
         div.common-search{
+            margin-bottom:20px;
             form .form-container > span.group-container > span.sub-container > span.for-select select{
                 background-position: calc(100% - 4px) center;
             }
         }
     }
+    div button.btn-white.btn2.icon-calendar {
+        height:40px;
+    }
 }
 
 
-@media screen and (max-width: 767px){
-    .general-empty-data{
-        .list{
-            padding-bottom:30px;
-            .top{
+@media screen and (min-width: 640px) {
+    div button.btn-white.btn2.icon-calendar {
+        width:130px;
+    }
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+    .general-event-login{
+        .list .top ul li.sort {
+            width:39px;
+            padding:16px 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .general-event-login{
+        .list .top {
+            ul.title{
                 display:none;
             }
-            .bottom{
-                margin-top:30px;
+            ul.details {
+                li{
+                    display:block;
+                    width:auto;
+                    border-left:none;
+                    margin:20px 12px 0 15px;
+                    padding:0;
+                    text-align:left;
+                    &.title{
+                        padding:0;
+                        font-size:17px;
+                        line-height: 27px;
+                        &.new:after{
+                            content:url('../images/icon/event_login_icon_new_big.png');
+                        }
+                        a{
+                            margin-right:8px;
+                        }
+                    }
+                    &.number{
+                        display:none;
+                    }
+                    &.status span{
+                        padding:4px 18px;
+                    }
+                    &.sort, &.date, &.fix-num, &.condition{
+                        color:#898989;
+                    }
+                    &.sort{
+                        margin-bottom:11px;
+                    }
+                    &.date, &.fix-num, &.condition{
+                        display:inline;
+                        margin-right:0;
+                        padding-right:8px;
+                    }
+                    &.fix-num, &.condition{
+                        padding-left:8px;
+                        margin-left:0;
+                        border-left:1px solid #dadada;
+                    }
+                    &.apply{
+                        margin-bottom:30px;
+                        button{
+                            width:84px;
+                        }
+                    }
+                    &.fix-num{
+                        &.no-num{
+                            display:none;
+                        }
+                        &:before{
+                            content:url('../images/icon/event_login_icon_user.png');
+                            margin-right:7px;
+                            vertical-align:middle;
+                        }
+                    }
+                }
             }
         }
     }
