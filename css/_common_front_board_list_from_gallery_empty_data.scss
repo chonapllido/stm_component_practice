@@ -43,6 +43,32 @@
     }
 }
 
+.faq-empty {
+    .bottom {  
+        margin-top: 38px;
+        margin-bottom: 37px;
+        p {
+            padding: 13px;
+            background-color: #fbfbfb;
+            border: 1px solid #e9e9e9;
+            font-size: 13px;
+            font-family: 'Malgun Gothic', sans-serif;
+            color: #959595;
+            text-align: center;
+            line-height: 12px;
+            span{
+                position:relative;
+                &:before{
+                    content:url('../images/icon/gallery-empty-data-icon1.png');
+                    position:absolute;
+                    left:-27px;
+                    top:0;
+                    }
+                }
+            }
+        }
+    }
+
 @media screen and (max-width: 767px){
     .gallery-empty-data{
         .list{
