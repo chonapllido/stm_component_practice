@@ -4142,49 +4142,74 @@ a {
 }
 
 @media screen and (min-width: 960px) {
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(2), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(3), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(4), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(6), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(7), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(8) {
+  .form-gallery .gallery-list .gallery-section-wrapper:nth-child(2), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(3), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(4), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(6), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(7), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(8) {
     margin-left: calc((100% - 864px) / 3);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(2), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(3), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(5), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(6), .form-gallery.writer-user .gallery-list .gallery-section-wrapper:nth-child(8) {
+  .form-gallery .gallery-list .gallery-section-wrapper:nth-child(2), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(3), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(5), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(6), .form-gallery .gallery-list .gallery-section-wrapper:nth-child(8) {
     margin-left: calc((100% - 648px) / 2);
   }
 }
 
 @media screen and (max-width: 767px) {
-  .form-gallery.writer-user .gallery-list {
+  .form-gallery .gallery-list {
     margin-top: 20px;
     border-top: 2px solid #a40022;
     border-bottom: 2px solid #313131;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper {
+  .form-gallery .gallery-list .gallery-section-wrapper {
     width: 100%;
     border-bottom: 1px solid #d4d4d4;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper:last-child {
+  .form-gallery .gallery-list .gallery-section-wrapper:last-child {
     border-bottom: none;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper .gallery-section {
+  .form-gallery .gallery-list .gallery-section-wrapper .gallery-section {
     margin-bottom: 0;
     margin-top: 30px;
     padding: 0 15px;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper .gallery-section .thumbnail {
+  .form-gallery .gallery-list .gallery-section-wrapper .gallery-section .thumbnail {
     margin: 0 auto;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper .gallery-section .details .title {
+  .form-gallery .gallery-list .gallery-section-wrapper .gallery-section .details .title {
     height: unset;
     max-height: 52px;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper .gallery-section .details .date-hit {
+  .form-gallery .gallery-list .gallery-section-wrapper .gallery-section .details .date-hit {
     margin-bottom: 30px;
   }
-  .form-gallery.writer-user .gallery-list .gallery-section-wrapper .gallery-section .details .save-options {
+  .form-gallery .gallery-list .gallery-section-wrapper .gallery-section .details .save-options {
     bottom: -14px;
   }
-  .form-gallery.writer-user .common-front-paging1 {
+  .form-gallery .common-front-paging1 {
+    margin-top: 20px;
+  }
+}
+
+.form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .files-writer .writer {
+  display: none;
+}
+
+.form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .files-writer, .form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .date-hit {
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.form-gallery.no-writer .common-front-paging1 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .files-writer, .form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .date-hit {
+    padding-bottom: 0;
+  }
+  .form-gallery.no-writer .gallery-list .gallery-section-wrapper .gallery-section .details .save-options {
+    bottom: 15px;
+  }
+  .form-gallery.no-writer .common-front-paging1 {
     margin-top: 20px;
   }
 }
