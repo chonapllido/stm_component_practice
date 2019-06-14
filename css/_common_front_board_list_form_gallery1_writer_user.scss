@@ -33,7 +33,7 @@
                         top:0;
                         width:calc(100% - 2px);
                         height:144px;
-                        border:1px solid red;
+                        border:1px solid #e8e8e8;
                         left:0;                 
                     }
                     img{
@@ -49,13 +49,11 @@
                         height:52px;
                         margin-top:16px;
                         overflow: hidden;
+                        cursor:pointer;
                         a{
                             color:#1b1b1b;
                             font-size:17px;
                             line-height: 24px;
-                            &:hover{
-                                text-decoration:underline;
-                            }
                         }
                         &.new a:after{
                             margin-left:8px;
@@ -116,8 +114,16 @@
                         }
                     }
                 }
-                &.on-hover .thumbnail{
-                    opacity:0.35;
+                &.on-hover{
+                    .thumbnail{
+                        opacity:0.35;
+                    }
+                    .title a{
+                        text-decoration:underline;
+                    }
+                    .files-writer .files a{
+                        text-decoration:underline;
+                    }
                 }
                 .save-options{
                     display:none;

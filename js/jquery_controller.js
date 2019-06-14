@@ -35,10 +35,10 @@ $(function(){
     });
 
     // Start Form Gallery Section
-    $(".form-gallery .details .title a").mouseenter(function(){
+    $(".form-gallery .details .title").mouseenter(function(){
         $(this).parents('.gallery-section').addClass('on-hover');
     });
-    $(".form-gallery .details .title a").mouseleave(function(){
+    $(".form-gallery .details .title").mouseleave(function(){
         $(".gallery-section").removeClass('on-hover');
     });
 
