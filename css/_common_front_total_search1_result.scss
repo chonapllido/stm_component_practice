@@ -1,6 +1,6 @@
 .common-front-total-search-result{
 	.top{
-		display: block;
+		display: table;
 		padding: 33px 0;
 		font: normal 19px 'Malgun Gothic';
 	}
@@ -20,6 +20,11 @@
 					font: normal 19px 'Malgun Gothic';
 					>li{
 						display: inline-block;
+						background: url($img + 'icon/icon_arrow_right.png') no-repeat 99% 50%;
+						padding: 0 20px 0 0;
+						&:last-child{
+							background:none;
+						}
 					}
 				}
 			}
@@ -42,7 +47,7 @@
 					display: table-cell;
 					background: #978276;
 					color: #efeae2;
-					padding: 0 7px;
+					padding: 0 7px 0 35px;
 					float: right;
 					>em{
 						font:normal 14px 'Malgun Gothic';
@@ -61,28 +66,31 @@
 					border-bottom:1px solid #d4d4d4;
 					width: 100%;
 					box-sizing: border-box;
-					.default-thumbnail{
+					.default-thumbnail, .default-gallery{
 						display: table-cell;
 						width: 110px;
 						height: 74px;
 						background: url($img + 'bg/bg_no_image.jpg') no-repeat;
-						img{
-							color: transparent;
-						}
+					}
+					.default-profile{
+						display: table-cell;
+						width: 44px;
+						height: 54px;
+						background: url($img + 'bg/bg_default_profile.jpg') no-repeat;
+					}
+					.default-magazine{
+						display: table-cell;
+						width: 70px;
+						height: 86px;
+						background: url($img + 'bg/bg_no_image_portrait.jpg') no-repeat;
 					}
 					.group-container{
 						display: table-cell;
+						vertical-align: top;
 						padding: 0 15px;
-						.title{
-							display: block;
-							font: normal 13px/20px 'Malgun Gothic';
-							color:#1b1b1b;
-							margin: 0 0 10px 0;
-						}
 						.new{
 							background: url($img + 'icon/icon_new.png') no-repeat;
 						}
-						
 					}
 					ul{
 						>li{
@@ -91,12 +99,73 @@
 							color: #898989;
 						}
 					}
+					img{
+						display: table;
+						margin: 0 auto;
+						color: transparent;
+					}
+					.sub-container{
+						display: table;
+					}
+					.red{
+						display: table;
+						font:bold 11px 'Malgun Gothic';
+						text-align: center;
+						border:1px solid #b40025;
+						background: #ce002c;
+						color: #ffffff;
+						padding: 3px 8px 6px 8px;
+						margin: 0 0 20px 0;
+					}
+					.green{
+						display: table;
+						font:bold 11px 'Malgun Gothic';
+						text-align: center;
+						border:1px solid #66a100;
+						background: #74b600;
+						color: #ffffff;
+						padding: 3px 8px 6px 8px;
+						margin: 0 0 20px 0;
+					}
 				}
+			}
+			.title{
+				display: block;
+				font: normal 13px/20px 'Malgun Gothic';
+				color:#1b1b1b;
+				margin: 0 0 10px 0;
+			}
+			.detail{
+				display: table;
+				margin:30 auto 30 auto;
+			}
+			.newsletter{
+				display: table;
+				vertical-align: top;
+				color: #ffffff;
+				font:bold 11px 'Malgun Gothic';
+				width: 86px;
+				background: #b69596;
+				padding: 5px 8px;
+				box-sizing: border-box;
+				margin: 0 0 20px 0;
+			}
+			.mentor{
+				display: table;
+				background: #f98900;
+				color: #ffffff;
+				padding: 6px 9px 8px 7px;
+				font:bold 11px 'Malgun Gothic';
+				margin: 0 0 20px 0;
 			}
 		}
 		.add{
 			display: block;
-			margin:0 auto;
+			margin: 20px auto 45px auto;
+			background:url($img + 'icon/icon_add.png') no-repeat 8% 40%;
+			padding: 3px 11px 10px 27px;
+			border: 1px solid #bcbcbc;
+			border-bottom: 1px solid #888888;
 		}
 	}
 }	
@@ -106,8 +175,13 @@
 }
 /* 640 */
 @media screen and (max-width:767px) {
+	
 }
 /* 480 */
 @media screen and (max-width:639px) {
+	
+}
+/* 320 */
+@media screen and (max-width:479px) {
 	
 }
