@@ -698,27 +698,37 @@ ul.large-tab.twelve li:nth-child(n + 5) a { border-top: 1px solid #fff; }
   .general-event-login .list .top ul.details li.fix-num:before { content: url("../images/icon/event_login_icon_user.png"); margin-right: 7px; vertical-align: middle; } }
 .general-event-login.before .list ul.title li.condition, .general-event-login.before .list ul.details li.condition { display: none; }
 
-.common-front-total-search-result .top { display: block; padding: 33px 0; font: normal 19px 'Malgun Gothic'; }
+.common-front-total-search-result .top { display: table; padding: 33px 0; font: normal 19px 'Malgun Gothic'; }
 .common-front-total-search-result .section .top-section { display: table; width: 100%; background: #fbfbfb; border-top: 1px solid #262223; border-bottom: 1px solid #d4d4d4; padding: 15px; box-sizing: border-box; }
 .common-front-total-search-result .section .top-section > ul { float: left; }
 .common-front-total-search-result .section .top-section > ul.detail { color: #7b001e; font: normal 19px 'Malgun Gothic'; }
-.common-front-total-search-result .section .top-section > ul.detail > li { display: inline-block; }
+.common-front-total-search-result .section .top-section > ul.detail > li { display: inline-block; background: url("../images/icon/icon_arrow_right.png") no-repeat 99% 50%; padding: 0 20px 0 0; }
+.common-front-total-search-result .section .top-section > ul.detail > li:last-child { background: none; }
 .common-front-total-search-result .section .top-section .count { float: right; display: table; border: 1px solid #816d63; font: normal 13px/19px 'Malgun Gothic'; box-sizing: border-box; line-height: 24px; vertical-align: top; }
 .common-front-total-search-result .section .top-section .count .total { display: table-cell; background: #8c766c; color: #efeae2; padding: 0 27px 0 7px; vertical-align: middle; }
-.common-front-total-search-result .section .top-section .count .number { display: table-cell; background: #978276; color: #efeae2; padding: 0 7px; float: right; }
+.common-front-total-search-result .section .top-section .count .number { display: table-cell; background: #978276; color: #efeae2; padding: 0 7px 0 35px; float: right; }
 .common-front-total-search-result .section .top-section .count .number > em { font: normal 14px 'Malgun Gothic'; color: #ffffff; }
 .common-front-total-search-result .section .bottom-section { display: table; width: 100%; }
 .common-front-total-search-result .section .bottom-section .container .sub-section { display: table; padding: 30px 15px; border-bottom: 1px solid #d4d4d4; width: 100%; box-sizing: border-box; }
-.common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail { display: table-cell; width: 110px; height: 74px; background: url("../images/bg/bg_no_image.jpg") no-repeat; }
-.common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail img { color: transparent; }
-.common-front-total-search-result .section .bottom-section .container .sub-section .group-container { display: table-cell; padding: 0 15px; }
-.common-front-total-search-result .section .bottom-section .container .sub-section .group-container .title { display: block; font: normal 13px/20px 'Malgun Gothic'; color: #1b1b1b; margin: 0 0 10px 0; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail, .common-front-total-search-result .section .bottom-section .container .sub-section .default-gallery { display: table-cell; width: 110px; height: 74px; background: url("../images/bg/bg_no_image.jpg") no-repeat; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .default-profile { display: table-cell; width: 44px; height: 54px; background: url("../images/bg/bg_default_profile.jpg") no-repeat; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .default-magazine { display: table-cell; width: 70px; height: 86px; background: url("../images/bg/bg_no_image_portrait.jpg") no-repeat; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .group-container { display: table-cell; vertical-align: top; padding: 0 15px; }
 .common-front-total-search-result .section .bottom-section .container .sub-section .group-container .new { background: url("../images/icon/icon_new.png") no-repeat; }
 .common-front-total-search-result .section .bottom-section .container .sub-section ul > li { display: inline-block; font: normal 13px 'Malgun Gothic'; color: #898989; }
-.common-front-total-search-result .section .add { display: block; margin: 0 auto; }
+.common-front-total-search-result .section .bottom-section .container .sub-section img { display: table; margin: 0 auto; color: transparent; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .sub-container { display: table; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .red { display: table; font: bold 11px 'Malgun Gothic'; text-align: center; border: 1px solid #b40025; background: #ce002c; color: #ffffff; padding: 3px 8px 6px 8px; margin: 0 0 20px 0; }
+.common-front-total-search-result .section .bottom-section .container .sub-section .green { display: table; font: bold 11px 'Malgun Gothic'; text-align: center; border: 1px solid #66a100; background: #74b600; color: #ffffff; padding: 3px 8px 6px 8px; margin: 0 0 20px 0; }
+.common-front-total-search-result .section .bottom-section .title { display: block; font: normal 13px/20px 'Malgun Gothic'; color: #1b1b1b; margin: 0 0 10px 0; }
+.common-front-total-search-result .section .bottom-section .detail { display: table; margin: 30 auto 30 auto; }
+.common-front-total-search-result .section .bottom-section .newsletter { display: table; vertical-align: top; color: #ffffff; font: bold 11px 'Malgun Gothic'; width: 86px; background: #b69596; padding: 5px 8px; box-sizing: border-box; margin: 0 0 20px 0; }
+.common-front-total-search-result .section .bottom-section .mentor { display: table; background: #f98900; color: #ffffff; padding: 6px 9px 8px 7px; font: bold 11px 'Malgun Gothic'; margin: 0 0 20px 0; }
+.common-front-total-search-result .section .add { display: block; margin: 20px auto 45px auto; background: url("../images/icon/icon_add.png") no-repeat 8% 40%; padding: 3px 11px 10px 27px; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
 
 /* 768 */
 /* 640 */
 /* 480 */
+/* 320 */
 
 /*# sourceMappingURL=common.css.map */
