@@ -1,163 +1,239 @@
-.container{
-    width:100%;
-}
 
-ul.combi-large-tab{
-    display:flex;
-    li{
-        width:100%;
-        background-color:#483f41;
-        a{
-            display:flex;
-            align-items:center;
-            height:calc(100% - 34px);
-            padding:17px 19px;
-            padding-right:54px;
-            line-height:18px;
-            font-size:15px;
-            font-family:'Malgun Gothic', sans-serif;
-            font-weight:bold;
-            color:#f3e6e6;
-            text-decoration:none;
-            cursor:pointer;
+.combi-large-tab{
+    display:table;
+    width:100%;
+    font-size:0;
+    a{
+      display:table-cell;
+      height:100%;
+      padding:16px 17px;
+      padding-right:52px;
+      background-color:#483f41;
+      text-align:left;
+      font-size:15px;
+      font-weight:bold;
+      line-height:20px;
+      font-family:'Malgun Gothic', sans-serif;
+      color:#f3e6e6;
+      text-decoration:none;
+      cursor:pointer;
+      box-sizing:border-box;
+      word-break:break-all;
+      vertical-align:middle;
+      &:not(:first-child){
+        border-left:1px solid #fff;
+      }
+      &.on{
+        position:relative;
+        background-color:#936c6a;
+        color:#fff;
+        &:after{
+          content:url('../images/icon/icon-down-large.png');
+          position:absolute;
+          right:20px;
+          top:calc(50% - 1px);
         }
-        &:not(:first-child) a{
-            border-left:1px solid #fff;
-        }
-        &.on{
-            position:relative;
-            background-color:#936c6a;
-            a{
-                color:#fff;
-            }
-            &:after{
-                content:url('../images/icon/icon-down-large.png');
-                position:absolute;
-                right:22px;
-                top:calc(45% - 1px);
-            }
-        }
+      }
+    }
+    &.one{
+      a{
+        width:50%;
+      }
+    }
+    &.two{
+      a{
+        width:calc(100% / 3);
+      }
+    }
+    &.three{
+      a{
+        width:25%;
+      }
     }
     &.four{
-        flex-flow:wrap;
-        li{
-            width:50%;
-            &:nth-child(odd) a{
-                border-left:none;
-            }
-            &:nth-child(n + 3) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:50%;
+        &:nth-child(odd){
+          border-left:none;
         }
+        &:nth-child(n+3){
+          border-top:1px solid #fff;
+        }
+      }
     }
-    &.five, &.six, &.nine, &.ten{
-        li a{
-            line-height:19px;
-        }
+    &.five{
+      a{
+        width:20%;
+      }
+    }
+    &.six{
+      a{
+        width:calc(100% / 6);
+      }
     }
     &.seven, &.eight{
-        flex-flow:wrap;
-        li{
-            width:calc(100% / 3);
-            &:nth-child(4) a{
-                border-left:none;
-            }
-            &:nth-child(n + 4) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:calc((100% - 1px) / 3);
+        &:nth-child(4){
+          border-left:none;
         }
+        &:nth-child(n+4){
+          border-top:1px solid #fff;
+        }
+      }
     }
-    &.eleven, &.twelve{
-        flex-flow:wrap;
-        li{
+    &.nine{
+      a{
+        width:calc(100% / 7);
+      }
+    }
+    &.ten{
+      span{
+        display:table-cell;
+        a{
+          width:calc(100% / 8);
+        }
+        &:nth-child(2) a{
+          border-left:1px solid #fff;
+        }
+      }
+    }
+    &.eleven{
+      span{
+        display:table;
+        width:100%;
+        a{
+          width:25%;
+        }
+        &:nth-child(2) a{
+          border-top:1px solid #fff;
+        }
+      }
+    }
+    &.twelve{
+      a{
+        display:inline-table;
+        width:25%;
+        &:nth-child(5){
+          border-left:none;
+        }
+        &:nth-child(n+5){
+          border-top:1px solid #fff;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    .combi-large-tab{
+      &.eight{
+        a{
+          width:calc((100% - 1px) / 2);
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+            border-left:1px solid #fff;
+          }
+          &:nth-child(odd){
+            border-left:none;
+          }
+        }
+      }
+      &.ten, &.eleven{
+        span{
+          display:table;
+          width:100%;
+          a{
             width:25%;
-            &:nth-child(5) a{
-                border-left:none;
-            }
-            &:nth-child(n + 5) a{
-                border-top:1px solid #fff;
-            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
         }
+      }
+      &.twelve{
+        a{
+          width:50%;
+          &:nth-child(odd){
+            border-left:none;
+          }
+          &:nth-child(even){
+            border-left:1px solid #fff;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
+        }
+      }
     }
-}
-
-@media screen and (max-width: 959px) and (min-width: 768px) {
-    ul.combi-large-tab{
-        &.three, &.eleven{
-            li a{
-                line-height:19px;
-            }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .combi-large-tab:not(.one) {
+      a{
+        display:inline-table;
+        width:50%;
+        &:nth-child(odd){
+          border-left:none;
         }
-        &.eight, &.twelve{
-            flex-flow:wrap;
-            li{
-                width:50%;
-                &:nth-child(odd) a{
-                    border-left:none;
-                }
-                &:nth-child(even) a{
-                    border-left:1px solid #fff;;
-                }
-                &:nth-child(n + 3) a{
-                    border-top:1px solid #fff;
-                }
-                a{
-                    line-height:18px;
-                }
-            }
+        &:nth-child(even){
+          border-left:1px solid #fff;
         }
-        &.ten{
-            flex-flow:wrap;
-            li{
-                width:25%;
-                &:nth-child(5) a{
-                    border-left:none;
-                }
-                &:nth-child(n + 5) a{
-                    border-top:1px solid #fff;
-                }
-            }
+        &:nth-child(n+3){
+          border-top:1px solid #fff;
         }
+      }
     }
-}
-
-@media screen and (max-width: 767px) and (min-width: 480px) {
-    ul.combi-large-tab{
-        &.two, &.three, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-        flex-flow:wrap;
-        li{
-            width:50%;
-            &:nth-child(odd) a{
-                border-left:none;
-            }
-            &:nth-child(even) a{
-                border-left:1px solid #fff;;
-            }
-            &:nth-child(n + 3) a{
-                border-top:1px solid #fff;
-            }
-            a{
-                line-height:18px;
-            }
+    .combi-large-tab.ten, .combi-large-tab.eleven{
+      span{
+        display:table;
+        width:100%;
+        a{
+          display:inline-table;
+          width:50%;
+          &:nth-child(3){
+            border-left:none;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
         }
+        &:nth-child(2) a{
+          border-top:1px solid #fff;
         }
+      }
     }
-}
-
-@media screen and (max-width: 479px) {
-    ul.combi-large-tab{
-        &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-            flex-direction:column;
-            li{
-                width:100%;
-                a{
-                    border-left:none;
-                    line-height:18px;
-                }
-                &:not(:first-child) a{
-                    border-top:1px solid #fff;
-                }
-            }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .combi-large-tab{
+      &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.twelve{
+        a{
+          display:block;
+          width:100%;
+          border-left:none;
+          &:nth-child(n+2){
+            border-top:1px solid #fff;
+          }
         }
+      }
+      &.ten, &.eleven{
+        span{
+          display:table;
+          width:100%;
+          a{
+            display:block;
+            width:100%;
+            border-left:none;
+            &:nth-child(n+2){
+              border-top:1px solid #fff;
+            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
+        }
+      }
     }
-}
+  }

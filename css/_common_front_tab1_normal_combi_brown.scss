@@ -1,151 +1,239 @@
 
-
-
-
-.container{
+.combi-normal-tab{
+    display:table;
     width:100%;
-}
-
-ul.combi-normal-tab{
-    display:flex;
-    li{
-        width:100%;
-        background-color:#483f41;
-        a{
-            display:flex;
-            align-items:center;
-            height:calc(100% - 30px);
-            padding:15px 17px;
-            padding-right:47px;
-            line-height:17px;
-            font-size:13px;
-            font-family:'Malgun Gothic', sans-serif;
-            font-weight:bold;
-            color:#f3e6e6;
-            text-decoration:none;
-            cursor:pointer;
+    font-size:0;
+    a{
+      display:table-cell;
+      height:100%;
+      padding:14px 12px;
+      padding-right:47px;
+      background-color:#483f41;
+      text-align:left;
+      font-size:13px;
+      font-weight:bold;
+      line-height:18px;
+      font-family:'Malgun Gothic', sans-serif;
+      color:#f3e6e6;
+      text-decoration:none;
+      cursor:pointer;
+      box-sizing:border-box;
+      word-break:break-all;
+      vertical-align:middle;
+      &:not(:first-child){
+        border-left:1px solid #fff;
+      }
+      &.on{
+        position:relative;
+        background-color:#936c6a;
+        color:#fff;
+        &:after{
+          content:url('../images/icon/icon-down-normal.png');
+          position:absolute;
+          right:20px;
+          top:calc(50% - 1px);
         }
-        &:not(:first-child) a{
-            border-left:1px solid #fff;
-        }
-        &.on{
-            position:relative;
-            background-color:#936c6a;
-            a{
-                color:#fff;
-            }
-            &:after{
-                content:url('../images/icon/icon-down-normal.png');
-                position:absolute;
-                right:20px;
-                top:calc(50% - 1px);
-            }
-        }
+      }
+    }
+    &.one{
+      a{
+        width:50%;
+      }
+    }
+    &.two{
+      a{
+        width:calc(100% / 3);
+      }
+    }
+    &.three{
+      a{
+        width:25%;
+      }
     }
     &.four{
-        flex-flow:wrap;
-        li{
-            width:50%;
-            &:nth-child(odd) a{
-                border-left:none;
-            }
-            &:nth-child(n + 3) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:50%;
+        &:nth-child(odd){
+          border-left:none;
         }
+        &:nth-child(n+3){
+          border-top:1px solid #fff;
+        }
+      }
+    }
+    &.five{
+      a{
+        width:20%;
+      }
+    }
+    &.six{
+      a{
+        width:calc(100% / 6);
+      }
     }
     &.seven, &.eight{
-        flex-flow:wrap;
-        li{
-            width:calc(100% / 3);
-            &:nth-child(4) a{
-                border-left:none;
-            }
-            &:nth-child(n + 4) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:calc((100% - 1px) / 3);
+        &:nth-child(4){
+          border-left:none;
         }
+        &:nth-child(n+4){
+          border-top:1px solid #fff;
+        }
+      }
     }
-    &.eleven, &.twelve{
-        flex-flow:wrap;
-        li{
+    &.nine{
+      a{
+        width:calc(100% / 7);
+      }
+    }
+    &.ten{
+      span{
+        display:table-cell;
+        a{
+          width:calc(100% / 8);
+        }
+        &:nth-child(2) a{
+          border-left:1px solid #fff;
+        }
+      }
+    }
+    &.eleven{
+      span{
+        display:table;
+        width:100%;
+        a{
+          width:25%;
+        }
+        &:nth-child(2) a{
+          border-top:1px solid #fff;
+        }
+      }
+    }
+    &.twelve{
+      a{
+        display:inline-table;
+        width:25%;
+        &:nth-child(5){
+          border-left:none;
+        }
+        &:nth-child(n+5){
+          border-top:1px solid #fff;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    .combi-normal-tab{
+      &.eight{
+        a{
+          width:calc((100% - 1px) / 2);
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+            border-left:1px solid #fff;
+          }
+          &:nth-child(odd){
+            border-left:none;
+          }
+        }
+      }
+      &.ten, &.eleven{
+        span{
+          display:table;
+          width:100%;
+          a{
             width:25%;
-            &:nth-child(5) a{
-                border-left:none;
-            }
-            &:nth-child(n + 5) a{
-                border-top:1px solid #fff;
-            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
         }
+      }
+      &.twelve{
+        a{
+          width:50%;
+          &:nth-child(odd){
+            border-left:none;
+          }
+          &:nth-child(even){
+            border-left:1px solid #fff;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
+        }
+      }
     }
-}
-
-
-@media screen and (max-width: 959px) and (min-width: 768px) {
-    ul.combi-normal-tab{
-        &.eight, &.twelve{
-            flex-flow:wrap;
-            li{
-                width:50%;
-                &:nth-child(odd) a{
-                    border-left:none;
-                }
-                &:nth-child(n + 3) a{
-                    border-top:1px solid #fff;
-                }
-                &:nth-child(even) a{
-                    border-left:1px solid #fff;
-                }
-            }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .combi-normal-tab:not(.one) {
+      a{
+        display:inline-table;
+        width:50%;
+        &:nth-child(odd){
+          border-left:none;
         }
-        &.ten, &.eleven{
-            flex-flow:wrap;
-            li{
-                width:25%;
-                &:nth-child(5) a{
-                    border-left:none;
-                }
-                &:nth-child(n + 5) a{
-                    border-top:1px solid #fff;
-                }
-            }
+        &:nth-child(even){
+          border-left:1px solid #fff;
         }
+        &:nth-child(n+3){
+          border-top:1px solid #fff;
+        }
+      }
     }
-}
-
-@media screen and (max-width: 767px) and (min-width: 480px) {
-    ul.combi-normal-tab{
-        &.two, &.three, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-            flex-flow:wrap;
-            li{
-                width:50%;
-                &:nth-child(odd) a{
-                    border-left:none;
-                }
-                &:nth-child(n + 3) a{
-                    border-top:1px solid #fff;
-                }
-                &:nth-child(even) a{
-                    border-left:1px solid #fff;;
-                }
-            }
+    .combi-normal-tab.ten, .combi-normal-tab.eleven{
+      span{
+        display:table;
+        width:100%;
+        a{
+          display:inline-table;
+          width:50%;
+          &:nth-child(3){
+            border-left:none;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
         }
-    }
-}
-
-@media screen and (max-width: 479px) {
-    ul.combi-normal-tab{
-        &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-            flex-direction:column;
-            li{
-                width:100%;
-                a{
-                    border-left:none;
-                }
-                &:not(:first-child) a{
-                    border-top:1px solid #fff;
-                }
-            }
+        &:nth-child(2) a{
+          border-top:1px solid #fff;
         }
+      }
     }
-}
+  }
+  
+  @media screen and (max-width: 479px) {
+    .combi-normal-tab{
+      &.one, &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.twelve{
+        a{
+          display:block;
+          width:100%;
+          border-left:none;
+          &:nth-child(n+2){
+            border-top:1px solid #fff;
+          }
+        }
+      }
+      &.ten, &.eleven{
+        span{
+          display:table;
+          width:100%;
+          a{
+            display:block;
+            width:100%;
+            border-left:none;
+            &:nth-child(n+2){
+              border-top:1px solid #fff;
+            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
+        }
+      }
+    }
+  }

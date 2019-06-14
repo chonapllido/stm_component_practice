@@ -1,213 +1,215 @@
 
-.container{
+.large-tab{
+    display:table;
     width:100%;
-}
-
-ul.large-tab{
-    display:flex;
-    li{
-        width:100%;
-        background-color:#483f41;
-        a{
-            display:flex;
-            align-items:center;
-            justify-content:center;
-            height:calc(100% - 34px);
-            padding:17px 18px;
-            line-height:18px;
-            text-align:center;
-            font-size:15px;
-            font-family:'Malgun Gothic', sans-serif;
-            font-weight:bold;
-            color:#f3e6e6;
-            text-decoration:none;
-            cursor:pointer;
-        }
-        &:not(:first-child) a{
-            border-left:1px solid #fff;
-        }
-        &.on{
-            position:relative;
-            background-color:#936c6a;
-            a{
-                color:#fff;
-            }
-        }
+    font-size:0;
+    a{
+      display:table-cell;
+      height:100%;
+      padding:16px 17px;
+      background-color:#483f41;
+      text-align:center;
+      font-size:15px;
+      line-height:20px;
+      font-family:'Malgun Gothic', sans-serif;
+      font-weight:bold;
+      color:#f3e6e6;
+      text-decoration:none;
+      cursor:pointer;
+      box-sizing:border-box;
+      word-break:break-all;
+      vertical-align:middle;
+      &:not(:first-child){
+        border-left:1px solid #fff;
+      }
+      &.on{
+        position:relative;
+        background-color:#936c6a;
+        color:#fff;
+      }
+    }
+    &.one, &.two{
+      a{
+        width:50%;
+      }
+    }
+    &.three, &.four{
+      a{
+        width:calc(100% / 3);
+      }
+    }
+    &.five{
+      a{
+        width:25%;
+        padding:16px 18px;
+      }
     }
     &.six{
-        flex-flow:wrap;
-        li{
-            width:50%;
-            &:nth-child(odd) a{
-                border-left:none;
-            }
-            &:nth-child(n + 3) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:50%;
+        &:nth-child(odd){
+          border-left:none;
         }
+        &:nth-child(n+3){
+          border-top:1px solid #fff;
+        }
+      }
+    }
+    &.seven{
+      a{
+        width:20%;
+      }
     }
     &.eight{
-        li a{
-            padding-left:20px;
-            padding-right:20px;
-            line-height: 19px;            
-            justify-content:center;
-        }
+      a{
+        width:calc(100% / 6);
+      }
     }
     &.nine{
-        flex-flow:wrap;
-        li{
-            width:calc(100% / 3);
-            &:nth-child(4) a{
-                border-left:none;
-            }
-            &:nth-child(n + 4) a{
-                border-top:1px solid #fff;
-            }
+      a{
+        display:inline-table;
+        width:calc((100% - 1px) / 3);
+        &:nth-child(4){
+          border-left:none;
         }
+        &:nth-child(n+4){
+          border-top:1px solid #fff;
+        }
+      }
     }
-    &.ten, &.eleven{
-        li a{
-            padding-left:18px;
-            padding-right:18px;
-            line-height: 19px;            
-            justify-content:center;
+    &.ten{
+      a{
+        width:calc(100% / 7);
+      }
+    }
+    &.eleven{
+      span{
+        display:table-cell;
+        a{
+          width:calc(100% / 8);
         }
+        &:nth-child(2) a{
+          border-left:1px solid #fff;
+        }
+      }
     }
     &.twelve{
-        flex-flow:wrap;
-        li{
+      span{
+        display:table;
+        width:100%;
+        a{
+          padding:16px 18px;
+          width:25%;
+        }
+        &:nth-child(2) a{
+          border-top:1px solid #fff;
+        }
+      }
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    .large-tab{
+      &.eleven{
+        span{
+          display:table;
+          width:100%;
+          a{
+            padding:16px 20px;
             width:25%;
-            &:nth-child(5) a{
-                border-left:none;
-            }
-            &:nth-child(n + 5) a{
-                border-top:1px solid #fff;
-            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
         }
+      }
     }
-}
-
-@media screen and (max-width: 959px) and (min-width: 768px) {
-    ul.large-tab{
-        &.five, &.seven{
-            li a{
-                padding-left:24px;
-                padding-right:24px;
-                line-height: 19px;            
-                justify-content:center;
-            }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    .large-tab{
+      &.seven, &.eight, &.nine, &.ten{
+        a{
+          display:inline-table;
+          width:50%;
+          &:nth-child(odd){
+            border-left:none;
+          }
+          &:nth-child(even){
+            border-left:1px solid #fff;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
         }
-        &.eleven, &.twelve{
-            flex-flow:wrap;
-            li{
-                width:25%;
-                a{
-                    padding-left:22px;
-                    padding-right:22px;
-                    line-height: 19px;            
-                    justify-content:center;
-                }
-                &:nth-child(5) a{
-                    border-left:none;
-                }
-                &:nth-child(n + 5) a{
-                    border-top:1px solid #fff;
-                }
+      }
+      &.eleven, &.twelve{
+        span{
+          display:table;
+          width:100%;
+          a{
+            display:inline-table;
+            width:50%;
+            &:nth-child(3){
+              border-left:none;
             }
+            &:nth-child(n+3){
+              border-top:1px solid #fff;
+            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
         }
+      }
     }
-}
-
-@media screen and (max-width: 767px) and (min-width: 640px) {
-    ul.large-tab{
-        &.five{
-            li a{
-                padding-left:24px;
-                padding-right:24px;
-                line-height: 19px;            
-                justify-content:center;
-            }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width: 639px){
+    .large-tab{
+      &.four, &.five{
+        a{
+          display:inline-table;
+          width:50%;
+          &:nth-child(odd){
+            border-left:none;
+          }
+          &:nth-child(n+3){
+            border-top:1px solid #fff;
+          }
         }
+      }
     }
-}
-
-@media screen and (max-width: 767px) and (min-width: 480px) {
-    ul.large-tab{
-        &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-            flex-flow:wrap;
-            li{
-                width:50%;
-                &:nth-child(odd) a{
-                    border-left:none;
-                }
-                &:nth-child(even) a{
-                    border-left:1px solid #fff;
-                }
-                &:nth-child(n + 3) a{
-                    border-top:1px solid #fff;
-                }
-                a{
-                    line-height:18px;
-                }
-            }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .large-tab:not(.one) {
+      a{
+        display:block;
+        width:100%;
+        border-left:none;
+        &:nth-child(n+2){
+          border-top:1px solid #fff;
         }
+      }
+      &.eleven, &.twelve{
+        span{
+          display:table;
+          width:100%;
+          a{
+            display:block;
+            width:100%;
+            border-left:none;
+            &:nth-child(n+2){
+              border-top:1px solid #fff;
+            }
+          }
+          &:nth-child(2) a{
+            border-top:1px solid #fff;
+          }
+        }
+      }
     }
-}
-
-@media screen and (max-width: 639px) and (min-width: 480px) {
-    ul.large-tab{
-        &.three{
-            li a{
-                padding-left:24px;
-                padding-right:24px;
-                line-height: 19px;            
-                justify-content:center;
-            }
-        }
-        &.four, &.five{
-            flex-flow:wrap;
-            li{
-                width:50%;
-                &:nth-child(odd) a{
-                    border-left:none;
-                }
-                &:nth-child(even) a{
-                    border-left:1px solid #fff;
-                }
-                &:nth-child(n + 3) a{
-                    border-top:1px solid #fff;
-                }
-                a{
-                    line-height:18px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 479px) {
-    ul.large-tab{
-        &.one{
-            li a{
-                padding-left:24px;
-                padding-right:24px;
-                line-height: 19px;            
-                justify-content:center;
-            }
-        }
-        &.two, &.three, &.four, &.five, &.six, &.seven, &.eight, &.nine, &.ten, &.eleven, &.twelve{
-            flex-direction:column;
-            li{
-                width:100%;
-                a{
-                    border-left:none;
-                    line-height: 18px;
-                }
-                &:not(:first-child) a{
-                    border-top:1px solid #fff;
-                }
-            }
-        }
-    }
-}
+  }
+  
