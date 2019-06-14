@@ -116,7 +116,7 @@
                 }
                 &.on-hover{
                     .thumbnail{
-                        opacity:0.35;
+                        opacity:0.65;
                     }
                     .title a{
                         text-decoration:underline;
@@ -194,7 +194,7 @@
                         display:block;
                     }
                     .thumbnail{
-                        opacity:0.45;
+                        opacity:0.55;
                     }
                 }
             }
@@ -210,8 +210,6 @@
         }
     }
 }
-
-
 
 @media screen and (min-width: 960px) {
     .form-gallery.writer-user{

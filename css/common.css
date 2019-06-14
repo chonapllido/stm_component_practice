@@ -4033,7 +4033,7 @@ a {
 }
 
 .form-gallery .gallery-list .gallery-section-wrapper .gallery-section.on-hover .thumbnail {
-  opacity: 0.35;
+  opacity: 0.65;
 }
 
 .form-gallery .gallery-list .gallery-section-wrapper .gallery-section.on-hover .title a {
@@ -4126,7 +4126,7 @@ a {
 }
 
 .form-gallery .gallery-list .gallery-section-wrapper .gallery-section.on .thumbnail {
-  opacity: 0.45;
+  opacity: 0.55;
 }
 
 .form-gallery .common-front-paging1 {
