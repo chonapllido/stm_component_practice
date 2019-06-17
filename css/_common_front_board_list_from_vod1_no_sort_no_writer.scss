@@ -1,28 +1,31 @@
 .vod.no-sort{
     font-family:'Malgun Gothic', sans-serif;
     .vod-list{
-        display:block;
+        display:block; //for IE9
+        display:flex;
+        flex-flow:wrap;
         width:100%;
         margin-top:30px;
         font-size:0;
         .vod-section-wrapper{
             display:inline-block;
+            position:relative;
             width:222px;
             margin-bottom:14px;
-            padding:20px 15px 30px;
+            padding:20px 15px 60px;
             border-top:2px solid #a40022;
             border-bottom:1px solid #313131;
             border-left:1px solid #dfdfdf;
             border-right:1px solid #dfdfdf;
             box-sizing: border-box;
             .vod-section{
-                position:relative;
                 height:auto;
                 .thumbnail{
                     position:relative;
                     width:100%;
                     height:128px;
                     z-index:1;
+                    overflow:hidden;
                     text-align:center;
                     &:after{
                         position:absolute;
@@ -63,13 +66,15 @@
                         top:50%;
                         left:50%;
                         transform:translate(-50%, -50%);
+                        max-width:100%;
+                        max-height:100%;
                     }
                 }
                 .details{
                     .title{
                         display:block;
-                        height:52px;
-                        margin-top:15px;
+                        max-height:52px;
+                        margin-top:17px;
                         overflow:hidden;
                         cursor:pointer;
                         a{
@@ -87,8 +92,8 @@
                         }
                     }
                     .date-hit{
-                        display:block;
-                        margin-top:13px;
+                        position:absolute;
+                        bottom:30px;
                         color:#898989;
                         font-size:0;
                         line-height:1;
@@ -151,11 +156,6 @@
                 &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(6), &:nth-child(7), &:nth-child(8){
                     margin-left:calc((100% - 888px) / 3);
                 }
-                &:nth-child(n+5){
-                    .details .title{
-                        height:unset;
-                    }
-                }
             }
         }
     }
@@ -165,12 +165,15 @@
     .vod.no-sort.no-writer{
         .vod-list{
             .vod-section-wrapper{
+                width:236px;
                 &:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6), &:nth-child(8){
-                    margin-left:calc((100% - 666px) / 2);
+                    margin-left:calc((100% - 708px) / 2);
                 }
-                &:nth-child(n+7){
-                    .details .title{
-                        height:unset;
+                .vod-section .thumbnail{
+                    height:138px;
+                    span{
+                        width:204px;
+                        height:138px;
                     }
                 }
             }
@@ -181,14 +184,31 @@
 @media screen and (max-width: 767px) {
     .vod.no-sort.no-writer{
         .vod-list{
+            margin-top:20px;
             .vod-section-wrapper{
                 display:block;
                 width:100%;
-                .details .title{
-                    height:unset;
-                    max-height:52px;
+                margin-bottom:0;
+                border:none;
+                border-bottom:1px solid #d4d4d4;
+                &:first-child{
+                    border-top:2px solid #a40022;
+                }
+                &:last-child{
+                    border-bottom:2px solid #313131;
+                }
+                .vod-section .thumbnail{
+                    height:146px;
+                    span{
+                        width:217px;
+                        height:147px;
+                    }
                 }
             }
+
+        }
+        .common-front-paging1 {
+            margin-top:20px;
         }
     }
 }

@@ -4220,6 +4220,11 @@ a {
 
 .vod.no-sort .vod-list {
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
   width: 100%;
   margin-top: 30px;
   font-size: 0;
@@ -4227,9 +4232,10 @@ a {
 
 .vod.no-sort .vod-list .vod-section-wrapper {
   display: inline-block;
+  position: relative;
   width: 222px;
   margin-bottom: 14px;
-  padding: 20px 15px 30px;
+  padding: 20px 15px 60px;
   border-top: 2px solid #a40022;
   border-bottom: 1px solid #313131;
   border-left: 1px solid #dfdfdf;
@@ -4239,7 +4245,6 @@ a {
 }
 
 .vod.no-sort .vod-list .vod-section-wrapper .vod-section {
-  position: relative;
   height: auto;
 }
 
@@ -4248,6 +4253,7 @@ a {
   width: 100%;
   height: 128px;
   z-index: 1;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -4297,12 +4303,14 @@ a {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .vod.no-sort .vod-list .vod-section-wrapper .vod-section .details .title {
   display: block;
-  height: 52px;
-  margin-top: 15px;
+  max-height: 52px;
+  margin-top: 17px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -4324,8 +4332,8 @@ a {
 }
 
 .vod.no-sort .vod-list .vod-section-wrapper .vod-section .details .date-hit {
-  display: block;
-  margin-top: 13px;
+  position: absolute;
+  bottom: 30px;
   color: #898989;
   font-size: 0;
   line-height: 1;
@@ -4379,28 +4387,50 @@ a {
   .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(2), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(3), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(4), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(6), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(7), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(8) {
     margin-left: calc((100% - 888px) / 3);
   }
-  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(n+5) .details .title {
-    height: unset;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 959px) {
-  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(2), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(3), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(5), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(6), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(8) {
-    margin-left: calc((100% - 666px) / 2);
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper {
+    width: 236px;
   }
-  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(n+7) .details .title {
-    height: unset;
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(2), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(3), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(5), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(6), .vod.no-sort.no-writer .vod-list .vod-section-wrapper:nth-child(8) {
+    margin-left: calc((100% - 708px) / 2);
+  }
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper .vod-section .thumbnail {
+    height: 138px;
+  }
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper .vod-section .thumbnail span {
+    width: 204px;
+    height: 138px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .vod.no-sort.no-writer .vod-list {
+    margin-top: 20px;
+  }
   .vod.no-sort.no-writer .vod-list .vod-section-wrapper {
     display: block;
     width: 100%;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 1px solid #d4d4d4;
   }
-  .vod.no-sort.no-writer .vod-list .vod-section-wrapper .details .title {
-    height: unset;
-    max-height: 52px;
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:first-child {
+    border-top: 2px solid #a40022;
+  }
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper:last-child {
+    border-bottom: 2px solid #313131;
+  }
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper .vod-section .thumbnail {
+    height: 146px;
+  }
+  .vod.no-sort.no-writer .vod-list .vod-section-wrapper .vod-section .thumbnail span {
+    width: 217px;
+    height: 147px;
+  }
+  .vod.no-sort.no-writer .common-front-paging1 {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=common.css.map */
