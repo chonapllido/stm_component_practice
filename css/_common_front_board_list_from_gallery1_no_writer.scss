@@ -1,0 +1,42 @@
+
+.form-gallery.no-writer{
+    .gallery-list{
+        .gallery-section-wrapper{
+            .gallery-section{
+                .details{
+                    .files-writer{
+                        .writer{
+                            display:none;
+                        }
+                    }
+                    .files-writer, .date-hit{
+                        display:inline-block;
+                        padding-bottom:10px;
+                    }
+                }
+            }
+        }
+    }
+    .common-front-paging1 {
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+    .form-gallery.no-writer{ 
+        .gallery-list .gallery-section-wrapper .gallery-section{
+            .details{
+                .files-writer, .date-hit{
+                    padding-bottom:0;
+                }
+                .save-options {
+                    bottom: 15px;
+                }
+            }
+        }
+        .common-front-paging1 {
+            margin-top: 20px;
+        }
+    }
+}

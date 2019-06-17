@@ -1,0 +1,194 @@
+.vod.no-sort{
+    font-family:'Malgun Gothic', sans-serif;
+    .vod-list{
+        display:block;
+        width:100%;
+        margin-top:30px;
+        font-size:0;
+        .vod-section-wrapper{
+            display:inline-block;
+            width:222px;
+            margin-bottom:14px;
+            padding:20px 15px 30px;
+            border-top:2px solid #a40022;
+            border-bottom:1px solid #313131;
+            border-left:1px solid #dfdfdf;
+            border-right:1px solid #dfdfdf;
+            box-sizing: border-box;
+            .vod-section{
+                position:relative;
+                height:auto;
+                .thumbnail{
+                    position:relative;
+                    width:100%;
+                    height:128px;
+                    z-index:1;
+                    text-align:center;
+                    &:after{
+                        position:absolute;
+                        z-index:-10;
+                        width:76px;
+                        height:76px;
+                        top:calc(50% - 38px);
+                        left:calc(50% - 38px);
+                        content:'';
+                        background:#f7f7f7 url('../images/icon/thumbnail_gallery_icon.png') no-repeat center;
+                        background-position: center calc(100% - 34px);
+                        border-radius:50%;
+                        border:1px solid #f3f3f3;
+                        box-sizing: border-box;
+                    }
+                    &:before{
+                        position:absolute;
+                        content:"NO IMAGE";
+                        top:calc(50% + 9px);
+                        left:calc(50% - 22px);
+                        z-index: -1;
+                        color:#b5b5b5;
+                        font-size:9px;
+                    }
+                    span{
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%, -50%);
+                        z-index:-2;
+                        width:190px;
+                        height:128px;
+                        border:1px solid #e8e8e8;
+                        box-sizing: border-box;               
+                    }
+                    img{
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%, -50%);
+                    }
+                }
+                .details{
+                    .title{
+                        display:block;
+                        height:52px;
+                        margin-top:15px;
+                        overflow:hidden;
+                        cursor:pointer;
+                        a{
+                            color:#1b1b1b;
+                            font-size:17px;
+                            line-height:24px;
+                        }
+                        &.new a:after{
+                            margin-left:8px;
+                            content:url('../images/icon/icon_gallery_new.png');
+                            vertical-align:middle;
+                        }
+                        &.hover{
+                            text-decoration:underline;
+                        }
+                    }
+                    .date-hit{
+                        display:block;
+                        margin-top:13px;
+                        color:#898989;
+                        font-size:0;
+                        line-height:1;
+                        .date{
+                            display:inline-block;
+                            margin-right:8px;
+                            padding-right:6px;
+                            border-right:1px solid #dadada;
+                            line-height:12px;
+                            font-size: 13px;
+                        }
+                        .hit{
+                            display:inline-block;
+                            line-height:12px;
+                            font-size: 13px;
+                            &:before{
+                                margin-right:6px;
+                                content:url('../images/icon/icon-hits.png');
+                            }
+                        }
+                    }
+                }
+                &.on-hover{
+                    .thumbnail{
+                        opacity: 0.65;
+                    }
+                    .details .title a{
+                        text-decoration:underline;
+                    }
+                }
+            }
+        }
+    }
+    .common-front-paging1 {
+        margin-top:6px;
+    }
+    .common-front-search{
+        margin-top:20px;
+        div.common-search form .form-container{
+            .for-select select{
+                background-position: calc(100% - 4px) center;
+            }
+            span.group-container{
+                span.sub-container{
+                    span.for-select select{
+                        background-position: calc(100% - 4px) center;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+
+
+@media screen and (min-width: 960px) {
+    .vod.no-sort.no-writer{
+        .vod-list{
+            .vod-section-wrapper{
+                &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+                    margin-left:calc((100% - 888px) / 3);
+                }
+                &:nth-child(n+5){
+                    .details .title{
+                        height:unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 959px) {
+    .vod.no-sort.no-writer{
+        .vod-list{
+            .vod-section-wrapper{
+                &:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6), &:nth-child(8){
+                    margin-left:calc((100% - 666px) / 2);
+                }
+                &:nth-child(n+7){
+                    .details .title{
+                        height:unset;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .vod.no-sort.no-writer{
+        .vod-list{
+            .vod-section-wrapper{
+                display:block;
+                width:100%;
+                .details .title{
+                    height:unset;
+                    max-height:52px;
+                }
+            }
+        }
+    }
+}

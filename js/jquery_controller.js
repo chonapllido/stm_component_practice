@@ -33,4 +33,42 @@ $(function(){
         e.preventDefault();
         $(".p3").toggleClass("active");
     });
+
+    // Start Form Gallery Section
+    $(".form-gallery .details .title").mouseenter(function(){
+        $(this).parents('.gallery-section').addClass('on-hover');
+    });
+    $(".form-gallery .details .title").mouseleave(function(){
+        $(".gallery-section").removeClass('on-hover');
+    });
+
+    $(".form-gallery .details .files a").click(function(e){
+        e.preventDefault();
+        $('.gallery-section').removeClass('on');
+        $(this).parents('.gallery-section').addClass('on');
+    });
+
+    $(".form-gallery .details .save-options .top a").click(function(e){
+        e.preventDefault();
+        $(this).parents('.gallery-section').removeClass('on');
+    });
+
+    $(".form-gallery .details .save-options .bottom a, .details .title").click(function(e){
+        e.preventDefault();
+    });
+
+    $(".form-gallery .gallery-list .details .title").dotdotdot();
+    // End Form Gallery Section
+
+    // Start VOD Section
+    $(".vod.no-sort.no-writer .vod-list .details .title").dotdotdot();
+
+    $(".vod.no-sort.no-writer .details .title").mouseenter(function(){
+        $(this).parents('.vod-section').addClass('on-hover');
+    });
+    $(".vod.no-sort.no-writer .details .title").mouseleave(function(){
+        $(".vod-section").removeClass('on-hover');
+    });
+    // End VOD Section
+    
 });
