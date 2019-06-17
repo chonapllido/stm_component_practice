@@ -61,12 +61,12 @@ $(function(){
     // End Form Gallery Section
 
     // Start VOD Section
-    $(".vod.no-sort.no-writer .vod-list .details .title").dotdotdot();
+    $(".vod.no-writer .vod-list .details .title").dotdotdot();
 
-    $(".vod.no-sort.no-writer .details .title").mouseenter(function(){
+    $(".vod.no-writer .details .title").mouseenter(function(){
         $(this).parents('.vod-section').addClass('on-hover');
     });
-    $(".vod.no-sort.no-writer .details .title").mouseleave(function(){
+    $(".vod.no-writer .details .title").mouseleave(function(){
         $(".vod-section").removeClass('on-hover');
     });
     // End VOD Section

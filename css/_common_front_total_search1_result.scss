@@ -11,19 +11,27 @@
 			background: #fbfbfb;
 			border-top:1px solid #262223;
 			border-bottom: 1px solid #d4d4d4;
-			padding: 15px;
 			box-sizing: border-box;
 			>ul{
-				float: left;
 				&.detail{
+					float: left;
+					margin: 15px 0 0 0;
 					color: #7b001e;
 					font: normal 19px 'Malgun Gothic';
+					padding: 0 15px;
+					box-sizing: border-box;
 					>li{
 						display: inline-block;
-						background: url($img + 'icon/icon_arrow_right.png') no-repeat 99% 50%;
-						padding: 0 20px 0 0;
+						padding: 0 20px 15px 0;
+						&:after{
+							position: absolute;
+							content: url($img + 'icon/icon_arrow_right.png');
+							margin: 8px 10px;
+						}
 						&:last-child{
-							background:none;
+							&:after{
+								content:'';
+							}
 						}
 					}
 				}
@@ -31,27 +39,32 @@
 			.count{
 				float: right;
 				display: table;
-				border: 1px solid #816d63;
 				font:normal 13px/19px 'Malgun Gothic';
 				box-sizing: border-box;
 				line-height: 24px;
 				vertical-align: top;
+				padding: 0 15px;
+				margin: 15px 0;
 				.total{
 					display: table-cell;
-					background: #8c766c;
+				
 					color: #efeae2;
 					padding: 0 27px 0 7px;
 					vertical-align: middle;
+					border: 1px solid #816d63;
+					background: #8c766c url($img + 'icon/board-list-icon1.png') no-repeat 88% 55%;
 				}
 				.number{
 					display: table-cell;
 					background: #978276;
 					color: #efeae2;
 					padding: 0 7px 0 35px;
-					float: right;
-					>em{
-						font:normal 14px 'Malgun Gothic';
-						color:#ffffff;
+					span{
+						float: right;
+						>em{
+							font:normal 14px 'Malgun Gothic';
+							color:#ffffff;
+						}
 					}
 				}
 			}
@@ -59,6 +72,7 @@
 		.bottom-section{
 			display: table;
 			width: 100%;
+			border-bottom: 1px solid #8b8b8b;
 			.container{
 				.sub-section{
 					display: table;
@@ -66,37 +80,92 @@
 					border-bottom:1px solid #d4d4d4;
 					width: 100%;
 					box-sizing: border-box;
-					.default-thumbnail, .default-gallery{
+					.default-thumbnail{
 						display: table-cell;
 						width: 110px;
 						height: 74px;
 						background: url($img + 'bg/bg_no_image.jpg') no-repeat;
+						img{
+							width: 110px;
+							height: 74px;
+						}
+						&:hover{
+							&:before{
+								position:absolute;
+								width: 110px;
+								height: 74px;
+								content: '';
+								background: url($img + 'thumbnail_mask.png');
+							}
+						}
+					}
+					.default-gallery{
+						display: table-cell;
+						width: 110px;
+						height: 74px;
+						background: url($img + 'bg/bg_no_image.jpg') no-repeat;
+						img{
+							width: 58px;
+							height: 74px;
+						}
+						&:hover{
+							&:before{
+								position:absolute;
+								width: 110px;
+								height: 74px;
+								content: '';
+								background: url($img + 'thumbnail_mask.png');
+							}
+						}
 					}
 					.default-profile{
 						display: table-cell;
 						width: 44px;
 						height: 54px;
 						background: url($img + 'bg/bg_default_profile.jpg') no-repeat;
+						&:hover{
+							&:before{
+								position:absolute;
+								width: 44px;
+								height: 54px;
+								content: '';
+								background: url($img + 'thumbnail_mask.png');
+							}
+						}
 					}
 					.default-magazine{
 						display: table-cell;
 						width: 70px;
 						height: 86px;
 						background: url($img + 'bg/bg_no_image_portrait.jpg') no-repeat;
+						&:hover{
+							&:before{
+								position:absolute;
+								width: 70px;
+								height: 86px;
+								content: '';
+								background: url($img + 'thumbnail_mask.png');
+							}
+						}
 					}
 					.group-container{
 						display: table-cell;
 						vertical-align: top;
 						padding: 0 15px;
-						.new{
-							background: url($img + 'icon/icon_new.png') no-repeat;
-						}
 					}
 					ul{
 						>li{
 							display: inline-block;
 							font: normal 13px 'Malgun Gothic';
 							color: #898989;
+							background: url($img + 'bg/bg_border_gray.jpg') no-repeat 100% 50%;
+							padding: 0 11px 0 5px;
+							&:first-child{
+								padding: 0 11px 0 0;
+							}
+							&:last-child{
+								background:none;
+							}
 						}
 					}
 					img{
@@ -106,6 +175,7 @@
 					}
 					.sub-container{
 						display: table;
+						width: 100%;
 					}
 					.red{
 						display: table;
@@ -127,6 +197,9 @@
 						padding: 3px 8px 6px 8px;
 						margin: 0 0 20px 0;
 					}
+					&:last-child{
+						border: none;
+					}
 				}
 			}
 			.title{
@@ -134,6 +207,18 @@
 				font: normal 13px/20px 'Malgun Gothic';
 				color:#1b1b1b;
 				margin: 0 0 10px 0;
+				position: relative;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+			.new{
+				&:after{
+					position: absolute;
+					content: url($img + 'icon/icon_new.png');
+					margin-top: 6px;
+					margin-left: 4px;
+				}
 			}
 			.detail{
 				display: table;
@@ -154,10 +239,13 @@
 				display: table;
 				background: #f98900;
 				color: #ffffff;
-				padding: 6px 9px 8px 7px;
+				padding: 4px 9px 6px 7px;
 				font:bold 11px 'Malgun Gothic';
 				margin: 0 0 20px 0;
 			}
+		}
+		.no-border-bottom{
+			border: none;
 		}
 		.add{
 			display: block;
@@ -168,20 +256,118 @@
 			border-bottom: 1px solid #888888;
 		}
 	}
-}	
-/* 768 */
-@media screen and (max-width:959px) {
-	
 }
 /* 640 */
 @media screen and (max-width:767px) {
-	
+	.common-front-total-search-result{
+		.section{
+			.bottom-section{
+				.container{
+					.sub-section{
+						.default-thumbnail{
+							display: block;
+							width: 216px;
+							height: 146px;
+							margin: 0 auto 20px auto;
+							background: url($img + 'bg/bg_no_image_v2.jpg') no-repeat;
+							img{
+								width: 216px;
+								height: 146px;
+							}
+						}
+						.default-gallery{
+							display: block;
+							width: 216px;
+							height: 146px;
+							margin: 0 auto 20px auto;
+							background: url($img + 'bg/bg_no_image_v2.jpg') no-repeat;
+							img{
+								width: 112px;
+								height: 146px;
+							}
+						}
+						.default-profile{
+							display: block;
+							width: 100px;
+							height: 120px;
+							margin: 0 auto 20px auto;
+							background: url($img + 'bg/bg_default_profile_v2.jpg') no-repeat;
+							img{
+								width: 100px;
+								height: 120px;
+							}
+						}
+						.default-magazine{
+							display: block;
+							width: 142px;
+							height: 180px;
+							margin: 0 auto 20px auto;
+							background: url($img + 'bg/bg_no_image_portrait_v2.jpg') no-repeat;
+							img{
+								width: 142px;
+								height: 180px;
+							}
+						}
+						.group-container{
+							display: block;
+							padding: 0;
+						}
+						ul{
+							&.information{
+								>li{
+									&.writer{
+										display:block;
+										margin: 0 0 7px 0;
+										background: none;
+									}
+									&.assign-date{
+										padding: 0 11px 0 0;
+									}
+									&.email{
+										display: block;
+										background: url($img + 'icon/icon_email.png') no-repeat 0 87%;
+										padding: 11px 0 0 20px;
+									}
+									&.position{
+										background: none;
+									}
+									.caption{
+										display: none;
+									}
+									.hit-number{
+										background: url($img + 'icon/icon-hits.png') no-repeat 0 50%;
+										padding: 0 0 0 20px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 /* 480 */
 @media screen and (max-width:639px) {
-	
-}
-/* 320 */
-@media screen and (max-width:479px) {
-	
+	.common-front-total-search-result{
+		.section{
+			.top-section{
+				>ul{
+					&.detail{
+						width: 100%;
+						border-bottom: 1px solid #e9e9e9;
+						>li{
+							display: block;
+						}
+					}
+				}
+				.count{
+					margin: 12px 0;
+					.number{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
 }

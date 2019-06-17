@@ -1,0 +1,84 @@
+.vod.sort.no-writer{
+    font-family:'Malgun Gothic', sans-serif;
+    .vod-list{
+        .vod-section-wrapper{
+            .vod-section{
+                .sort{
+                    a{
+                        display:block;
+                        position:relative;
+                        font-size:13px;
+                        line-height:12px;
+                        color: #9b7a58;
+                        margin-bottom:15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .vod.sort.no-writer{
+        .vod-list{
+            .vod-section-wrapper{
+                &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+                    margin-left:calc((100% - 888px) / 3);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 959px) {
+    .vod.sort.no-writer{
+        .vod-list{
+            .vod-section-wrapper{
+                width:236px;
+                &:nth-child(2), &:nth-child(3), &:nth-child(5), &:nth-child(6), &:nth-child(8){
+                    margin-left:calc((100% - 708px) / 2);
+                }
+                .vod-section .thumbnail{
+                    height:138px;
+                    span{
+                        width:204px;
+                        height:138px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .vod.sort.no-writer{
+        .vod-list{
+            margin-top:20px;
+            .vod-section-wrapper{
+                display:block;
+                width:100%;
+                margin-bottom:0;
+                border:none;
+                border-bottom:1px solid #d4d4d4;
+                &:first-child{
+                    border-top:2px solid #a40022;
+                }
+                &:last-child{
+                    border-bottom:2px solid #313131;
+                }
+                .vod-section .thumbnail{
+                    height:146px;
+                    span{
+                        width:217px;
+                        height:147px;
+                    }
+                }
+            }
+
+        }
+        .common-front-paging1 {
+            margin-top:20px;
+        }
+    }
+}
