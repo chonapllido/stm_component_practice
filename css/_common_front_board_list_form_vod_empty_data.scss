@@ -1,0 +1,56 @@
+.vod.empty-data{
+    .vod-list{
+        display:block;
+        position:relative;
+        clear:both;
+        margin:45px 0;
+        p{
+            padding:13px;
+            background-color:#fbfbfb;
+            border:1px solid #e9e9e9;
+            font-size:13px;
+            font-family:'Malgun Gothic', sans-serif;
+            color:#959595;
+            text-align:center;
+            line-height:12px;
+            span{
+                position:relative;
+                &:before{
+                    content:url('../images/icon/gallery-empty-data-icon1.png');
+                    position:absolute;
+                    left:-27px;
+                    top:0;
+                }
+            }
+        }
+    }
+    .common-front-paging1 {
+        margin-top:0;
+    }
+    .common-front-search{
+        margin-top:20px;
+        div.common-search form .form-container{
+            .for-select select{
+                background-position: calc(100% - 4px) center;
+            }
+            span.group-container{
+                span.sub-container{
+                    span.for-select select{
+                        background-position: calc(100% - 4px) center;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 767px){
+    .vod.empty-data{
+        .vod-list{
+            margin:20px 0;
+            padding:30px 0;
+            border-top:2px solid #a40022;
+            border-bottom:2px solid #313131;
+        }
+    }
+}
