@@ -1,0 +1,114 @@
+
+
+.vod-content{
+    position:relative;
+    font-family:'Malgun Gothic', sans-serif;
+    border-top:2px solid #a40022;
+    .board-view-details{
+        h2{
+            margin:26px 15px;
+            font-size:19px;
+            line-height:26px;
+            font-weight:normal;
+            color:#1b1b1b;
+            &.new:after{
+                margin-left:8px;
+                content:url('../images/icon/icon-new-vod-lg.png');
+            }
+        }
+        .wrapper-details{
+            display:block;
+            position:relative;
+            width:100%;
+            padding:16px 15px;
+            background-color:#fcfcfc;
+            border-top:1px solid #e6e6e6;
+            border-bottom:1px solid #d4d4d4;
+            box-sizing:border-box;
+            line-height:12px;
+            font-size:13px;
+            .title{
+                display:inline-block;
+                color:#755332;
+            }
+            .entry{
+                display:inline-block;
+                color:#898989;
+            }
+            .writer, .date-create, .hit{
+                display:inline-block;
+            }
+            .date-hit{
+                float:right;
+            }
+            .date-create, .hit{
+                margin-left:3px;
+                padding-left:7px;
+                border-left:1px solid #ccbfb3;
+            }
+        }
+    }
+    .vod-container{
+        display:block;
+        position:relative;
+        margin-top:40px;
+        .left{
+            display:inline-block;
+            width:calc(100% - 320px);
+            .content{
+                position:relative;;
+                width:100%;
+                margin-top:15px;
+                border:1px solid #d8d8d8;
+                box-sizing:border-box;
+                span{
+                    display:block;
+                    width:calc(100% - 41px);
+                    padding:9px 15px;
+                    font-size:13px;
+                    line-height:20px; 
+                    box-sizing:border-box;
+                }               
+                a{
+                    position:absolute;
+                    width:41px;
+                    height:100%;
+                    top:0;
+                    right:0;
+                    background:#eeeeee url('../images/icon/icon-disable.png') no-repeat center;
+                }
+            }
+            .information{
+                position:relative;
+                margin-top:15px;
+                background-color:#717171;
+                border-top:1px solid #565656;
+                border-bottom:1px solid #565656;
+                box-sizing:border-box;
+                .top{
+                    padding:15px 14px;;
+                    span{
+                        font-size:15px;
+                        font-weight:bold;
+                        line-height:14px;
+                        color:#fff;
+                    }
+                    a{
+                        position:absolute;
+                        width:41px;
+                        height:100%;
+                        top:0;
+                        right:0;
+                        background:#606060 url('../images/icon/icon-vod-down.png') no-repeat center;
+                    }
+                }
+            }
+        }
+        .right{
+            float:right;
+            width:300px;
+            height:50px;
+            background-color:#ccbfb3;
+        }
+    }
+}
