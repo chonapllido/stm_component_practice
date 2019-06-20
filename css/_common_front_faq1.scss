@@ -22,6 +22,9 @@ $stm_img: '../images/';
 			width: 39px;
 			cursor: pointer;
 			background: url($stm_img + 'icon/faq-add.png') 0 50% no-repeat;
+			&.minimize {
+				background: url($stm_img + 'icon/faq-minimize.png') no-repeat 0 50%;
+			}
 		}
 		.q-section {
 			display: table-cell;
@@ -55,6 +58,9 @@ $stm_img: '../images/';
 					}
 				}
 			}
+		}
+		&.no-border {
+			border-bottom: 0;
 		}
 	}
 }
@@ -104,6 +110,8 @@ $stm_img: '../images/';
 @media screen and (max-width: 767px) {
 	.faq-section {
 		.question {
+			display: block;
+			position: relative;
 			.q-img {
 				display: block;
 				border-right: 0;
@@ -136,14 +144,17 @@ $stm_img: '../images/';
 			.link-add {
 				display: block;
 				position: absolute;
-				top: 18px;
+				top: 15px;
+				right: 15px;
+				width: 24px;
+				height: 24px;
 			}
 		}
 	}
 	.pop-out {
 		.mobile {
 			display: block;
-			margin: 16px;
+			margin: -2px 15px 15px 15px;
 			border: 1px solid #d9d9d9;
 			box-sizing: border-box;
 			.pop-out-cont {
