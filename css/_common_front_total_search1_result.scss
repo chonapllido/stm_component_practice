@@ -204,7 +204,7 @@
 			}
 			.title{
 				display: block;
-				font: normal 13px/20px 'Malgun Gothic';
+				font: normal 17px/20px 'Malgun Gothic';
 				color:#1b1b1b;
 				margin: 0 0 10px 0;
 				position: relative;
@@ -250,8 +250,8 @@
 		.add{
 			display: block;
 			margin: 20px auto 45px auto;
-			background:url($img + 'icon/icon_add.png') no-repeat 8% 40%;
-			padding: 3px 11px 10px 27px;
+			background: url("../images/icon/icon_add.png") no-repeat 8% 50%;
+			padding: 5px 11px 8px 27px;
 			border: 1px solid #bcbcbc;
 			border-bottom: 1px solid #888888;
 		}
@@ -366,6 +366,11 @@
 					.number{
 						width: 100%;
 					}
+				}
+			}
+			.bottom-section{
+				.title{
+					font: normal 13px/20px 'Malgun Gothic';
 				}
 			}
 		}
