@@ -801,12 +801,27 @@ a { text-decoration: none; }
 .faq-section .question .q-section .qtable .status .stext { display: inline-block; padding: 3px 9px 4px 8px; color: #fff; font: normal 11px/11px 'Malgun Gothic'; border: 1px solid #475b6e; background: #4e6479; }
 
 .pop-out { display: none; border: 1px solid #d9d9d9; border-top: 0; border-bottom: 1px solid #b4b4b4; width: 100%; box-sizing: border-box; }
-.pop-out .pop-out-cont { display: table-cell; background: #fdfdfd; padding: 20px; font: 13px/17px "Malgun Gothic"; vertical-align: middle; }
-.pop-out .pop-out-cont:first-child { background: #f7f7f7; width: 54px; padding: 0; text-align: center; color: #b09c75; font-weight: bold; border-right: 1px solid #d9d9d9; }
-.pop-out .pop-out-cont p { display: block; margin-bottom: 20px; margin-top: 10px; }
-.pop-out .pop-out-cont button { margin-left: 0; }
+.pop-out .mobile { display: table; }
+.pop-out .mobile .pop-out-cont { display: table-cell; background: #fdfdfd; padding: 20px; font: 13px/17px "Malgun Gothic"; vertical-align: middle; }
+.pop-out .mobile .pop-out-cont:first-child { background: #f7f7f7; width: 54px; padding: 0; text-align: center; color: #b09c75; font-weight: bold; border-right: 1px solid #d9d9d9; }
+.pop-out .mobile .pop-out-cont p { display: block; margin-bottom: 20px; margin-top: 10px; }
+.pop-out .mobile .pop-out-cont button { margin-left: 0; }
+.pop-out .mobile .btn-ans-cont { display: none; }
 .pop-out.active { display: table; }
 
+@media screen and (max-width: 767px) { .faq-section .question .q-img { display: block; border-right: 0; background: url("../images/bg/bg_border_dark_gray.png") no-repeat 100%; }
+  .faq-section .question .q-img img { margin-top: 16px; }
+  .faq-section .question .q-section { display: block; padding: 0; }
+  .faq-section .question .q-section .qtable { display: block; }
+  .faq-section .question .q-section .qtable .status { display: block; position: absolute; top: 18px; left: 65px; }
+  .faq-section .question .q-section .qtable .qtext { display: block; width: 100%; box-sizing: border-box; border-top: 1px solid #eaeaea; padding: 30px 10px 30px 15px; font: normal 17px/20px "Malgun Gothic"; }
+  .faq-section .question .link-add { display: block; position: absolute; top: 18px; }
+  .pop-out .mobile { display: block; margin: 16px; border: 1px solid #d9d9d9; box-sizing: border-box; }
+  .pop-out .mobile .pop-out-cont { display: block; position: relative; }
+  .pop-out .mobile .pop-out-cont:first-child { height: 36px; width: 100%; box-sizing: border-box; text-align: left; font: bold 13px/36px "Malgun Gothic"; padding: 0px 15px 11px 15px; border-right: 0; }
+  .pop-out .mobile .pop-out-cont:first-child:after { content: ''; position: absolute; background: url("../images/icon/question_arrow_down.png") no-repeat 100%; width: 8px; height: 4px; top: 16px; right: 17px; }
+  .pop-out .mobile .btn-ans-cont { display: block; border-top: 1px solid #e1e1e1; text-align: center; padding-left: 15px; padding-right: 15px; height: 54px; width: 100%; box-sizing: border-box; }
+  .pop-out .mobile .btn-ans-cont .btn-ans { margin-top: 10px; font: bold 13px "Malgun Gothic"; color: #b09c75; border: 1px solid #d1d1d1; border-bottom: 1px solid #b2b2b2; padding: 6px; width: 73px; cursor: pointer; background: #fafafa; } }
 .form-gallery { font-family: 'Malgun Gothic', sans-serif; }
 .form-gallery .gallery-list { width: 100%; margin-top: 30px; font-size: 0; }
 .form-gallery .gallery-list .gallery-section-wrapper { display: inline-block; width: 216px; }
@@ -944,5 +959,37 @@ a { text-decoration: none; }
 @media screen and (max-width: 639px) { .common-front-nonemail > div .top .icon { display: block; margin: 0 auto; padding: 0 0 20px 0; }
   .common-front-nonemail > div .top .text { display: block; vertical-align: middle; }
   .common-front-nonemail > div .top .text > em { color: #785635; } }
+.vod-content { position: relative; padding-bottom: 40px; border-top: 2px solid #a40022; border-bottom: 2px solid #313131; font-family: 'Malgun Gothic', sans-serif; }
+.vod-content .board-view-details h2 { margin: 26px 15px; font-size: 19px; line-height: 26px; font-weight: normal; color: #1b1b1b; }
+.vod-content .board-view-details h2.new:after { margin-left: 8px; content: url("../images/icon/icon-new-vod-lg.png"); }
+.vod-content .board-view-details .wrapper-details { display: block; position: relative; width: 100%; padding: 16px 15px; background-color: #fcfcfc; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #d4d4d4; box-sizing: border-box; line-height: 12px; font-size: 13px; }
+.vod-content .board-view-details .wrapper-details .title { display: inline-block; color: #755332; }
+.vod-content .board-view-details .wrapper-details .entry { display: inline-block; color: #898989; }
+.vod-content .board-view-details .wrapper-details .writer, .vod-content .board-view-details .wrapper-details .date-create, .vod-content .board-view-details .wrapper-details .hit { display: inline-block; }
+.vod-content .board-view-details .wrapper-details .date-hit { float: right; }
+.vod-content .board-view-details .wrapper-details .date-create, .vod-content .board-view-details .wrapper-details .hit { margin-left: 3px; padding-left: 7px; border-left: 1px solid #ccbfb3; }
+.vod-content .vod-container { display: block; position: relative; margin-top: 40px; }
+.vod-content .vod-container .left { display: inline-block; width: calc(100% - 320px); }
+.vod-content .vod-container .left .content { position: relative; width: 100%; margin-top: 15px; border: 1px solid #d8d8d8; box-sizing: border-box; }
+.vod-content .vod-container .left .content .vod-title { display: block; width: calc(100% - 41px); padding: 9px 15px; font-size: 13px; line-height: 20px; box-sizing: border-box; }
+.vod-content .vod-container .left .content a { position: absolute; width: 41px; height: 100%; top: 0; right: 0; background: #eeeeee url("../images/icon/icon-disable.png") no-repeat center; }
+.vod-content .vod-container .left .information { margin-top: 15px; box-sizing: border-box; }
+.vod-content .vod-container .left .information .top { position: relative; padding: 15px 14px; background-color: #717171; border-top: 1px solid #565656; border-bottom: 1px solid #565656; }
+.vod-content .vod-container .left .information .top .description { font-size: 15px; font-weight: bold; line-height: 14px; color: #fff; }
+.vod-content .vod-container .left .information .top a { position: absolute; width: 41px; height: 100%; top: 0; right: 0; background: #606060 url("../images/icon/icon-vod-down.png") no-repeat center; }
+.vod-content .vod-container .left .information .section { display: block; border-bottom: 1px solid #d4d4d4; font-size: 0; }
+.vod-content .vod-container .left .information .section .title { display: table-cell; width: 80px; padding: 15px 13px; background-color: #f7f7f7; color: #755332; font-size: 13px; line-height: 12px; box-sizing: border-box; }
+.vod-content .vod-container .left .information .section .content { display: table-cell; margin: 0; padding: 15px; width: calc(100% - 80px); border: none; border-left: 1px solid #e6e6e6; color: #535353; font-size: 13px; line-height: 12px; box-sizing: border-box; }
+.vod-content .vod-container .left .information .section .content.icons { padding: 10px 15px; }
+.vod-content .vod-container .left .information .section .content.icons .icon { display: table-cell; width: 22px; height: 22px; padding-right: 10px; }
+.vod-content .vod-container .left .information .section .content.icons .icon:first-child { background: url("../images/icon/icon-vod-gray1.png") no-repeat; }
+.vod-content .vod-container .left .information .section .content.icons .icon:nth-child(2) { background: url("../images/icon/icon-vod-gray2.png") no-repeat; }
+.vod-content .vod-container .left .information .section .content.icons .icon:nth-child(3) { background: url("../images/icon/icon-vod-gray3.png") no-repeat; }
+.vod-content .vod-container .left .information .section .content.icons .icon:nth-child(4) { background: url("../images/icon/icon-vod-gray4.png") no-repeat; }
+.vod-content .vod-container .left .information .section:last-child { border-bottom: 1px solid #b4b4b4; }
+.vod-content .vod-container .right { float: right; width: 300px; height: 50px; }
+.vod-content .vod-container .right .right-top { position: relative; }
+.vod-content .vod-container .right .right-top .title-right { display: block; width: calc(100% - 56px); padding: 14px; font-size: 15px; line-height: 14px; color: #000; }
+.vod-content .vod-container .right .right-top .icon-btn { position: absolute; width: 42px; height: 100%; top: 0; right: 0; background: url("../images/icon/icon-vod-play.png") no-repeat center; }
 
 /*# sourceMappingURL=common.css.map */
