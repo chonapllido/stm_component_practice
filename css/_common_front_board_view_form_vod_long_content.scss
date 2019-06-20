@@ -2,8 +2,10 @@
 
 .vod-content{
     position:relative;
-    font-family:'Malgun Gothic', sans-serif;
+    padding-bottom:40px;
     border-top:2px solid #a40022;
+    border-bottom:2px solid #313131;
+    font-family:'Malgun Gothic', sans-serif;
     .board-view-details{
         h2{
             margin:26px 15px;
@@ -61,7 +63,7 @@
                 margin-top:15px;
                 border:1px solid #d8d8d8;
                 box-sizing:border-box;
-                span{
+                .vod-title{
                     display:block;
                     width:calc(100% - 41px);
                     padding:9px 15px;
@@ -79,15 +81,15 @@
                 }
             }
             .information{
-                position:relative;
                 margin-top:15px;
-                background-color:#717171;
-                border-top:1px solid #565656;
-                border-bottom:1px solid #565656;
                 box-sizing:border-box;
                 .top{
-                    padding:15px 14px;;
-                    span{
+                    position:relative;
+                    padding:15px 14px;
+                    background-color:#717171;
+                    border-top:1px solid #565656;
+                    border-bottom:1px solid #565656;
+                    .description{
                         font-size:15px;
                         font-weight:bold;
                         line-height:14px;
@@ -102,13 +104,82 @@
                         background:#606060 url('../images/icon/icon-vod-down.png') no-repeat center;
                     }
                 }
+                .section{
+                    display:block;
+                    border-bottom:1px solid #d4d4d4;
+                    font-size:0;
+                    .title{
+                        display:table-cell;
+                        width:80px;
+                        padding:15px 13px;
+                        background-color:#f7f7f7;
+                        color:#755332;
+                        font-size:13px;
+                        line-height:12px;
+                        box-sizing:border-box;
+                    }
+                    .content{
+                        display:table-cell;
+                        margin:0;                    
+                        padding:15px;                        
+                        width:calc(100% - 80px);
+                        border:none;
+                        border-left:1px solid #e6e6e6;
+                        color:#535353;
+                        font-size:13px;
+                        line-height:12px;
+                        box-sizing:border-box;
+                        &.icons{
+                            padding:10px 15px;
+                            .icon{
+                                display:table-cell;
+                                width:22px;
+                                height:22px;
+                                padding-right:10px;
+                                &:first-child{
+                                    background:url('../images/icon/icon-vod-gray1.png') no-repeat;
+                                }
+                                &:nth-child(2){
+                                    background:url('../images/icon/icon-vod-gray2.png') no-repeat;
+                                }
+                                &:nth-child(3){
+                                    background:url('../images/icon/icon-vod-gray3.png') no-repeat;
+                                }
+                                &:nth-child(4){
+                                    background:url('../images/icon/icon-vod-gray4.png') no-repeat;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        border-bottom:1px solid #b4b4b4;                        
+                    }
+                }
             }
         }
         .right{
             float:right;
             width:300px;
             height:50px;
-            background-color:#ccbfb3;
+            .right-top{
+                position:relative;
+                .title-right{
+                    display:block;
+                    width:calc(100% - 56px);
+                    padding:14px;
+                    font-size:15px;
+                    line-height:14px;
+                    color:#000;
+                }
+                .icon-btn{
+                    position:absolute;
+                    width:42px;
+                    height:100%;
+                    top:0;
+                    right:0;
+                    background:url('../images/icon/icon-vod-play.png') no-repeat center;
+                }
+            }
         }
     }
 }
