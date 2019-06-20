@@ -769,7 +769,8 @@ a { text-decoration: none; }
 .common-front-total-search-result .section .add { display: block; margin: 20px auto 45px auto; background: url("../images/icon/icon_add.png") no-repeat 8% 50%; padding: 5px 11px 8px 27px; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
 
 /* 640 */
-@media screen and (max-width: 737px) { .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail { display: block; width: 216px; height: 146px; margin: 0 auto 20px auto; background: url("../images/bg/bg_no_image_v2.jpg") no-repeat; }
+@media screen and (max-width: 737px) { .common-front-total-search-result .section .top-section .count { position: absolute; right: 0; }
+  .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail { display: block; width: 216px; height: 146px; margin: 0 auto 20px auto; background: url("../images/bg/bg_no_image_v2.jpg") no-repeat; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail img { width: 216px; height: 146px; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail:hover:before { width: 216px; height: 146px; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-gallery { display: block; width: 216px; height: 146px; margin: 0 auto 20px auto; background: url("../images/bg/bg_no_image_v2.jpg") no-repeat; }
@@ -791,7 +792,7 @@ a { text-decoration: none; }
 /* 480 */
 @media screen and (max-width: 609px) { .common-front-total-search-result .section .top-section > ul.detail { width: 100%; border-bottom: 1px solid #e9e9e9; }
   .common-front-total-search-result .section .top-section > ul.detail > li { display: block; }
-  .common-front-total-search-result .section .top-section .count { margin: 12px 0; }
+  .common-front-total-search-result .section .top-section .count { position: unset; margin: 12px 0; }
   .common-front-total-search-result .section .top-section .count .number { width: 100%; }
   .common-front-total-search-result .section .bottom-section .title { font: normal 13px/20px 'Malgun Gothic'; } }
 .faq-section .question { display: table; position: relative; width: 100%; box-sizing: border-box; border: 1px solid #d9d9d9; border-bottom: 1px solid #b4b4b4; }
