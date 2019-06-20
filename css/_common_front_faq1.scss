@@ -129,6 +129,7 @@ $stm_img: '../images/';
 						box-sizing: border-box;
 						border-top: 1px solid #eaeaea;
 						padding: 30px 10px 30px 15px;
+						font: normal 17px/20px "Malgun Gothic";
 					}
 				}
 			}
@@ -167,18 +168,16 @@ $stm_img: '../images/';
 					}
 				}
 			}
-			.btn-cont {
-				padding-left: 15px;
-				padding-right: 15px;
-				height: 54px;
-				width: 100%;
-				box-sizing: border-box;
 				.btn-ans-cont {
 					display: block;
 					border-top: 1px solid #e1e1e1;
 					text-align: center;
+					padding-left: 15px;
+					padding-right: 15px;
+					height: 54px;
+					width: 100%;
+					box-sizing: border-box;
 					.btn-ans {
-						display: block;
 						margin-top: 10px;
 						font: bold 13px "Malgun Gothic";
 						color: #b09c75;
@@ -187,9 +186,9 @@ $stm_img: '../images/';
 						padding: 6px;
 						width: 73px;
 						cursor: pointer;
+						background: #fafafa;
 					}
 				}
-			}
 		}
 	}
 }
