@@ -798,12 +798,14 @@ a { text-decoration: none; }
 .faq-section .question { display: table; position: relative; width: 100%; box-sizing: border-box; border: 1px solid #d9d9d9; border-bottom: 1px solid #b4b4b4; }
 .faq-section .question .q-img { display: table-cell; vertical-align: middle; width: 54px; height: 54px; text-align: center; border-right: 1px solid #eaeaea; }
 .faq-section .question .link-add { display: table-cell; vertical-align: middle; width: 39px; cursor: pointer; background: url("../images/icon/faq-add.png") 0 50% no-repeat; }
+.faq-section .question .link-add.minimize { background: url("../images/icon/faq-minimize.png") no-repeat 0 50%; }
 .faq-section .question .q-section { display: table-cell; vertical-align: middle; padding-left: 15px; box-sizing: border-box; }
 .faq-section .question .q-section .qtable { display: table; }
 .faq-section .question .q-section .qtable .qtext { display: table-cell; vertical-align: middle; padding-left: 10px; padding-right: 10px; color: #1b1b1b; font: normal 13px/20px 'Malgun Gothic'; }
 .faq-section .question .q-section .qtable .qtext:hover { text-decoration: underline; }
 .faq-section .question .q-section .qtable .status { display: table-cell; min-width: 44px; vertical-align: middle; }
 .faq-section .question .q-section .qtable .status .stext { display: inline-block; padding: 3px 9px 4px 8px; color: #fff; font: normal 11px/11px 'Malgun Gothic'; border: 1px solid #475b6e; background: #4e6479; }
+.faq-section .question.no-border { border-bottom: 0; }
 
 .pop-out { display: none; border: 1px solid #d9d9d9; border-top: 0; border-bottom: 1px solid #b4b4b4; width: 100%; box-sizing: border-box; }
 .pop-out .mobile { display: table; }
@@ -814,14 +816,15 @@ a { text-decoration: none; }
 .pop-out .mobile .btn-ans-cont { display: none; }
 .pop-out.active { display: table; }
 
-@media screen and (max-width: 767px) { .faq-section .question .q-img { display: block; border-right: 0; background: url("../images/bg/bg_border_dark_gray.png") no-repeat 100%; }
+@media screen and (max-width: 767px) { .faq-section .question { display: block; position: relative; }
+  .faq-section .question .q-img { display: block; border-right: 0; background: url("../images/bg/bg_border_dark_gray.png") no-repeat 100%; }
   .faq-section .question .q-img img { margin-top: 16px; }
   .faq-section .question .q-section { display: block; padding: 0; }
   .faq-section .question .q-section .qtable { display: block; }
   .faq-section .question .q-section .qtable .status { display: block; position: absolute; top: 18px; left: 65px; }
   .faq-section .question .q-section .qtable .qtext { display: block; width: 100%; box-sizing: border-box; border-top: 1px solid #eaeaea; padding: 30px 10px 30px 15px; font: normal 17px/20px "Malgun Gothic"; }
-  .faq-section .question .link-add { display: block; position: absolute; top: 18px; }
-  .pop-out .mobile { display: block; margin: 16px; border: 1px solid #d9d9d9; box-sizing: border-box; }
+  .faq-section .question .link-add { display: block; position: absolute; top: 15px; right: 15px; width: 24px; height: 24px; }
+  .pop-out .mobile { display: block; margin: -2px 15px 15px 15px; border: 1px solid #d9d9d9; box-sizing: border-box; }
   .pop-out .mobile .pop-out-cont { display: block; position: relative; }
   .pop-out .mobile .pop-out-cont:first-child { height: 36px; width: 100%; box-sizing: border-box; text-align: left; font: bold 13px/36px "Malgun Gothic"; padding: 0px 15px 11px 15px; border-right: 0; }
   .pop-out .mobile .pop-out-cont:first-child:after { content: ''; position: absolute; background: url("../images/icon/question_arrow_down.png") no-repeat 100%; width: 8px; height: 4px; top: 16px; right: 17px; }

@@ -34,6 +34,12 @@ $(function(){
         $(".p3").toggleClass("active");
     });
 
+    $(".faq-section").on("click", function(e){
+        e.preventDefault();
+        $(this).find(".link-add").toggleClass("minimize");
+        $(this).find(".question").toggleClass("no-border");
+    });
+
     // Start Form Gallery Section
     $(".form-gallery .details .title").mouseenter(function(){
         $(this).parents('.gallery-section').addClass('on-hover');
