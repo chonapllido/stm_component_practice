@@ -954,16 +954,15 @@ a { text-decoration: none; }
 .common-front-nonemail > div { display: table; width: 100%; font: normal 13px 'Malgun Gothic'; }
 .common-front-nonemail > div .top { display: table; width: 100%; padding: 30px 15px; box-sizing: border-box; border-top: 2px solid #a40022; border-bottom: 2px solid #313131; }
 .common-front-nonemail > div .top .icon { display: table-cell; background: url("../images/icon/icon_nonemail.png") no-repeat; width: 60px; height: 60px; padding: 0 20px 0 0; }
-.common-front-nonemail > div .top .text { display: table-cell; vertical-align: middle; }
+.common-front-nonemail > div .top .text { display: table-cell; vertical-align: middle; font: normal 13px/20px 'Malgun Gothic'; }
 .common-front-nonemail > div .top .text > em { color: #785635; }
 .common-front-nonemail > div .bottom .container { display: table; width: 100%; box-sizing: border-box; padding: 40px 0; }
-.common-front-nonemail > div .bottom .container .title { display: table; font: normal 17px 'Malgun Gothic'; color: #1b1b1b; margin: 0 0 30px 0; padding: 0 0 0 25px; background: url("../images/icon/icon_arrow_right_square.jpg") no-repeat 0 50%; }
-.common-front-nonemail > div .bottom .container > ul > li { color: #719d9b; margin: 0 0 20px 0; padding: 0 0 0 24px; background: url("../images/icon/icon_arrow_right_circle.jpg") no-repeat 0 50%; }
+.common-front-nonemail > div .bottom .container .title { display: table; font: normal 17px 'Malgun Gothic'; color: #1b1b1b; margin: 0 0 30px 0; padding: 0 0 0 25px; background: url("../images/icon/icon_arrow_right_square.jpg") no-repeat 0 6px; }
+.common-front-nonemail > div .bottom .container > ul > li { min-width: 14px; height: 18px; color: #719d9b; margin: 0 0 20px 0; padding: 0 0 0 24px; background: url("../images/icon/icon_arrow_right_circle.jpg") no-repeat 0 4px; }
 .common-front-nonemail > div .bottom .container > ul > li:last-child { margin: 0; }
-.common-front-nonemail > div .bottom .sub-bottom { display: table; width: 100%; padding: 30px; background: #f7f8fa; border: 1px solid #e5e7e9; box-sizing: border-box; }
-.common-front-nonemail > div .bottom .sub-bottom > button { display: block; margin: 0 auto; border: 1px solid #bcbcbc; font: normal 15px/48px 'Malgun Gothic'; padding: 0; background: #ffffff url("../images/icon/icon_globe.png") no-repeat 14px center; }
-.common-front-nonemail > div .bottom .sub-bottom > button:after { content: url("../images/icon/icon_right_red.png"); padding: 14px 17px; border-left: 1px solid #e9e9e9; }
-.common-front-nonemail > div .bottom .sub-bottom > button > span { padding: 0 17px 0 43px; }
+.common-front-nonemail > div .bottom .sub-container { display: table; width: 100%; padding: 30px; background: #f7f8fa; border: 1px solid #e5e7e9; box-sizing: border-box; }
+.common-front-nonemail > div .bottom .sub-container a { display: block; width: 234px; height: 44px; padding: 0 0 0 45px; box-sizing: border-box; margin: 0 auto; border: 1px solid #bcbcbc; font: normal 15px/39px 'Malgun Gothic'; background: #ffffff url("../images/icon/icon_globe.png") no-repeat 14px center; }
+.common-front-nonemail > div .bottom .sub-container a:after { float: right; content: ''; border-left: 1px solid #e9e9e9; padding: 21px; background: url("../images/icon/icon_right_red.png") no-repeat 17px 15px; }
 
 /* 480 */
 @media screen and (max-width: 639px) { .common-front-nonemail > div .top .icon { display: block; margin: 0 auto; padding: 0 0 20px 0; }
