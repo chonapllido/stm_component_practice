@@ -44,8 +44,8 @@
 				box-sizing: border-box;
 				line-height: 24px;
 				vertical-align: top;
-				padding: 0 15px 0 0;
-				margin: 15px 0;
+				padding: 0 15px;
+				margin: 15px;
 				.total{
 					display: table-cell;
 					color: #efeae2;
@@ -270,8 +270,9 @@
 								white-space: nowrap;
 								text-overflow: ellipsis;
 								max-width: 257px;
+								padding: 0 5px 15px 0;
 								&:after{
-									margin: 8px -27px;
+									margin: 8px -32px;
 								}
 							}
 						}
