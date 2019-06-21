@@ -37,7 +37,11 @@ $(function(){
     $(".faq-section").on("click", function(e){
         e.preventDefault();
         $(this).find(".link-add").toggleClass("minimize");
-            $(this).find(".question").toggleClass("no-border");
+        
+        if($(window).width() < 768){
+             $(this).find(".question").toggleClass("no-border");
+        }
+        
     });
 
     // Start Form Gallery Section
