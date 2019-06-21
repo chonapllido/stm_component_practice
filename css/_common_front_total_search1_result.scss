@@ -23,6 +23,7 @@
 					>li{
 						display: inline-block;
 						padding: 0 20px 15px 0;
+						vertical-align: top;
 						&:after{
 							position: absolute;
 							content: url($img + 'icon/icon_arrow_right.png');
@@ -47,7 +48,6 @@
 				margin: 15px 0;
 				.total{
 					display: table-cell;
-				
 					color: #efeae2;
 					padding: 0 27px 0 7px;
 					vertical-align: middle;
@@ -262,6 +262,21 @@
 	.common-front-total-search-result{
 		.section{
 			.top-section{
+				>ul{
+					&.detail{
+						>li{
+							&.ellipsis{
+								overflow: hidden;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								max-width: 257px;
+								&:after{
+									margin: 8px -27px;
+								}
+							}
+						}
+					}
+				}
 				.count{
 					position: absolute;
 					right: 0;

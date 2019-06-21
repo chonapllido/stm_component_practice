@@ -730,7 +730,7 @@ a { text-decoration: none; }
 .common-front-total-search-result .top { display: table; padding: 33px 0; font: normal 19px 'Malgun Gothic'; }
 .common-front-total-search-result .section .top-section { display: table; width: 100%; background: #fbfbfb; border-top: 1px solid #262223; border-bottom: 1px solid #d4d4d4; box-sizing: border-box; }
 .common-front-total-search-result .section .top-section > ul.detail { float: left; margin: 15px 0 0 0; color: #7b001e; font: normal 19px 'Malgun Gothic'; padding: 0 15px; box-sizing: border-box; }
-.common-front-total-search-result .section .top-section > ul.detail > li { display: inline-block; padding: 0 20px 15px 0; }
+.common-front-total-search-result .section .top-section > ul.detail > li { display: inline-block; padding: 0 20px 15px 0; vertical-align: top; }
 .common-front-total-search-result .section .top-section > ul.detail > li:after { position: absolute; content: url("../images/icon/icon_arrow_right.png"); margin: 8px 10px; }
 .common-front-total-search-result .section .top-section > ul.detail > li:last-child:after { content: ''; }
 .common-front-total-search-result .section .top-section .count { float: right; display: table; font: normal 13px/19px 'Malgun Gothic'; box-sizing: border-box; line-height: 24px; vertical-align: top; padding: 0 15px 0 0; margin: 15px 0; }
@@ -769,7 +769,9 @@ a { text-decoration: none; }
 .common-front-total-search-result .section .add { display: block; margin: 20px auto 45px auto; background: url("../images/icon/icon_add.png") no-repeat 8% 50%; padding: 5px 11px 8px 27px; border: 1px solid #bcbcbc; border-bottom: 1px solid #888888; }
 
 /* 640 */
-@media screen and (max-width: 737px) { .common-front-total-search-result .section .top-section .count { position: absolute; right: 0; }
+@media screen and (max-width: 737px) { .common-front-total-search-result .section .top-section > ul.detail > li.ellipsis { overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 257px; }
+  .common-front-total-search-result .section .top-section > ul.detail > li.ellipsis:after { margin: 8px -27px; }
+  .common-front-total-search-result .section .top-section .count { position: absolute; right: 0; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail { display: block; width: 216px; height: 146px; margin: 0 auto 20px auto; background: url("../images/bg/bg_no_image_v2.jpg") no-repeat; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail img { width: 216px; height: 146px; }
   .common-front-total-search-result .section .bottom-section .container .sub-section .default-thumbnail:hover:before { width: 216px; height: 146px; }
