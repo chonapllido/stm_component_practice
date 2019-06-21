@@ -76,5 +76,7 @@ $(function(){
         $(".vod-section").removeClass('on-hover');
     });
     // End VOD Section
-    
+
+    $('.dot').dotdotdot();
+
 });
