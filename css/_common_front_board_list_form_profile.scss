@@ -1,5 +1,142 @@
 $stm_img: '../images/';
 
-.profile-section {
-	
+	.profile {
+		margin-bottom: 30px;
+		overflow: hidden;
+		.profile-item {
+			width: 100%;
+			> li {
+				float: left;
+				width: 25%;
+				min-height: 376px;
+				font: 13px "Malgun Gothic";
+				text-align: center;
+				border-bottom: 1px solid #dfdfdf;
+				border-left: 1px solid #dfdfdf;
+				padding: 30px 23px 30px 23px;
+				box-sizing: border-box;
+				span {
+					display: block;
+				}
+				.sort {
+					background: url("../images/bg/bg_bottom_red.png") no-repeat 50% 100%;
+					color: #b38f6b;
+					font: 13px/20px "Malgun Gothic";
+					margin-bottom: 20px;
+					padding-bottom: 11px;
+				}
+				a{
+					text-decoration: none;
+					.thumbnail {
+						position: relative;
+						width: 100px;
+						height: 120px;
+						margin: 0 auto;
+						&:before {
+							content: '';
+							position: absolute;
+							background: url($stm_img + 'thumbnail/profile1_empty.jpg') no-repeat 0% 0%;
+							top: 5px;
+							width: 100px;
+							height: 120px;
+							left: 0;
+							z-index: -1;
+						}
+						img {
+							width: 100%;
+							height: 100%;
+						}
+					}
+					.name {
+						font: 17px/24px "Malgun Gothic";
+						color: #000;
+						margin: 10px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+				.description, .position {
+					color: #a8a8a8;
+				}
+				&:nth-child(1) {
+					border-top: 1px solid #dfdfdf;
+				}
+				& + &:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4) {
+					border-top: 1px solid #dfdfdf;
+				}
+				&:nth-child(4n) {
+					border-right: 1px solid #dfdfdf;
+				}
+				
+			}
+		}
+	}
+
+/*768*/
+@media screen and (max-width: 959px) {
+	.profile {
+		.profile-item {
+			> li {
+				width: 33.3%;
+				&:nth-child(8) {
+					border-right: 1px solid #dfdfdf;
+					border-left: 1px solid #dfdfdf;
+				}
+				&:nth-child(3n) {
+					border-right: 1px solid #dfdfdf;
+				}
+				&:nth-child(4) {
+					border-right: 0;
+					border-top: 0;
+				}
+			}
+		}
+	}
+}
+
+/*640*/
+@media screen and (max-width: 767px) {
+	.profile {
+		.profile-item {
+			> li {
+				width: 50%;
+				min-height: 326px;
+				&:nth-child(8) {
+					border-right: 0;
+					border-left: 1px solid #dfdfdf;
+				}
+				&:nth-child(2n) {
+					border-right: 1px solid #dfdfdf;
+				}
+				&:nth-child(3) {
+					border-right: 0;
+					border-top: 0;
+				}
+			}
+		}
+	}
+}
+
+/*480*/
+@media screen and (max-width: 639px) {
+	.profile {
+		border-top: 2px solid #a40022;
+		border-bottom: 2px solid #313131;
+		.profile-item {
+			> li {
+				width: 100%;
+				border-left: 0;
+				border-right: 0;
+				&:nth-child(2n) {
+					border-right: 0;
+					border-left: 0;
+					border-top: 0;
+				}
+				&:last-child {
+					border-bottom: 0;
+				}
+			}
+		}
+	}
 }
