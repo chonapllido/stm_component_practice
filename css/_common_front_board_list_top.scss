@@ -59,23 +59,11 @@
         font-size:13px;
         font-family:'Malgun Gothic', sans-serif;
         outline:none;
-        overflow:hidden;
-        background:url('../images/icon/board-list-icon2.png') no-repeat;
-        background-color:#fff;
-        background-position:calc(100% - 4px) center;
-        -webkit-appearance: none;
-        appearance:none;
         vertical-align:bottom;
         cursor:pointer;
         &:focus{
             outline:none;
         }
-        &::-ms-expand {
-            visibility:hidden;
-        }
-        &::-ms-expand {
-            display: none;
-        } 
     }
     &.count-tab{
         display:table;
@@ -105,7 +93,7 @@
             vertical-align:bottom;
             a{
                 display:block;
-                padding:8px 8px 8px 12px;
+                padding:9px 12px 8px;
                 color:#a40022;
                 border:1px solid #dedede;
                 border-left:none;
@@ -193,14 +181,24 @@
         float:right;
         input{
             width:78px;
-            height:24px;
+            height:26px;
             padding-left:8px;
+            border:1px solid #bababa;
             font-size:12px;
             font-family:'Malgun Gothic', sans-serif;
         }
         img{
             vertical-align:middle;
             margin-left:8px;
+            margin-bottom: 1px;
+        }
+        button{
+            width:52px;
+            padding:8px 10px;
+        }
+        .dash{      
+            -webkit-margin-end:-2px;
+            -webkit-margin-start:-2px;
         }
     }
 }
@@ -211,9 +209,11 @@
     .right-combi{
         float:right;
         ul.front-board.button-tabs{
-            display:inline;
+            display:inline-block;
             float:none;
+            border-right:1px solid #dedede;
             margin-right:10px;
+            padding-right:10px;
         }
     }
 }
@@ -253,8 +253,10 @@
                 width:50%;
                 a{
                     width:100%;
+                    height:30px;
                     background-position:8px;
                     text-align:center;
+                    box-sizing:border-box;
                     span{
                         display:block;
                         margin-top:8px;
@@ -265,7 +267,7 @@
         &.calendar-tab{
             width:100%;
             input{
-                width:calc(50% - 83px);
+                width:calc(50% - 79px);
             }
         }
     }
@@ -276,6 +278,11 @@
         .right-combi{
             width:100%;
             margin-top:10px;
+            ul.front-board.button-tabs{
+                border-right:none;
+                margin-right:0;
+                padding-right:0;
+            }
         }
     }
 }
@@ -299,7 +306,7 @@
         }
         &.calendar-tab{
             input{
-                width:calc(50% - 77px);
+                width:calc(50% - 73px);
                 padding-left:2px;
             }
         }
