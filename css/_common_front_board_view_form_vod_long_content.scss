@@ -1,10 +1,6 @@
-
-
 .vod-content{
     position:relative;
-    padding-bottom:40px;
     border-top:2px solid #a40022;
-    border-bottom:2px solid #313131;
     font-family:'Malgun Gothic', sans-serif;
     .board-view-details{
         h2{
@@ -54,9 +50,14 @@
         display:block;
         position:relative;
         margin-top:40px;
-        .left{
+        padding-bottom:40px;
+        border-bottom:2px solid #313131;
+        .left-content{
             display:inline-block;
             width:calc(100% - 320px);
+            iframe{
+                height:382px;
+            }
             .content{
                 position:relative;;
                 width:100%;
@@ -65,11 +66,19 @@
                 box-sizing:border-box;
                 .vod-title{
                     display:block;
-                    width:calc(100% - 41px);
-                    padding:9px 15px;
+                    width:432px;
+                    padding:20px 15px;
                     font-size:13px;
                     line-height:20px; 
+                    text-overflow:clip;
+                    overflow:hidden;
+                    white-space:nowrap;
                     box-sizing:border-box;
+                    &.on{
+                        width:calc(100% - 41px);
+                        white-space:unset;
+                        padding:11px 15px;
+                    }
                 }               
                 a{
                     position:absolute;
@@ -77,7 +86,10 @@
                     height:100%;
                     top:0;
                     right:0;
-                    background:#eeeeee url('../images/icon/icon-disable.png') no-repeat center;
+                    background:#eeeeee url('../images/icon/vod-icon-open.png') no-repeat center;
+                    &.on{
+                        background:#eeeeee url('../images/icon/vod-icon-close.png') no-repeat center;
+                    }
                 }
             }
             .information{
@@ -85,7 +97,7 @@
                 box-sizing:border-box;
                 .top{
                     position:relative;
-                    padding:15px 14px;
+                    padding:14px;
                     background-color:#717171;
                     border-top:1px solid #565656;
                     border-bottom:1px solid #565656;
@@ -111,12 +123,13 @@
                     .title{
                         display:table-cell;
                         width:80px;
-                        padding:15px 13px;
+                        padding:0 13px;
                         background-color:#f7f7f7;
                         color:#755332;
                         font-size:13px;
                         line-height:12px;
                         box-sizing:border-box;
+                        vertical-align:middle;
                     }
                     .content{
                         display:table-cell;
@@ -130,46 +143,50 @@
                         line-height:12px;
                         box-sizing:border-box;
                         &.icons{
-                            padding:10px 15px;
+                            padding:0 15px;
                             .icon{
-                                display:table-cell;
+                                display:inline-block;
                                 width:22px;
-                                height:22px;
+                                height:42px;
                                 padding-right:10px;
                                 &:first-child{
                                     background:url('../images/icon/icon-vod-gray1.png') no-repeat;
+                                    background-position:center left
                                 }
                                 &:nth-child(2){
                                     background:url('../images/icon/icon-vod-gray2.png') no-repeat;
+                                    background-position:center left
                                 }
                                 &:nth-child(3){
                                     background:url('../images/icon/icon-vod-gray3.png') no-repeat;
+                                    background-position:center left
                                 }
                                 &:nth-child(4){
                                     background:url('../images/icon/icon-vod-gray4.png') no-repeat;
+                                    background-position:center left
                                 }
                             }
                         }
                     }
-                    &:last-child{
-                        border-bottom:1px solid #b4b4b4;                        
-                    }
                 }
             }
         }
-        .right{
+        .right-content{
             float:right;
             width:300px;
-            height:50px;
+            height:auto;
             .right-top{
                 position:relative;
+                border:1px solid #d4d4d4;
                 .title-right{
                     display:block;
-                    width:calc(100% - 56px);
+                    width:calc(100% - 42px);
                     padding:14px;
                     font-size:15px;
                     line-height:14px;
                     color:#000;
+                    box-sizing:border-box;
+                    border-right:1px solid #ebebeb;;
                 }
                 .icon-btn{
                     position:absolute;
@@ -178,6 +195,298 @@
                     top:0;
                     right:0;
                     background:url('../images/icon/icon-vod-play.png') no-repeat center;
+                }
+            }
+            .vod-list{
+                display:block;
+                padding:15px 12px;
+                padding-top:0;
+                border:1px solid #d4d4d4;
+                border-top:none;
+                .content-wrapper{
+                    height:auto;
+                    position:relative;
+                    padding-top:20px;
+                    padding-bottom:20px;
+                    border-bottom:1px solid #d4d4d4;
+                    box-sizing:border-box;
+                    .thumbnail{
+                        display:inline-block;
+                        position:relative;
+                        width:92px;
+                        height:68px;
+                        z-index:1;
+                        background:#fafafa url(../images/icon/icon-play.png) no-repeat center 16px;
+                        overflow:hidden;
+                        span{
+                            position:absolute;
+                            top:0;
+                            left:0;
+                            z-index:-2;
+                            width:100%;
+                            height:68px;
+                            border:1px solid #e9e9e9;
+                            box-sizing:border-box;
+                        }  
+                        &:after{
+                            position:absolute;
+                            content:"NO IMAGE";
+                            left:50%;
+                            bottom:16px;
+                            transform:translate(-50%, -50%);
+                            z-index:-1;
+                            color:#b5b5b5;
+                            font-size:9px;
+                        }       
+                        img{
+                            position:absolute;
+                            z-index:2;
+                            left:50%;
+                            top:50%;
+                            transform:translate(-50%, -50%);    
+                            max-width:100%;max-height:100%;                     
+                        }
+                    }
+                    .details{
+                        float:right;
+                        width:calc(100% - 92.1px);
+                        padding-left:15px;
+                        padding-right:15px;
+                        box-sizing:border-box;
+                        .title{
+                            display:block;
+                            cursor:pointer;
+                            max-height:40px;
+                            overflow:hidden;
+                            a{
+                                color:#1b1b1b;
+                                font-size:13px;
+                                line-height:20px;
+                            }
+                        }
+                        .date-hit{
+                            position:absolute;
+                            bottom:27px;
+                            color:#898989;
+                            font-size:0;
+                            line-height:1;
+                            .date{
+                                display:inline-block;
+                                margin-right:8px;
+                                padding-right:8px;
+                                border-right:1px solid #dadada;
+                                line-height:12px;
+                                font-size:13px;
+                            }
+                            .hit{
+                                display:inline-block;
+                                line-height:9px;
+                                font-size:13px;
+                                &:before{
+                                    content:url('../images/icon/icon-hits.png');
+                                    margin-right:6px;
+                                }
+                            }
+                        }
+                    }
+                    &.on-hover{
+                        .details .title a{
+                            text-decoration:underline;
+                        }
+                        .thumbnail{
+                            opacity:0.65;
+                        }
+                    }
+                    &:last-child{
+                        border-bottom:none;
+                    }
+                }
+            }
+            .common-front-paging1{
+                display:none;
+            }
+        }
+    }
+    .btn-grp{
+        margin-top:20px;
+    }
+}
+
+@media screen and (max-width: 959px){
+    .vod-content{
+        .vod-container{
+            .left-content{
+                iframe{
+                    height:342px;
+                }
+                .content{
+                    .vod-title{
+                        height:80px;
+                        width:calc(100% - 65px);
+                        margin:10px 13px;
+                        padding:0;
+                        background-color:#fff;
+                        white-space:pre-wrap;
+                        &.on{
+                            width:calc(100% - 39px);
+                            height:100%;
+                            margin:0;
+                            padding:10px 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px){
+    .vod-content{
+        .board-view-details{
+            h2{
+                margin:13px 15px;
+            }
+            .wrapper-details{
+                .writer, .date-create, .hit{
+                    .title{
+                        display:none;
+                    }
+                }
+                .date-hit{
+                    float:none;
+                    .hit{
+                        .entry{
+                            &:before{
+                                content:url('../images/icon/icon-hits.png');
+                                margin-right:6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .vod-container{
+            .left-content, .right-content{
+                display:block;
+                float:none;
+                width:100%;
+            }
+            .left-content{
+                iframe{
+                    height:410px;
+                }
+                .content{
+                    .vod-title{
+                        height:38px;
+                    }
+                }
+            }
+            .right-content{
+                margin-top:15px;
+                padding-bottom:20px;
+                border:1px solid #d4d4d4;
+                .right-top{
+                    border:none;
+                    border-bottom:1px solid #d4d4d4;
+                }
+                .vod-list{
+                    display:inline-block;
+                    width:100%;
+                    padding:0 15px;
+                    border:none;
+                    box-sizing:border-box;
+                    .content-wrapper{
+                        float:left;
+                        width:50%;
+                        &:nth-child(n+3){
+                            display:none;
+                        }
+                    }
+                }
+                .common-front-paging1{
+                    display:block;
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 639px){
+    .vod-content{
+        .board-view-details{
+            .wrapper-details{
+                .date-hit{
+                    display:block;
+                    margin-top:16px;
+                    .date-create{
+                        border:none;
+                        margin:0;
+                        padding:0;
+                    }
+                }
+            }
+        }
+        .vod-container{
+            padding-bottom:0;
+            .left-content{
+                iframe{
+                    height:313px;
+                }
+                .information{
+                    .section{
+                        .title{
+                            display:block;
+                            width:100%;
+                            padding:15px;
+                            border-bottom:1px solid #d4d4d4;
+                        }
+                        .content{
+                            display:block;
+                            width:100%;
+                            border-left:none;
+                        }
+                        &:last-child{
+                            border-bottom:1px solid #b4b4b4; 
+                        }
+                    }
+                }
+            }
+            .right-content{
+                padding-bottom:0;
+                border:none;
+                .right-top{
+                    border:1px solid #d4d4d4;
+                }
+                .vod-list{
+                    padding:0;
+                    .content-wrapper, .content-wrapper:nth-child(n+3){
+                        display:block;
+                        float:none;
+                        width:100%;
+                        box-sizing:border-box;
+                        .thumbnail{
+                            margin-left:15px;
+                        }
+                        .details{
+                            width:calc(100% - 107.1px);
+                        }
+                    }
+                }
+                .common-front-paging1{
+                    display:none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 479px){
+    .vod-content{
+        .vod-container{
+            .left-content{
+                iframe{
+                    height:236px;
                 }
             }
         }
