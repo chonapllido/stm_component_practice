@@ -79,8 +79,26 @@ $(function(){
     $(".vod.no-writer .details .title").mouseleave(function(){
         $(".vod-section").removeClass('on-hover');
     });
+    
+    $(".vod-content .details .title").dotdotdot();
+
+    $(".vod-content .details .title").mouseenter(function(){
+        $(this).parents('.content-wrapper').addClass('on-hover');
+    });
+    $(".vod-content .details .title").mouseleave(function(){
+        $(".content-wrapper").removeClass('on-hover');
+    });
+
+    $(".vod-content .content a").click(function(e){
+        e.preventDefault();
+        $(this).siblings().toggleClass('on');
+        $(this).toggleClass('on');
+        console.log('x');
+    });
     // End VOD Section
 
     $('.dot').dotdotdot();
 
 });
+
+
