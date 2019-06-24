@@ -8,7 +8,7 @@ $stm_img: '../images/';
 			> li {
 				float: left;
 				width: 25%;
-				min-height: 376px;
+				max-height: 376px;
 				font: 13px "Malgun Gothic";
 				text-align: center;
 				border-bottom: 1px solid #dfdfdf;
@@ -51,9 +51,9 @@ $stm_img: '../images/';
 						font: 17px/24px "Malgun Gothic";
 						color: #000;
 						margin: 10px;
-						&:hover {
-							text-decoration: underline;
-						}
+					}
+					&:hover {
+						text-decoration: underline;
 					}
 				}
 				.description, .position {
