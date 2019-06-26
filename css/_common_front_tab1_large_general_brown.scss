@@ -1,215 +1,47 @@
 
-.large-tab{
-    display:table;
-    width:100%;
-    font-size:0;
+
+
+.general-tab.large{
+  li{
+    min-height:52px;
     a{
-      display:table-cell;
-      height:100%;
-      padding:16px 17px;
-      background-color:#483f41;
-      text-align:center;
-      font-size:15px;
+      padding:16px;
       line-height:20px;
-      font-family:'Malgun Gothic', sans-serif;
+      font-size:15px;
       font-weight:bold;
       color:#f3e6e6;
-      text-decoration:none;
-      cursor:pointer;
-      box-sizing:border-box;
-      word-break:break-all;
-      vertical-align:middle;
-      &:not(:first-child){
-        border-left:1px solid #fff;
-      }
-      &.on{
-        position:relative;
-        background-color:#936c6a;
-        color:#fff;
-      }
     }
-    &.one, &.two{
-      a{
-        width:50%;
-      }
+  }
+  &.five, &.eleven, &.twelve{
+    li a{
+      padding:16px 18px;
     }
-    &.three, &.four{
-      a{
-        width:calc(100% / 3);
-      }
+  }
+  &.eight{
+    li a{
+      padding:16px 17px;
     }
-    &.five{
-      a{
-        width:25%;
-        padding:16px 18px;
-      }
-    }
+  }
+}
+
+/* Start CSS for Internet Explorer 9 (Only) */
+.for-iE9 body{
+  .general-tab.normal{
     &.six{
-      a{
-        display:inline-table;
-        width:50%;
-        &:nth-child(odd){
-          border-left:none;
-        }
-        &:nth-child(n+3){
-          border-top:1px solid #fff;
-        }
-      }
-    }
-    &.seven{
-      a{
-        width:20%;
-      }
-    }
-    &.eight{
-      a{
-        width:calc(100% / 6);
+      li{
+        height:52px;
       }
     }
     &.nine{
-      a{
-        display:inline-table;
-        width:calc((100% - 1px) / 3);
-        &:nth-child(4){
-          border-left:none;
-        }
-        &:nth-child(n+4){
-          border-top:1px solid #fff;
-        }
-      }
-    }
-    &.ten{
-      a{
-        width:calc(100% / 7);
-      }
-    }
-    &.eleven{
-      span{
-        display:table-cell;
-        a{
-          width:calc(100% / 8);
-        }
-        &:nth-child(2) a{
-          border-left:1px solid #fff;
-        }
+      li{
+        height:52px;
       }
     }
     &.twelve{
-      span{
-        display:table;
-        width:100%;
-        a{
-          padding:16px 18px;
-          width:25%;
-        }
-        &:nth-child(2) a{
-          border-top:1px solid #fff;
-        }
+      li{
+        height:52px;
       }
     }
   }
-  
-  @media screen and (min-width: 768px) and (max-width: 959px) {
-    .large-tab{
-      &.eleven{
-        span{
-          display:table;
-          width:100%;
-          a{
-            padding:16px 20px;
-            width:25%;
-          }
-          &:nth-child(2) a{
-            border-top:1px solid #fff;
-          }
-        }
-      }
-    }
-  }
-  
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    .large-tab{
-      &.seven, &.eight, &.nine, &.ten{
-        a{
-          display:inline-table;
-          width:50%;
-          &:nth-child(odd){
-            border-left:none;
-          }
-          &:nth-child(even){
-            border-left:1px solid #fff;
-          }
-          &:nth-child(n+3){
-            border-top:1px solid #fff;
-          }
-        }
-      }
-      &.eleven, &.twelve{
-        span{
-          display:table;
-          width:100%;
-          a{
-            display:inline-table;
-            width:50%;
-            &:nth-child(3){
-              border-left:none;
-            }
-            &:nth-child(n+3){
-              border-top:1px solid #fff;
-            }
-          }
-          &:nth-child(2) a{
-            border-top:1px solid #fff;
-          }
-        }
-      }
-    }
-  }
-  
-  @media screen and (min-width: 480px) and (max-width: 639px){
-    .large-tab{
-      &.four, &.five{
-        a{
-          display:inline-table;
-          width:50%;
-          &:nth-child(odd){
-            border-left:none;
-          }
-          &:nth-child(n+3){
-            border-top:1px solid #fff;
-          }
-        }
-      }
-    }
-  }
-  
-  @media screen and (max-width: 479px) {
-    .large-tab:not(.one) {
-      a{
-        display:block;
-        width:100%;
-        border-left:none;
-        &:nth-child(n+2){
-          border-top:1px solid #fff;
-        }
-      }
-      &.eleven, &.twelve{
-        span{
-          display:table;
-          width:100%;
-          a{
-            display:block;
-            width:100%;
-            border-left:none;
-            &:nth-child(n+2){
-              border-top:1px solid #fff;
-            }
-          }
-          &:nth-child(2) a{
-            border-top:1px solid #fff;
-          }
-        }
-      }
-    }
-  }
-  
+}
+/* End CSS for Internet Explorer 9 (Only) */
