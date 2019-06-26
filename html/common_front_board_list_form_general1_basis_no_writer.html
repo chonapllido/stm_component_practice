@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="../js/jquery-ui-1.11.2.custom/jquery-ui.css"/>
     <link rel="stylesheet" href="../js/jquery-ui-1.11.2.custom/jquery-ui.theme.css"/>
     <script type="text/javascript" src="../js/jquery_1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.dotdotdot.js.js"></script>
     <script type="text/javascript" src="../js/jquery-ui-1.11.2.custom/jquery-ui.min.js" ></script>
-    <script type="text/javascript" src="../js/jquery_controller.js" ></script>
     <script type="text/javascript" src="../js/calendar/calendar.js"></script>
+    <script type="text/javascript" src="../js/jquery_controller.js"></script>
     <script type="text/javascript">var language="ko"; img_src ="../images";</script>
 </head>
 <style>
@@ -36,52 +37,100 @@
             </div>
         </div>
 
-        <div class="list general1_basis_no_writer">
-            <div class="top">
-                <ul class="title">
-                    <li class="number">번호</li>
-                    <li class="title">제목</li>
-                    <li class="sort">첨부</li>
-                    <li class="date">작성일</li>
-                    <li class="sort">조회</li>
-                </ul>
-                <ul class="details">
-                    <li class="number"><span class="notice">NOTICE</span></li>
-                    <li class="title">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</li>
-                    <li class="sort">03</li>
-                    <li class="date">2000.00.00</li>
-                    <li class="sort">00,000</li>
-                </ul>
-                <ul class="details">
-                    <li class="number"><span class="notice">NOTICE</span></li>
-                    <li class="title">다다다다다다다다다다다다다다다다</li>
-                    <li class="sort">-</li>
-                    <li class="date">2000.00.00</li>
-                    <li class="sort">00,000</li>
-                </ul>
-                <ul class="details">
-                    <li class="number">599,993</li>
-                    <li class="title">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</li>
-                    <li class="sort">03</li>
-                    <li class="date">2000.00.00</li>
-                    <li class="sort">00,000</li>
-                </ul>
-                <ul class="details">
-                    <li class="number">599,992</li>
-                    <li class="title">다다다다다다다다다다다다다다다다다다다다다다다다다</li>
-                    <li class="sort">-</li>
-                    <li class="date">2000.00.00</li>
-                    <li class="sort">00,000</li>
-                </ul>
-                <ul class="details">
-                    <li class="number">599,991</li>
-                    <li class="title">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</li>
-                    <li class="sort">02</li>
-                    <li class="date">2000.00.00</li>
-                    <li class="sort">00,000</li>
-                </ul>
-            </div>
-        </div>
+        <table class="common_front_board_list_form_general1_basis_no_writer">
+          <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>첨부</th>
+            <th>작성일</th>
+            <th>조회</th>
+          </tr>
+          <tr class="with-notice">
+            <td><span class="notice">NOTICE</span></td>
+            <td class="title new"><a href="#">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</a></td>
+            <td class="rel">
+                <a href="#" class="file">03</a>
+                <div class="download-file">
+                    <span class="top">첨부파일 다운로드<button class="close"/></span>
+                    <ul class="files">
+                        <li><a href="#" class="pdf">다다다다다다다.pdf</a></li>
+                        <li><a href="#" class="doc">다다다다다다다다다다다다다다다.doc</a></li>
+                        <li><a href="#" class="zip">다다다다다.zip</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>2000.00.00</td>
+            <td>00,000</td>
+          </tr>
+          <tr class="with-notice">
+            <td><span class="notice">NOTICE</span></td>
+            <td class="title"><a href="#">다다다다다다다다다다다다다다다다</a></td>
+            <td class="rel">
+                <a href="#" class="file">-</a>
+                <div class="download-file">
+                    <span class="top">첨부파일 다운로드<button class="close"/></span>
+                    <ul class="files">
+                        <li><a href="#" class="pdf">다다다다다다다.pdf</a></li>
+                        <li><a href="#" class="doc">다다다다다다다다다다다다다다다.doc</a></li>
+                        <li><a href="#" class="zip">다다다다다.zip</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>2000.00.00</td>
+            <td>00,000</td>
+          </tr>
+           <tr>
+            <td>599,993</td>
+            <td class="title new"><a href="#">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</a></td>
+            <td class="rel">
+                <a href="#" class="file">03</a>
+                <div class="download-file">
+                    <span class="top">첨부파일 다운로드<button class="close"/></span>
+                    <ul class="files">
+                        <li><a href="#" class="pdf">다다다다다다다.pdf</a></li>
+                        <li><a href="#" class="doc">다다다다다다다다다다다다다다다.doc</a></li>
+                        <li><a href="#" class="zip">다다다다다.zip</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>2000.00.00</td>
+            <td>00,000</td>
+           </tr>
+           <tr>
+            <td>599,992</td>
+            <td class="title new"><a href="#">다다다다다다다다다다다다다다다다다다다다다다다다다</a></td>
+            <td class="rel">
+                <a href="#" class="file">-</a>
+                <div class="download-file">
+                    <span class="top">첨부파일 다운로드<button class="close"/></span>
+                    <ul class="files">
+                        <li><a href="#" class="pdf">다다다다다다다.pdf</a></li>
+                        <li><a href="#" class="doc">다다다다다다다다다다다다다다다.doc</a></li>
+                        <li><a href="#" class="zip">다다다다다.zip</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>2000.00.00</td>
+            <td>00,000</td>
+          </tr>
+           <tr>
+            <td>599,991</td>
+            <td class="title"><a href="#">다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다다</a></td>
+            <td class="rel">
+                <a href="#" class="file">02</a>
+                <div class="download-file">
+                    <span class="top">첨부파일 다운로드<button class="close"/></span>
+                    <ul class="files">
+                        <li><a href="#" class="pdf">다다다다다다다.pdf</a></li>
+                        <li><a href="#" class="doc">다다다다다다다다다다다다다다다.doc</a></li>
+                        <li><a href="#" class="zip">다다다다다.zip</a></li>
+                    </ul>
+                </div>
+            </td>
+            <td>2000.00.00</td>
+            <td>00,000</td>
+          </tr>
+        </table>
 
         <div class="common-front-paging1">
             <div>

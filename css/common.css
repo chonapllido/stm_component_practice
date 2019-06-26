@@ -687,6 +687,7 @@ a { text-decoration: none; }
 .general-event-login .list .top ul li.number { width: 66px; }
 .general-event-login .list .top ul li.status { width: 50px; }
 .general-event-login .list .top ul li.sort { width: 84px; }
+.general-event-login .list .top ul li.file { width: 84px; }
 .general-event-login .list .top ul li.date { width: 80px; }
 .general-event-login .list .top ul li.fix-num { width: 77px; }
 .general-event-login .list .top ul li.condition { width: 70px; }
@@ -1001,5 +1002,32 @@ a { text-decoration: none; }
 .vod-content .vod-container .right .right-top { position: relative; }
 .vod-content .vod-container .right .right-top .title-right { display: block; width: calc(100% - 56px); padding: 14px; font-size: 15px; line-height: 14px; color: #000; }
 .vod-content .vod-container .right .right-top .icon-btn { position: absolute; width: 42px; height: 100%; top: 0; right: 0; background: url("../images/icon/icon-vod-play.png") no-repeat center; }
+
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer { display: table; width: 100%; border-top: 2px solid #a40022; border-bottom: 2px solid #313131; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr { font: normal 13px 'Malgun Gothic'; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr th { font-weight: bold; color: #755332; padding: 17px 25px; border-bottom: 1px solid #313131; border-right: 1px solid #e6e6e6; z-index: 1; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr th:last-child { border-right: none; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td { color: #1b1b1b; text-align: center; padding: 20px 15px; border-bottom: 1px solid #d4d4d4; border-right: 1px solid #e6e6e6; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td:last-child { border-right: none; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td.title { text-align: left; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td.new:after { content: url("../images/icon/event_login_icon_new.png"); margin: 0 0 0 5px; vertical-align: middle; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td a { color: #1b1b1b; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td a.file { display: inline-block; position: relative; width: 50px; margin: 0 0 0 20px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td a.file:before { float: left; content: url("../images/icon/icon-save.png"); margin: 1px 0 0 0; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td a:hover { text-decoration: underline; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td.rel { position: relative; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file { display: none; position: absolute; top: 10px; left: 10px; border: 1px solid #313131; background: #ffffff; text-align: left; min-width: 213px; z-index: 1; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file .top { display: block; padding: 11px 15px; font: bold 13px 'Malgun Gothic'; background: #434343; color: #ffffff; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file .top .close { float: right; border: none; border-left: 1px solid #313131; margin: -11px -15px; background: #3d3d3d url("../images/icon/btn-trans-close.png") no-repeat center; width: 36px; height: 38px; cursor: pointer; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files { padding: 15px 13px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li { display: block; margin-bottom: 10px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li:last-child { margin: 0; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li > a { display: block; padding: 0 0 0 25px; min-height: 20px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li > a.pdf { background: url("../images/icon/icon-pdf.png") no-repeat left top; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li > a.doc { background: url("../images/icon/icon-doc.png") no-repeat left top 4px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li > a.zip { background: url("../images/icon/icon-zip.png") no-repeat left top 2px; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .download-file > ul.files > li > a:hover { text-decoration: underline; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr td .notice { background: #4e6479; border: 1px solid #475b6e; padding: 7px; color: #fff; }
+.general-event-login table.common_front_board_list_form_general1_basis_no_writer tr.with-notice { background: #f0f6f7; }
 
 /*# sourceMappingURL=common.css.map */

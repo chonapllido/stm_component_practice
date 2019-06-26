@@ -1,0 +1,131 @@
+.general-event-login{
+	table{
+		&.common_front_board_list_form_general1_basis_no_writer{
+			display: table;
+			width: 100%;
+			border-top: 2px solid #a40022;
+			border-bottom:2px solid #313131;
+			tr{
+				font: normal 13px 'Malgun Gothic';
+				th{
+					font-weight: bold;	
+					color:#755332;
+					padding: 17px 25px;
+					border-bottom:1px solid #313131;
+					border-right:1px solid #e6e6e6;
+					z-index: 1;
+					&:last-child{
+						border-right:none;
+					}
+				}
+				td{
+					color: #1b1b1b;
+					text-align:center;
+					padding: 20px 15px;
+					border-bottom:1px solid #d4d4d4;
+					border-right:1px solid #e6e6e6;
+					&:last-child{
+						border-right:none;
+					}
+					&.title{
+						text-align: left;
+					}
+					&.new{
+						&:after{
+                            content: url($img + 'icon/event_login_icon_new.png');
+                        	margin: 0 0 0 5px;
+                        	vertical-align: middle;
+                        }
+					}
+					a{
+						color: #1b1b1b;
+						&.file{
+							display: inline-block;
+							position: relative;
+							width: 50px;
+							margin: 0 0 0 20px;
+							&:before{
+	                            float: left;
+	                            content:url($img + 'icon/icon-save.png');
+	                        	margin: 1px 0 0 0;
+	                        }
+						}
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+					&.rel{
+						position: relative;
+					}
+					.download-file{
+						display: none;
+						position: absolute;
+						top: 10px;
+						left:10px;
+						border: 1px solid #313131;
+						background: #ffffff;
+						text-align: left;
+						min-width: 213px;
+						z-index: 1;
+						.top{
+							display: block;
+							padding: 11px 15px;
+							font: bold 13px 'Malgun Gothic';
+							background: #434343;
+							color: #ffffff;
+							.close{
+								float: right;
+								border: none;
+								border-left: 1px solid #313131;
+								margin: -11px -15px;
+								background: #3d3d3d url($img + 'icon/btn-trans-close.png') no-repeat center;
+								width: 36px;
+								height: 38px;
+								cursor: pointer;
+							}
+						}
+						>ul{
+							&.files{
+								padding: 15px 13px;
+								>li{
+									display: block;
+									margin-bottom: 10px;
+									
+									&:last-child{
+										margin:0;
+									}
+									>a{
+										display: block;
+										padding: 0 0 0 25px;
+										min-height: 20px;
+				      					&.pdf{
+				      						background: url($img + 'icon/icon-pdf.png') no-repeat left top;
+				      					}
+				      					&.doc{
+				      						background: url($img + 'icon/icon-doc.png') no-repeat left top 4px;
+				      					}
+				      					&.zip{
+				      						background: url($img + 'icon/icon-zip.png') no-repeat left top 2px;
+				      					}
+										&:hover{
+											text-decoration:underline;
+										}
+									}
+								}
+							}
+						}
+					}
+					.notice{
+						background: #4e6479;
+						border: 1px solid #475b6e;
+						padding: 7px;
+						color: #fff;
+					}
+				}
+				&.with-notice{
+					background: #f0f6f7;
+				}
+			}		
+		}
+	}
+}

@@ -68,19 +68,33 @@ $(function(){
     });
 
     $(".form-gallery .gallery-list .details .title").dotdotdot();
+    
     // End Form Gallery Section
 
     // Start VOD Section
+
     $(".vod.no-writer .vod-list .details .title").dotdotdot();
+    
 
     $(".vod.no-writer .details .title").mouseenter(function(){
         $(this).parents('.vod-section').addClass('on-hover');
     });
+
     $(".vod.no-writer .details .title").mouseleave(function(){
         $(".vod-section").removeClass('on-hover');
     });
     // End VOD Section
 
-    $('.dot').dotdotdot();
+    $(".dot").dotdotdot();
+
+    $(".common_front_board_list_form_general1_basis_no_writer .file").on("click", function(e){
+        e.preventDefault();
+        $(this).siblings(".download-file").show();
+    });
+
+    $(".common_front_board_list_form_general1_basis_no_writer .close").on("click", function(e){
+        e.preventDefault();
+        $(this).closest(".download-file").hide();
+    });
 
 });
