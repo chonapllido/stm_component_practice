@@ -1,39 +1,43 @@
 
 
-
-.general-tab.normal{
+.general-tab.normal-brown{
   li{
     min-height:46px;
     a{
       padding:14px;
       font-weight:bold;
     }
+    &.on{
+      a{
+        color:#fff;
+      }
+    }
   }
-  &.three, &.seven, &.eight, &.ten{
-    li a{
-      padding: 14px 10px;
+  &.six{
+    li{
+      height:46px;
+    }
+  }
+  &.eight li{
+    a{
+      padding:14px 12px;
+    }
+  }
+  &.nine{
+    li{
+      height:46px;
+    }
+  }
+  &.ten{
+    li{
+      a{
+        padding:14px 13px;
+      }
+    }
+  }
+  &.twelve{
+    li{
+      height:46px;
     }
   }
 }
-
-/* Start CSS for Internet Explorer 9 (Only) */
-.for-iE9 body{
-  .general-tab.normal{
-    &.six{
-      li{
-        height:46px;
-      }
-    }
-    &.nine{
-      li{
-        height:46px;
-      }
-    }
-    &.twelve{
-      li{
-        height:46px;
-      }
-    }
-  }
-}
-/* End CSS for Internet Explorer 9 (Only) */

@@ -5,7 +5,7 @@ $(function(){
 		fnCalendar('input.calendar');
 	} catch (e){}
 	
-    $("tab-combi li a, .general-tab li a").on("click", function (e) {
+    $(".tab-combi li a, .general-tab li a").on("click", function (e) {
         e.preventDefault();
         $(this).parents("li").siblings().removeClass("on");
         $(this).parents("li").addClass("on");

@@ -1,6 +1,4 @@
 
-
-
 .general-tab.large{
   li{
     min-height:52px;
@@ -11,37 +9,30 @@
       font-weight:bold;
       color:#f3e6e6;
     }
-  }
-  &.five, &.eleven, &.twelve{
-    li a{
-      padding:16px 18px;
+    &.on{
+      a{
+        color:#fff;
+      }
     }
   }
-  &.eight{
+  &.five{
     li a{
       padding:16px 17px;
     }
   }
-}
-
-/* Start CSS for Internet Explorer 9 (Only) */
-.for-iE9 body{
-  .general-tab.normal{
-    &.six{
-      li{
-        height:52px;
-      }
+  &.six{
+    li{
+      height:52px;
     }
-    &.nine{
-      li{
-        height:52px;
-      }
+  }
+  &.nine{
+    li{
+      height:52px;
     }
-    &.twelve{
-      li{
-        height:52px;
-      }
+  }
+  &.twelve{
+    li{
+      height:52px;
     }
   }
 }
-/* End CSS for Internet Explorer 9 (Only) */
