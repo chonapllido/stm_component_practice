@@ -23,8 +23,7 @@
 </style>
 <body>
 
-    <div class="general-empty-data">
-
+    <div class="board-list-general empty-data">
         <div class="combi-tab one">
             <ul class="front-board count-tab">
                 <li class="total"><a href="#">TOTAL</a></li>
@@ -37,22 +36,34 @@
                 <button>선택</button>
             </div>
         </div>
-
-        <div class="list">
-            <div class="top">
-                <ul class="title">
-                    <li class="number">번호</li>
-                    <li class="title">제목</li>
-                    <li class="attachment">첨부</li>
-                    <li class="date">작성일</li>
-                    <li class="lookup">조회</li>
-                </ul>
-            </div>
-            <div class="bottom">
-                <p><span>데이터가 존재하지 않습니다.</span></p>
-            </div>
+        <div class="empty-data-table">
+            <table>
+                <colgroup>
+                    <col width="77px"></col>
+                    <col></col>
+                    <col width="66px"></col>
+                    <col width="94px"></col>
+                    <col width="78px"></col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="number">번호</th>
+                        <th class="title">제목</th>
+                        <th class="attachment">첨부</th>
+                        <th class="date">작성일</th>
+                        <th class="lookup">조회</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="5"><p><span>데이터가 존재하지 않습니다.</span></p></td>
+                    </tr>
+                </tbody>
+                <tbody>
+                    
+                </tbody>
+            </table>
         </div>
-
         <div class="common-front-paging1">
             <div>
                 <span class="left">
@@ -78,7 +89,6 @@
                 </span>
             </div>
         </div>
-
         <div class="common-front-search">
             <div>
                 <div class="common-search">
@@ -113,7 +123,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 </body>
