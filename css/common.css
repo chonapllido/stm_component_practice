@@ -474,7 +474,7 @@ a { text-decoration: none; }
 .common-front-search .common-search > form .form-container > span.for-calendar > span.calendar-container { padding: 0 40px 0 0; }
 .common-front-search .common-search > form .form-container > span.for-calendar > span.calendar-container input { width: 90px; height: 30px; padding-left: 7px; font: normal 13px/28px 'Malgun Gothic'; border: 1px solid #bababa; }
 .common-front-search .common-search > form .form-container > span.for-calendar > span.calendar-container .ui-datepicker-trigger { position: absolute; margin: 4px 8px; cursor: pointer; }
-.common-front-search .common-search > form .form-container > span.for-calendar > span.two { background: url("../images/bg/bg_border_dark_gray.png") no-repeat 93% 50%; padding: 11px 50px 12px 10px; }
+.common-front-search .common-search > form .form-container > span.for-calendar > span.two { background: url("../images/bg/bg_border_dark_gray_v2.jpg") no-repeat 93% 50%; padding: 11px 50px 12px 10px; }
 .common-front-search .common-search > form .form-container > span.for-select { background: url("../images/bg/bg_border_dark_gray.png") no-repeat 92% 50%; padding: 10px 20px 10px 0; }
 .common-front-search .common-search > form .form-container > span.for-select select { width: 100px; height: 28px; padding-left: 5px; border: 1px solid #bababa; background: #ffffff url("../images/icon/icon_dropdown.jpg") no-repeat center right; -webkit-appearance: none; box-sizing: border-box; }
 .common-front-search .common-search > form .form-container > span.fs1 { padding: 10px 10px 10px 0; background: none; }
