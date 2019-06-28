@@ -1,3 +1,4 @@
+
 .tab-combi.normal{
   li{
     min-height:46px;
@@ -7,98 +8,74 @@
       font-weight:bold;
     }
   }
+  &.twelve{
+    li{
+      height:46px;
+    }
+  }
 }
-
+@media screen and (min-width: 960px){
+  .tab-combi.normal{
+    &.seven, &.eight{
+      li:nth-child(4){
+        border-left:none;
+      }
+    }
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 960px) {
+  .tab-combi.normal{
+    &.ten, &.eleven{
+      li a{
+        padding-right:28px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 767px) {
   .tab-combi.normal{
-    flex-flow:wrap;
     li{
+      float:left;
       width:calc((100% / 2) - 0.1px);
-      &:nth-child(odd) a{
-        border-left:none;
+      height:30px;
+      border:none;
+      a{
+        border:none;
       }
-      &:nth-child(even) a{
+      &:nth-child(odd){
+        border-left:none;
+        a{
+          border-left:none;
+        }
+      }
+      &:nth-child(even){
         border-left:1px solid #fff;
+        a{
+          border-left:none;
+        }
       }
-      &:nth-child(n+3) a{
+      &:nth-child(n+3){
         border-top:1px solid #fff;
-      }
-      &:nth-child(3) a{
-        border-left:none;
+          a{
+            border-top:none;
+          }
       }
     }
   }
 }
-
 @media screen and (max-width: 479px) {
   .tab-combi.normal{
-    flex-flow:no-wrap;
-    flex-direction:column;
     li{
-      width:100%;
-      &:nth-child(n+1) a{
-        border-top:1px solid #fff;
-        border-left:none;
-      }
-    }
-  }
-}
-
-/* Start CSS for Internet Explorer 9 (Only) */
-.for-iE9 body{
-  .tab-combi.normal{
-    &.twelve{
-      li{
-        height:46px;
-      }
-    }
-  }
-  @media screen and (max-width: 767px) {
-    .tab-combi.normal{
-      li{
-        float:left;
-        width:calc((100% / 2) - 0.1px);
-        height:30px;
-        border:none;
-        a{
-          border:none;
-        }
-        &:nth-child(odd){
+        display:block;
+        float:none;
+        width:100%;
+        &:nth-child(n+1){
+          border-top:1px solid #fff;
           border-left:none;
           a{
-            border-left:none;
+            border:none;
           }
         }
-        &:nth-child(even){
-          border-left:1px solid #fff;
-          a{
-            border-left:none;
-          }
-        }
-        &:nth-child(n+3){
-          border-top:1px solid #fff;
-            a{
-              border-top:none;
-            }
-        }
-      }
-    }
-  }
-  @media screen and (max-width: 479px) {
-    .tab-combi.normal{
-      li{
-          display:block;
-          float:none;
-          width:100%;
-          &:nth-child(n+1){
-            border-top:1px solid #fff;
-            border-left:none;
-            a{
-              border:none;
-            }
-          }
-      }
     }
   }
 }
-/* End CSS for Internet Explorer 9 (Only) */
