@@ -1,116 +1,253 @@
 .common-front-search{
-	>div{
-		display:table;
-		margin: 0 auto;
+	.common-search{
+		display: block;
 		width: 100%;
-		.common-search{
-			display: block;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+		border-top:1px solid #dedede;
+		border-bottom:1px solid #dedede;
+		background: #f7f7f7;
+		>form{
+			display: table;
 			width: 100%;
-			box-sizing: border-box;
-			margin-bottom: 30px;
-			border-top:1px solid #dedede;
-			border-bottom:1px solid #dedede;
-			background: #f7f7f7;
-			>form{
-				display: table;
+			input{
 				width: 100%;
-				input{
-					width: 100%;
-					height: 29px;
-					padding: 0 7px;
-					box-sizing: border-box;
-					border:1px solid #bababa;
-					font: normal 13px/28px 'Malgun Gothic';
-					&:placeholder-shown{
-                        color: #b5b5b5!important;
-                    }
-                    &:-ms-input-placeholder {
-					     color: #b5b5b5!important;
+				height: 29px;
+				padding: 0 7px;
+				box-sizing: border-box;
+				border:1px solid #bababa;
+				font: normal 13px/28px 'Malgun Gothic';
+				&:placeholder-shown{
+                    color: #b5b5b5!important;
+                }
+                &:-ms-input-placeholder {
+				     color: #b5b5b5!important;
+				}
+			}
+			.for-input{
+				display: table-cell;
+				width:100%;
+				padding: 10px 10px 10px 15px;
+				box-sizing: border-box;
+			}
+			.form-container{
+				display: table-cell;
+				padding: 0 15px;
+				vertical-align: top;
+				>span{
+					display: table-cell;
+					&.for-input{
+						width:100%;
+						padding: 10px 0;
+					}
+					&.for-calendar{
+						>span{
+							display: table-cell;
+							&.calendar-container{
+								padding: 0 40px 0 0;
+								input{
+									width: 90px;
+									height: 30px;
+									padding-left: 7px;
+									font: normal 13px/28px 'Malgun Gothic';
+									border: 1px solid #bababa;
+								}
+								.ui-datepicker-trigger{
+									position: absolute;
+									margin:4px 8px;
+									cursor: pointer;
+								}
+							}
+							&.two{
+								background: url($img + "bg/bg_border_dark_gray.png") no-repeat 93% 50%;
+								padding: 11px 50px 12px 10px;
+							}
+						}
+					}
+					&.for-select{
+						background: url($img + "bg/bg_border_dark_gray.png") no-repeat 92% 50%;
+						padding: 10px 20px 10px 0;
+						select{
+							width: 100px;
+							height: 28px;
+							padding-left: 5px;
+							border:1px solid #bababa;
+							background: #ffffff url($img + 'icon/icon_dropdown.jpg') no-repeat center right;
+							-webkit-appearance: none;
+							box-sizing: border-box;
+						}
+					}
+					&.fs1{
+						padding: 10px 10px 10px 0;
+						background: none;
+					}
+					&.group-container{
+						width: 100%;
+						>span{
+							&.sub-container{
+								display: table;
+								width: 100%;
+								>span{
+									display: table-cell;
+									&.for-select{
+										padding: 10px 10px 10px 0;
+										width: 100px;
+										select{
+											width: 100px;
+											height: 30px;
+											padding-left:5px;
+											border:1px solid #bababa;
+											background: #ffffff url($img + 'icon/icon_dropdown.jpg') no-repeat center right;
+		  									-webkit-appearance: none;
+		  									box-sizing: border-box;
+										}
+									}
+									&.for-input{
+										padding: 10px 0;
+										
+									}
+								}
+							}
+						}
 					}
 				}
-				.for-input{
-					display: table-cell;
-					width:100%;
-					padding: 10px 10px 10px 15px;
+			}
+			.search{
+				display: table-cell;
+				border-left:1px solid #e9e9e9;
+				padding: 9px 15px;
+				width: 70px;
+				box-sizing: border-box;
+				vertical-align: top;
+				button{
+					display: inline-block;
+					width: 70px;
+					height: 100%;
+					padding: 6px 10px;
+					background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 20% 55%;
+					color: #fff;
+					border:1px solid #d94e50;
+					border-bottom: 1px solid #b0393a;
 					box-sizing: border-box;
+					text-align:right;
+					font: bold 13px 'Malgun Gothic';
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+/* 768 */
+@media screen and (max-width:959px) {
+	.common-front-search{
+		.common-search{
+			>form{
+				.form-container{
+					>span{
+						&.gc1{
+							display: block;
+							margin-top: -10px;
+						}
+						&.select1{
+							background: none;
+						}
+					}
+				}
+				.s1{
+					button{
+						background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 50% 35%;
+						text-align:center;
+						padding: 35px 14px 18px 14px;
+					}
+				}
+			}	
+		}
+	}
+}
+
+/* 640 */
+@media screen and (max-width:767px) {
+	.common-front-search{
+		.common-search{
+			>form{
+				.form-container{
+					>span{
+						&.for-calendar{
+							>span{
+								&.cc1{
+									background: none;
+								}
+							}
+						}
+						&.gc2{
+							display: block;
+							margin-top: -10px;
+						}
+						&.mt-10{
+							margin-top: -10px;
+						}
+					}
+				}
+				.s2{
+					button{
+						background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 50% 35%;
+						text-align:center;
+						padding: 35px 14px 18px 14px;
+					}
+				}
+			}	
+		}
+	}
+}
+
+/* 480 */
+@media screen and (max-width:639px) {
+	.common-front-search{
+		.common-search{
+			>form{
+				.for-input{
+					display: block;
+					padding: 10px 15px;
+					input{
+						width: 100%;
+						height: 30px;
+					}
 				}
 				.form-container{
-					display: table-cell;
-					padding: 0 15px;
-					vertical-align: top;
+					display: block;
+					padding: 0;
 					>span{
-						display: table-cell;
+						display: block;
 						&.for-input{
-							width:100%;
-							padding: 10px 0;
+							padding: 10px 15px;
 						}
 						&.for-calendar{
 							>span{
-								display: table-cell;
 								&.calendar-container{
-									padding-right:40px;
-									input{
-										width: 90px;
-										height: 30px;
-										padding-left: 7px;
-										font: normal 13px/28px 'Malgun Gothic';
-										border: 1px solid #bababa;
-
-									}
-									.ui-datepicker-trigger{
-										position: absolute;
-										margin:4px 9px;
-										cursor: pointer;
-									}
+									padding: 10px 35px 10px 15px;
 								}
 								&.two{
-									background: url($img + "bg/bg_border_dark_gray.png") no-repeat 93% 50%;
-									padding: 11px 50px 12px 10px;
+									padding: 10px 36px 10px 7px;
+									background: none;
 								}
-
 							}
 						}
 						&.for-select{
-							background: url($img + "bg/bg_border_dark_gray.png") no-repeat 92% 50%;
-							padding: 10px 20px 10px 0;
+							padding: 10px 15px;
 							select{
-								width: 100px;
-								height: 28px;
-								padding-left: 5px;
-								border:1px solid #bababa;
-								background: #ffffff url($img + 'icon/icon_dropdown.jpg') no-repeat center right;
-									-webkit-appearance: none;
-									box-sizing: border-box;
+								width: 100%;
 							}
 						}
-						&.fs1{
-							padding: 10px 10px 10px 0;
-							background: none;
-						}
 						&.group-container{
-							width: 100%;
 							>span{
 								&.sub-container{
-									display: table;
-									width: 100%;
 									>span{
-										display: table-cell;
 										&.for-select{
-											padding: 10px 10px 10px 0;
-											width: 100px;
-											select{
-												width: 100px;
-												height: 30px;
-												padding-left:5px;
-												border:1px solid #bababa;
-												background: #ffffff url($img + 'icon/icon_dropdown.jpg') no-repeat center right;
-			  									-webkit-appearance: none;
-			  									box-sizing: border-box;
-											}
+											padding: 10px 10px 10px 15px;	
 										}
 										&.for-input{
-											padding: 10px 0;
-											
+											padding: 10px 15px 0 0;
 										}
 									}
 								}
@@ -119,144 +256,17 @@
 					}
 				}
 				.search{
-					display: table-cell;
-					border-left:1px solid #e9e9e9;
-					padding: 9px 15px;
-					width: 70px;
-					box-sizing: border-box;
-					vertical-align: top;
+					display: block;
+					border-top: 1px solid #e9e9e9;
+					border-left:none;
+					padding: 10px 15px;
+					width: 100%;
 					button{
-						display: inline-block;
-						width: 70px;
-						height: 100%;
-						padding: 6px 10px;
-						background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 20% 55%;
-						color: #fff;
-						border:1px solid #d94e50;
-						border-bottom: 1px solid #b0393a;
-						box-sizing: border-box;
-						text-align:right;
-						font: bold 13px 'Malgun Gothic';
-						cursor: pointer;
-					}
-				}
-			}
-		}
-	}
-}
-/* 768 */
-@media screen and (max-width:959px) {
-	.common-front-search{
-		>div{
-			.common-search{
-				>form{
-					.form-container{
-						>span{
-							&.gc1{
-								display: block;
-								margin-top: -10px;
-							}
-							&.select1{
-								background: none;
-							}
-						}
-					}
-					.s1{
-						button{
-							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 50% 35%;
-							text-align:center;
-							padding: 35px 14px 18px 14px;
-						}
-					}
-				}	
-			}
-		}
-	}
-}
-
-/* 640 */
-@media screen and (max-width:767px) {
-	.common-front-search{
-		>div{
-			.common-search{
-				>form{
-					.form-container{
-						>span{
-							&.for-calendar{
-								>span{
-									&.cc1{
-										background: none;
-									}
-								}
-							}
-							&.gc2{
-								display: block;
-								margin-top: -10px;
-							}
-							&.mt-10{
-								margin-top: -10px;
-							}
-						}
-					}
-					.s2{
-						button{
-							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat 50% 35%;
-							text-align:center;
-							padding: 35px 14px 18px 14px;
-						}
-					}
-				}	
-			}
-		}
-	}
-}
-
-/* 480 */
-@media screen and (max-width:639px) {
-	.common-front-search{
-		>div{
-			.common-search{
-				>form{
-					.for-input{
-						display: block;
-						padding: 10px 15px;
-						input{
-							width: 100%;
-							height: 30px;
-						}
-					}
-					.form-container{
-						display: block;
-						>span{
-							display: block;
-							&.for-calendar{
-								>span{
-									&.two{
-										background: none;
-									}
-								}
-							}
-							&.for-select{
-								padding: 10px 0;
-								select{
-									width: 100%;
-								}
-							}
-						}
-					}
-					.search{
-						display: block;
-						border-top: 1px solid #e9e9e9;
-						border-left:none;
-						padding: 10px 15px;
 						width: 100%;
-						button{
-							width: 100%;
-							height: 30px;
-							background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat center left 10px;
-							text-align:center;
-							padding: 0;
-						}
+						height: 30px;
+						background: #eb5b5e url($img + 'icon/icon_front_search.png') no-repeat center left 10px;
+						text-align:center;
+						padding: 0;
 					}
 				}
 			}
