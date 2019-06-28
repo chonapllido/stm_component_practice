@@ -1,6 +1,6 @@
 .general-event-login{
 	table{
-		&.common_front_board_list_form_general1_basis_no_writer{
+		&.common_front_board_list_form_general1_basis{
 			display: table;
 			width: 100%;
 			border-top: 2px solid #a40022;
@@ -143,7 +143,7 @@
 @media screen and (max-width:767px){
 	.general-event-login{
 		table{
-			&.common_front_board_list_form_general1_basis_no_writer{
+			&.common_front_board_list_form_general1_basis{
 				colgroup{
 					display: none;
 				}
