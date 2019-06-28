@@ -41,13 +41,13 @@ $(function(){
         if($(window).width() < 768){
              $(this).find(".question").toggleClass("no-border");
         }
-        
     });
 
     // Start Form Gallery Section
     $(".form-gallery .details .title").mouseenter(function(){
         $(this).parents('.gallery-section').addClass('on-hover');
     });
+
     $(".form-gallery .details .title").mouseleave(function(){
         $(".gallery-section").removeClass('on-hover');
     });
@@ -74,7 +74,6 @@ $(function(){
     // Start VOD Section
 
     $(".vod.no-writer .vod-list .details .title").dotdotdot();
-    
 
     $(".vod.no-writer .details .title").mouseenter(function(){
         $(this).parents('.vod-section').addClass('on-hover');
@@ -89,6 +88,7 @@ $(function(){
     $(".vod-content .details .title").mouseenter(function(){
         $(this).parents('.content-wrapper').addClass('on-hover');
     });
+
     $(".vod-content .details .title").mouseleave(function(){
         $(".content-wrapper").removeClass('on-hover');
     });
@@ -99,6 +99,7 @@ $(function(){
         $(this).toggleClass('on');
         console.log('x');
     });
+
     // End VOD Section
 
     $(".dot").dotdotdot();
@@ -112,7 +113,4 @@ $(function(){
         e.preventDefault();
         $(this).closest(".download-file").hide();
     });
-
 });
-
-
