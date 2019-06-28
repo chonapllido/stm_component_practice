@@ -979,6 +979,7 @@ a { text-decoration: none; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td { color: #1b1b1b; text-align: center; border-bottom: 1px solid #d4d4d4; border-right: 1px solid #e6e6e6; vertical-align: middle; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td:last-child { border-right: none; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td.status .notice { background: #4e6479; border: 1px solid #475b6e; padding: 3px 7px; color: #fff; }
+.general-event-login table.common_front_board_list_form_general1_basis tr td.writer-division { text-align: left; padding: 0 15px; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td.title { width: 100%; text-align: left; padding: 13px 15px; line-height: 20px; box-sizing: border-box; font: normal 17px/20px 'Malgun Gothic'; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td.new:after { content: url("../images/icon/event_login_icon_new.png"); margin: 0 0 0 5px; vertical-align: middle; }
 .general-event-login table.common_front_board_list_form_general1_basis tr td a { color: #1b1b1b; }
@@ -1009,7 +1010,9 @@ a { text-decoration: none; }
   .general-event-login table.common_front_board_list_form_general1_basis tr .none { display: none !important; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td { float: left; border-bottom: none; border-right: none; padding: 0 0 29px 15px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.border-left { background: url("../images/bg/bg_border_gray.jpg") no-repeat 7.5px 4px; }
-  .general-event-login table.common_front_board_list_form_general1_basis tr td.status { padding: 20px 15px 0 15px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.status { padding: 20px 0 0 15px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.sort { color: #9b7a58; padding: 20px 7px 0 15px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.ml { margin: 0 0 0 -8px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.title { padding: 20px 15px 14px 15px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td a.file { margin: 0; width: auto; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td a.file:before { margin: 1px 10px 0 0; }
