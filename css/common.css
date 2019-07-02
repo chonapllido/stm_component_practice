@@ -1012,11 +1012,21 @@ a { text-decoration: none; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.border-left { background: url("../images/bg/bg_border_gray.jpg") no-repeat 7.5px 4px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.status { padding: 20px 0 0 15px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.sort { color: #9b7a58; padding: 20px 7px 0 15px; }
-  .general-event-login table.common_front_board_list_form_general1_basis tr td.ml { margin: 0 0 0 -8px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.writer-division { width: 526px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td.title { padding: 20px 15px 14px 15px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.ml { margin-left: -51px; }
+  .general-event-login table.common_front_board_list_form_general1_basis tr td.mt { margin-top: 7px; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td a.file { margin: 0; width: auto; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td a.file:before { margin: 1px 10px 0 0; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td:first-child, .general-event-login table.common_front_board_list_form_general1_basis tr td:nth-child(2) { display: block; }
   .general-event-login table.common_front_board_list_form_general1_basis tr td .views { padding: 0 0 0 21px; background: url("../images/icon/icon_hits.png") no-repeat 0 4px; } }
+/*---------------------------------*/
+/* 480px */
+/*---------------------------------*/
+@media screen and (max-width: 639px) { .general-event-login table.common_front_board_list_form_general1_basis tr td.writer-division { width: 368px; } }
+/*---------------------------------*/
+/* 320px */
+/*---------------------------------*/
+@media screen and (max-width: 479px) { .general-event-login table.common_front_board_list_form_general1_basis tr td.writer-division { width: 200px; } }
 
 /*# sourceMappingURL=common.css.map */

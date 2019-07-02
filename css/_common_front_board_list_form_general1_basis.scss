@@ -177,22 +177,17 @@
 							color: #9b7a58;
 							padding: 20px 7px 0 15px;
 						}
-						&.ml{
-							margin: 0 0 0 -8px;
-						}
 						&.writer-division{
-
+							width: 526px;
 						}
 						&.title{
 							padding: 20px 15px 14px 15px;
 						}
-						&.date{
-							
+						&.ml{
+							margin-left:-51px;
 						}
-						&.new{
-							&:after{
-	                           
-	                        }
+						&.mt{
+							margin-top: 7px;
 						}
 						a{
 							&.file{
@@ -202,12 +197,6 @@
 		                            margin: 1px 10px 0 0;
 		                        }
 							}
-							&:hover{
-								
-							}
-						}
-						&.rel{
-							
 						}
 						&:first-child, &:nth-child(2){
 							display: block;
@@ -216,42 +205,44 @@
 							padding: 0 0 0 21px;
 							background: url("../images/icon/icon_hits.png") no-repeat 0 4px;
 						}
-						.download-file{
-							.top{
-								
-								.close{
-									
-								}
-							}
-							>ul{
-								&.files{
-									
-									>li{
-										
-										&:last-child{
-											
-										}
-										>a{
-											
-					      					&.pdf{
-					      						
-					      					}
-					      					&.doc{
-					      						
-					      					}
-					      					&.zip{
-					      						
-					      					}
-											&:hover{
-												
-											}
-										}
-									}
-								}
-							}
+					}
+				}
+			}
+		}
+	}
+}
+/*---------------------------------*/
+/* 480px */
+/*---------------------------------*/
+@media screen and (max-width:639px){
+	.general-event-login{
+		table{
+			&.common_front_board_list_form_general1_basis{
+				tr{ 
+					td{
+						&.writer-division{
+							width: 368px;
 						}
 					}
-				}		
+				}
+			}
+		}
+	}
+}
+/*---------------------------------*/
+/* 320px */
+/*---------------------------------*/
+@media screen and (max-width:479px){
+	.general-event-login{
+		table{
+			&.common_front_board_list_form_general1_basis{
+				tr{ 
+					td{
+						&.writer-division{
+							width: 200px;
+						}
+					}
+				}
 			}
 		}
 	}
