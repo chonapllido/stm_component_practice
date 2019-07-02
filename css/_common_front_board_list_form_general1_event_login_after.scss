@@ -1,28 +1,6 @@
 
 
-.event-login{
-    table{
-        width:100%;
-        border-collapse:separate;
-        border-spacing:0;
-        border-top:2px solid #a40022;
-        border-bottom:2px solid #313131;
-        font-family:'Malgun Gothic', sans-serif;
-        thead{
-            tr{
-                th{
-                    padding:16px 5px;
-                    color:#755332;
-                    font:bold 13px/12px 'Malgun Gothic';
-                    text-align:center;
-                    &:not(:first-child) {
-                        border-left:1px solid #e6e6e6;
-                    }
-                }
-            }
-        }
-    }
-}
+
 
 .general-event-login{
     .combi-tab.one{
