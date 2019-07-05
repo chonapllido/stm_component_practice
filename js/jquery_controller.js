@@ -104,12 +104,12 @@ $(function(){
 
     $(".dot").dotdotdot();
 
-    $(".common_front_board_list_form_general1_basis_no_writer .file").on("click", function(e){
+    $(".common_front_board_list_form_general1_basis .file").on("click", function(e){
         e.preventDefault();
         $(this).siblings(".download-file").show();
     });
 
-    $(".common_front_board_list_form_general1_basis_no_writer .close").on("click", function(e){
+    $(".common_front_board_list_form_general1_basis .close").on("click", function(e){
         e.preventDefault();
         $(this).closest(".download-file").hide();
     });
