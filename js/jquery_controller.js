@@ -113,4 +113,26 @@ $(function(){
         e.preventDefault();
         $(this).closest(".download-file").hide();
     });
+
+    $('.tech-list-smk .default-thumbnail').hover(
+        function(){
+            $(this).siblings('.main-detail').find('.heading').addClass('on');
+            $(this).addClass('on');
+            
+        }, function(){
+            $(this).siblings('.main-detail').find('.heading').removeClass('on');
+            $(this).removeClass('on');
+        }
+    );
+
+    $('').hover(
+        function(){
+            $(this).closest('').siblings('').addClass('on');
+            $(this).addClass('on');
+
+        }, function(){
+            $(this).closest('').siblings('').removeClass('on');
+            $(this).removeClass('on');
+        }
+    );
 });
